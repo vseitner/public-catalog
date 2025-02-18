@@ -1,0 +1,21 @@
+- id: cloudless-2022
+  name: EOxCloudless 2022
+  url: '//s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2022_3857/default/g/{z}/{y}/{x}.jpeg'
+  media_type: image/jpeg
+  protocol: 'xyz'
+  visible: true
+  Attribution: '{ EOxCloudless 2022: <a href="//s2maps.eu" target="_blank">Sentinel-2 cloudless - s2maps.eu</a> by <a href="//eox.at" target="_blank">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2022) }'
+- id: terrain-light
+  name: Terrain light
+  url: '//s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg'
+  media_type: image/jpeg
+  visible: false
+  protocol: 'xyz'
+  Attribution: '{ Terrain light: Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors and <a href="//maps.eox.at/#data" target="_blank">others</a>, Rendering &copy; <a href="http://eox.at" target="_blank">EOX</a> }'
+- id: eox-osm
+  name: 'OSM Background'
+  url: '//s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg'
+  media_type: image/jpeg
+  visible: false
+  protocol: 'xyz'
+  Attribution: '{ OSM: Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors and <a href="//maps.eox.at/#data" target="_blank">others</a>, Rendering &copy; <a href="http://eox.at" target="_blank">EOX</a> }'

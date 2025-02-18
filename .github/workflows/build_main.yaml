@@ -1,0 +1,57 @@
+# This is a basic workflow takes care of building and deploying
+# catalog when pushing to main branch
+
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+      pages: write
+      pull-requests: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          pip install -U pip
+          pip install json2yaml
+          pip install eodash_catalog==0.1.6
+      - name: Convert JSON to YAML
+        run: |
+          mkdir -p collections
+          for file in json_collections/*.json; do
+            json2yaml "$file" > "collections/$(basename "$file" .json).yaml"
+          mkdir -p indicators
+          for file in json_indicators/*.json; do
+            json2yaml "$file" > "indicators/$(basename "$file" .json).yaml"
+          done
+      - name: Build
+        env:
+          SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
+          SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
+          SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
+          SH_INSTANCE_ID_POLARTEP: ${{ secrets.SH_INSTANCE_ID_POLARTEP }}
+          SH_CLIENT_ID_POLARTEP: ${{ secrets.SH_CLIENT_ID_POLARTEP }}
+          SH_CLIENT_SECRET_POLARTEP: ${{ secrets.SH_CLIENT_SECRET_POLARTEP }}
+        # actually run the catalog generation
+        run: eodash_catalog
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./build
+          branch: gh-pages
+          clean-exclude: pr-preview
+          force: false

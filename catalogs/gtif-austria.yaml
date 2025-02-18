@@ -1,0 +1,8 @@
+id: "GTIF-Austria"
+title: "GTIF Austria"
+description: "Green Transition Information Factory - Austria"
+endpoint: "https://gtif-austria.github.io/public-catalog/GTIF-Austria/"
+default_base_layers: "layers/baselayers"
+default_overlay_layers: "layers/overlays"
+collections:
+  - LULUCF_land_use
