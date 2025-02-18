@@ -1,0 +1,65 @@
+{
+  "type": "Collection",
+  "id": "land_use",
+  "stac_version": "1.1.0",
+  "description": "TBD",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2018/2018-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/HeatAdapt/update/LULUCF_2018_AT_70m_3857_rendered.tif"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Land Use, Land Use Change and Forestry (LULUCF)"
+    }
+  ],
+  "themes": [
+    "TBD"
+  ],
+  "tags": [
+    "land use"
+  ],
+  "agency": [
+    "None"
+  ],
+  "subcode": "LULUCF",
+  "satellite": [
+    "Combined"
+  ],
+  "endpointtype": "COG source",
+  "title": "Land Use, Land Use Change and Forestry (LULUCF)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          11,
+          46.5,
+          15.5,
+          48.9
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-01-01T00:00:00Z",
+          "2018-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}
