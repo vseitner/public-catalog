@@ -1,23 +1,44 @@
 {
-    "Agency": [
-      "ESA"
-    ],
-    "Resources": [
-      {
-        "Name": "COG source",
-        "Style": "test_assets/cog_style.json",
-        "Bbox": [11, 46.5, 15.5, 48.9],
-        "TimeEntries": [
-          {
-            "Time": "2023",
-            "Assets": [
-              {
-                "Identifier": "solar_power",
-                "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/DHI/v2/SolarPowerPotential_Annual_COG_clipped_3857_fixed.tif"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  "Name": "land_use",
+  "Title": "Land Use, Land Use Change and Forestry (LULUCF)",
+  "EodashIdentifier": "LULUCF",
+  "Description": "TBD",
+  "Themes": [
+    "TBD"
+  ],
+  "Tags": [
+    "land use"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Combined"
+      ]
+    }
+  },
+  "Agency": [
+    "None"
+  ],
+  "Resources": [
+    {
+      "Name": "COG source",
+      "Bbox": [
+        11,
+        46.5,
+        15.5,
+        48.9
+      ],
+      "TimeEntries": [
+        {
+          "Time": "2018",
+          "Assets": [
+            {
+              "Identifier": "LULUCF",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/HeatAdapt/update/LULUCF_2018_AT_70m_3857_rendered.tif"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
