@@ -2,7 +2,7 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [],
-  "id": "2018-01-01T00:00:00Z",
+  "id": "2020-01-01T00:00:00Z",
   "geometry": {
     "type": "FeatureCollection",
     "features": [
@@ -46,7 +46,7 @@
     48.9
   ],
   "properties": {
-    "datetime": "2018-01-01T00:00:00Z"
+    "datetime": "2020-01-01T00:00:00Z"
   },
   "links": [
     {
@@ -70,7 +70,7 @@
   ],
   "assets": {
     "LULUCF": {
-      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2018_Austria_hrmsd_3857_COG.tif",
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2020_Austria_hrmsd_3857_COG.tif",
       "type": "image/tiff",
       "roles": [
         "data"

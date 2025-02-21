@@ -1,0 +1,65 @@
+{
+  "type": "Collection",
+  "id": "NUTS2_AT",
+  "stac_version": "1.1.0",
+  "description": "NUTS2 Statistik Austria 2016",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "item",
+      "href": "./NUTS2_AT/2016/2016-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/NUTS2_AT.fgb"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Land Use, Land Use Change and Forestry (LULUCF)"
+    }
+  ],
+  "themes": [
+    "TBD"
+  ],
+  "tags": [
+    "land use"
+  ],
+  "agency": [
+    "None"
+  ],
+  "subcode": "NUTS2_AT",
+  "satellite": [
+    "Combined"
+  ],
+  "endpointtype": "FlatGeobuf source",
+  "title": "NUTS2 Austria (Gemeinden)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          11,
+          46.5,
+          15.5,
+          48.9
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-01-01T00:00:00Z",
+          "2016-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}

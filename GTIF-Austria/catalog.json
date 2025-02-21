@@ -15,21 +15,16 @@
       "href": "./land_use/collection.json",
       "type": "application/json",
       "title": "Land Use, Land Use Change and Forestry (LULUCF)",
-      "code": "LULUCF",
+      "code": "LULUCF_indicator",
       "id": "land_use",
       "themes": [
-        "TBD"
+        "Land"
       ],
-      "subcode": "LULUCF",
+      "subcode": "LULUCF_indicator",
       "satellite": [
         "Combined"
       ],
-      "tags": [
-        "land use"
-      ],
-      "agency": [
-        "None"
-      ]
+      "collection_group": "Capabilities"
     },
     {
       "rel": "self",

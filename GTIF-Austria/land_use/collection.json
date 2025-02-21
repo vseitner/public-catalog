@@ -12,9 +12,31 @@
     },
     {
       "rel": "child",
+      "href": "./NUTS2_AT/collection.json",
+      "type": "application/json",
+      "title": "NUTS2 Austria (Gemeinden)",
+      "endpointtype": "FlatGeobuf source",
+      "code": "NUTS2_AT",
+      "id": "NUTS2_AT",
+      "themes": [
+        "TBD"
+      ],
+      "tags": [
+        "land use"
+      ],
+      "agency": [
+        "None"
+      ],
+      "subcode": "NUTS2_AT",
+      "satellite": [
+        "Combined"
+      ]
+    },
+    {
+      "rel": "child",
       "href": "./land_use/collection.json",
       "type": "application/json",
-      "title": "Land Use, Land Use Change and Forestry (LULUCF)",
+      "title": "LULUCF Time Series",
       "endpointtype": "COG source",
       "code": "LULUCF",
       "id": "land_use",
@@ -88,22 +110,20 @@
     }
   ],
   "themes": [
-    "TBD"
+    "Land"
   ],
-  "tags": [
-    "land use"
-  ],
-  "agency": [
-    "None"
-  ],
-  "subcode": "LULUCF",
-  "satellite": [
-    "Combined"
-  ],
+  "subcode": "LULUCF_indicator",
+  "collection_group": "Capabilities",
   "title": "Land Use, Land Use Change and Forestry (LULUCF)",
   "extent": {
     "spatial": {
       "bbox": [
+        [
+          11,
+          46.5,
+          15.5,
+          48.9
+        ],
         [
           11,
           46.5,
@@ -121,8 +141,8 @@
     "temporal": {
       "interval": [
         [
-          "2018-01-01T00:00:00Z",
-          "2018-01-01T00:00:00Z"
+          "2015-01-01T00:00:00Z",
+          "2023-01-01T00:00:00Z"
         ]
       ]
     }
@@ -130,6 +150,7 @@
   "license": "other",
   "summaries": {
     "subcode": [
+      "NUTS2_AT",
       "LULUCF"
     ],
     "themes": [

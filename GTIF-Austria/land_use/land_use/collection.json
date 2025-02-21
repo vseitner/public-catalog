@@ -12,11 +12,83 @@
     },
     {
       "rel": "item",
+      "href": "./land_use/2015/2015-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2015_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2016/2016-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2016_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2017/2017-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2017_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
       "href": "./land_use/2018/2018-01-01T00:00:00Z.json",
       "type": "application/geo+json",
       "datetime": "2018-01-01T00:00:00Z",
       "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/HeatAdapt/update/LULUCF_2018_AT_70m_3857_rendered.tif"
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2018_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2019/2019-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2019_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2020/2020-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2020_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2021/2021-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2021_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2022/2022-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2022_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2023/2023-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2023_Austria_hrmsd_3857_COG.tif"
       ]
     },
     {
@@ -40,7 +112,7 @@
     "Combined"
   ],
   "endpointtype": "COG source",
-  "title": "Land Use, Land Use Change and Forestry (LULUCF)",
+  "title": "LULUCF Time Series",
   "extent": {
     "spatial": {
       "bbox": [
@@ -55,8 +127,8 @@
     "temporal": {
       "interval": [
         [
-          "2018-01-01T00:00:00Z",
-          "2018-01-01T00:00:00Z"
+          "2015-01-01T00:00:00Z",
+          "2023-01-01T00:00:00Z"
         ]
       ]
     }
