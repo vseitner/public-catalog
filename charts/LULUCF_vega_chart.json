@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Relative change in land cover types over years",
+    "width": 600,
+    "height": 400,
+    "data": {
+        "name": "LULUCF_stats"
+    },
+    "transform": [{"filter": "datum.landtype !== 'other lands'"}],
+    "mark": "bar",
+    "params": [{
+      "name": "landtypeselect",
+      "select": {"type": "point", "fields": ["landtype"]},
+      "bind": "legend"
+    }],
+    "encoding": {
+      "x": {"field": "year", "type": "ordinal", "title": "Year"},
+      "y": {"field": "change", "type": "quantitative", "title": "Relative Change"},
+      "color": {
+        "condition": {
+          "param": "landtypeselect",
+          "field": "landtype",
+          "type": "nominal",
+          "scale": {
+            "domain": ["forestland", "cropland", "grassland", "wetlands", "settlements"],
+            "range": ["#006400", "#FFA500", "#228B22", "#4682B4", "#B22222"]
+          },
+          "title": "Land Type"
+        },
+        "value": "lightgray"
+      },
+      "tooltip": [
+        {"field": "year", "type": "quantitative", "title": "Year"},
+        {"field": "landtype", "type": "nominal", "title": "Land Type"},
+        {"field": "area", "type": "quantitative", "title": "Area"},
+        {"field": "change", "type": "quantitative", "title": "Change"}
+      ]
+    }
+  }

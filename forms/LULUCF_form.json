@@ -1,0 +1,19 @@
+{
+    "options": {
+        "execute": true
+    },
+    "type": "object",
+    "properties": {
+        "feature": {
+            "type": "spatial",
+            "title": "Select administrative area on map",
+            "options": {
+                "for": "eox-map#main",
+                "layerId": "NUTS2_AT;:;itemid:;:0",
+                "type": "string",
+                "featureProperty": "ID"
+            },
+            "format": "feature"
+        }
+    }
+}

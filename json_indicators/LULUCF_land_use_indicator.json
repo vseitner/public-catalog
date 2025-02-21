@@ -8,6 +8,18 @@
     "Themes": [
       "Land"
     ],
+    "Process": {
+        "Name": "LULUCF_statistics",
+        "JsonForm": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/forms/LULUCF_form.json",
+        "VegaDefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/charts/LULUCF_vega_chart.json",
+        "EndPoints": [
+            {
+                "Identifier": "LULUCF_stats",
+                "Url": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/statistics/{{feature}}.json",
+                "Type": "application/json"
+            }
+        ]
+    },
     "Collections": [
       "NUTS2_AT",
       "LULUCF_land_use"
