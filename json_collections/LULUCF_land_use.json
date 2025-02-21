@@ -22,6 +22,7 @@
   "Resources": [
     {
       "Name": "COG source",
+      "Style": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
       "Bbox": [
         11,
         46.5,
