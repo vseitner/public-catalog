@@ -1,117 +1,145 @@
 {
-  "Name": "land_use",
-  "Title": "LULUCF Time Series",
-  "EodashIdentifier": "LULUCF",
-  "Description": "TBD",
-  "Themes": [
-    "TBD"
-  ],
-  "Tags": [
-    "land use"
-  ],
-  "DataSource": {
-    "Spaceborne": {
-      "Satellite": [
-        "Combined"
-      ]
-    }
-  },
-  "Agency": [
-    "None"
-  ],
-  "Resources": [
-    {
-      "Name": "COG source",
-      "Style": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
-      "Bbox": [
-        11,
-        46.5,
-        15.5,
-        48.9
-      ],
-      "TimeEntries": [
+    "Name": "land_use",
+    "Title": "LULUCF Time Series",
+    "EodashIdentifier": "LULUCF",
+    "Description": "TBD",
+    "Themes": ["TBD"],
+    "Tags": ["land use"],
+    "DataSource": {"Spaceborne": {"Satellite": ["Combined"]}},
+    "Agency": ["None"],
+    "Colorlegend": {
+        "title": "Land cover classes",
+        "range": [
+            "#334f21",
+            "#538135",
+            "#659c40",
+            "#bf8f00",
+            "#dede62",
+            "#cfb05c",
+            "#b1954e",
+            "#d99f00",
+            "#5abe2f",
+            "#71e93a",
+            "#2f5496",
+            "#2fa396",
+            "#833c0b",
+            "#c23c0b",
+            "#c2650b",
+            "#9da18a",
+            "#dfdfdf",
+            "#61957f"
+        ],
+        "domain": [
+            "Coniferous forest",
+            "Deciduous forest",
+            "Unstocked forest",
+            "Annual cropland",
+            "Viticulture",
+            "Orchards",
+            "Other perennial crops",
+            "Other woody biomass in cropland",
+            "Grassland",
+            "Other woody biomass in grassland",
+            "Water",
+            "Wetland",
+            "Unvegetated settlements",
+            "Trees in settlements",
+            "Grassland in settlements",
+            "Rocks and screes",
+            "Glaciers",
+            "Alpine dwarf shrub heaths"
+        ],
+        "scaleType": "categorical",
+        "markType": "rectangle"
+    },
+    "Resources": [
         {
-          "Time": "2015",
-          "Assets": [
-            {
-              "Identifier": "LULUCF",
-              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2015_Austria_hrmsd_3857_COG.tif"
-            }
-          ]
-        },
-        {
-          "Time": "2016",
-          "Assets": [
-            {
-              "Identifier": "LULUCF",
-              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2016_Austria_hrmsd_3857_COG.tif"
-            }
-          ]
-        },
-        {
-          "Time": "2017",
-          "Assets": [
-            {
-              "Identifier": "LULUCF",
-              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2017_Austria_hrmsd_3857_COG.tif"
-            }
-          ]
-        },
-        {
-          "Time": "2018",
-          "Assets": [
-            {
-              "Identifier": "LULUCF",
-              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2018_Austria_hrmsd_3857_COG.tif"
-            }
-          ]
-        },
-        {
-          "Time": "2019",
-          "Assets": [
-            {
-              "Identifier": "LULUCF",
-              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2019_Austria_hrmsd_3857_COG.tif"
-            }
-          ]
-        },
-        {
-          "Time": "2020",
-          "Assets": [
-            {
-              "Identifier": "LULUCF",
-              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2020_Austria_hrmsd_3857_COG.tif"
-            }
-          ]
-        },
-        {
-          "Time": "2021",
-          "Assets": [
-            {
-              "Identifier": "LULUCF",
-              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2021_Austria_hrmsd_3857_COG.tif"
-            }
-          ]
-        },
-        {
-          "Time": "2022",
-          "Assets": [
-            {
-              "Identifier": "LULUCF",
-              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2022_Austria_hrmsd_3857_COG.tif"
-            }
-          ]
-        },
-        {
-          "Time": "2023",
-          "Assets": [
-            {
-              "Identifier": "LULUCF",
-              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2023_Austria_hrmsd_3857_COG.tif"
-            }
-          ]
+            "Name": "COG source",
+            "Style": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
+            "Bbox": [11, 46.5, 15.5, 48.9],
+            "TimeEntries": [
+                {
+                    "Time": "2015",
+                    "Assets": [
+                        {
+                            "Identifier": "LULUCF",
+                            "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2015_Austria_hrmsd_3857_COG.tif"
+                        }
+                    ]
+                },
+                {
+                    "Time": "2016",
+                    "Assets": [
+                        {
+                            "Identifier": "LULUCF",
+                            "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2016_Austria_hrmsd_3857_COG.tif"
+                        }
+                    ]
+                },
+                {
+                    "Time": "2017",
+                    "Assets": [
+                        {
+                            "Identifier": "LULUCF",
+                            "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2017_Austria_hrmsd_3857_COG.tif"
+                        }
+                    ]
+                },
+                {
+                    "Time": "2018",
+                    "Assets": [
+                        {
+                            "Identifier": "LULUCF",
+                            "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2018_Austria_hrmsd_3857_COG.tif"
+                        }
+                    ]
+                },
+                {
+                    "Time": "2019",
+                    "Assets": [
+                        {
+                            "Identifier": "LULUCF",
+                            "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2019_Austria_hrmsd_3857_COG.tif"
+                        }
+                    ]
+                },
+                {
+                    "Time": "2020",
+                    "Assets": [
+                        {
+                            "Identifier": "LULUCF",
+                            "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2020_Austria_hrmsd_3857_COG.tif"
+                        }
+                    ]
+                },
+                {
+                    "Time": "2021",
+                    "Assets": [
+                        {
+                            "Identifier": "LULUCF",
+                            "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2021_Austria_hrmsd_3857_COG.tif"
+                        }
+                    ]
+                },
+                {
+                    "Time": "2022",
+                    "Assets": [
+                        {
+                            "Identifier": "LULUCF",
+                            "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2022_Austria_hrmsd_3857_COG.tif"
+                        }
+                    ]
+                },
+                {
+                    "Time": "2023",
+                    "Assets": [
+                        {
+                            "Identifier": "LULUCF",
+                            "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2023_Austria_hrmsd_3857_COG.tif"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
