@@ -1,0 +1,56 @@
+{
+    "legend": [
+        {
+            "title": "WMO Stage of Development",
+            "range": [
+                "#334f21",
+                "#538135",
+                "#659c40",
+                "#bf8f00",
+                "#dede62",
+                "#cfb05c",
+                "#b1954e",
+                "#d99f00",
+                "#5abe2f",
+                "#71e93a",
+                "#2f5496",
+                "#2fa396",
+                "#833c0b",
+                "#c23c0b",
+                "#c2650b",
+                "#9da18a",
+                "#dfdfdf",
+                "#61957f"
+            ],
+            "domain": [
+                "Coniferous forest",
+                "Deciduous forest",
+                "Unstocked forest",
+                "Annual cropland",
+                "Viticulture",
+                "Orchards",
+                "Other perennial crops",
+                "Other woody biomass in cropland",
+                "Grassland",
+                "Other woody biomass in grassland",
+                "Water",
+                "Wetland",
+                "Unvegetated settlements",
+                "Trees in settlements",
+                "Grassland in settlements",
+                "Rocks and screes",
+                "Glaciers",
+                "Alpine dwarf shrub heaths"
+            ],
+            "scaleType": "categorical",
+            "markType": "rectangle"
+        }
+    ],
+    "color": [
+        "match",
+        ["band", 1],
+        110,
+        "#334f21",
+        "#ff0000"
+    ]
+}
