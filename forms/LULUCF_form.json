@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "feature": {
-            "type": "spatial",
+            "type": "string",
             "title": "Select administrative area on map",
             "options": {
                 "for": "eox-map#main",
