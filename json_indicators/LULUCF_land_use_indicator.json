@@ -1,0 +1,15 @@
+{
+    "Name": "land_use",
+    "Title": "Land Use, Land Use Change and Forestry (LULUCF)",
+    "EodashIdentifier": "LULUCF_indicator",
+    "Description": "TBD",
+    "CollectionGroup": "Capabilities",
+    "Attribution": "Developed within FFG project GHG-KIT [contract #FO999893432] https://ghg-kit.at/",
+    "Themes": [
+      "Land"
+    ],
+    "Collections": [
+      "NUTS2_AT",
+      "LULUCF_land_use"
+    ]
+  }

@@ -1,0 +1,44 @@
+{
+  "Name": "NUTS2_AT",
+  "Title": "NUTS2 Austria (Gemeinden)",
+  "EodashIdentifier": "NUTS2_AT",
+  "Description": "NUTS2 Statistik Austria 2016",
+  "Themes": [
+    "TBD"
+  ],
+  "Tags": [
+    "land use"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Combined"
+      ]
+    }
+  },
+  "Agency": [
+    "None"
+  ],
+  "Resources": [
+    {
+      "Name": "FlatGeobuf source",
+      "Bbox": [
+        11,
+        46.5,
+        15.5,
+        48.9
+      ],
+      "TimeEntries": [
+        {
+          "Time": "2016",
+          "Assets": [
+            {
+              "Identifier": "NUTS2_AT",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/NUTS2_AT.fgb"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

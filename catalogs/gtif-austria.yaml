@@ -5,4 +5,4 @@ endpoint: "https://gtif-austria.github.io/public-catalog/GTIF-Austria/"
 default_base_layers: "layers/baselayers"
 default_overlay_layers: "layers/overlays"
 collections:
-  - LULUCF_land_use
+  - LULUCF_land_use_indicator

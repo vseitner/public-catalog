@@ -1,6 +1,6 @@
 {
   "Name": "land_use",
-  "Title": "Land Use, Land Use Change and Forestry (LULUCF)",
+  "Title": "LULUCF Time Series",
   "EodashIdentifier": "LULUCF",
   "Description": "TBD",
   "Themes": [
@@ -30,11 +30,83 @@
       ],
       "TimeEntries": [
         {
+          "Time": "2015",
+          "Assets": [
+            {
+              "Identifier": "LULUCF",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2015_Austria_hrmsd_3857_COG.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2016",
+          "Assets": [
+            {
+              "Identifier": "LULUCF",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2016_Austria_hrmsd_3857_COG.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2017",
+          "Assets": [
+            {
+              "Identifier": "LULUCF",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2017_Austria_hrmsd_3857_COG.tif"
+            }
+          ]
+        },
+        {
           "Time": "2018",
           "Assets": [
             {
               "Identifier": "LULUCF",
-              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/HeatAdapt/update/LULUCF_2018_AT_70m_3857_rendered.tif"
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2018_Austria_hrmsd_3857_COG.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019",
+          "Assets": [
+            {
+              "Identifier": "LULUCF",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2019_Austria_hrmsd_3857_COG.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2020",
+          "Assets": [
+            {
+              "Identifier": "LULUCF",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2020_Austria_hrmsd_3857_COG.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2021",
+          "Assets": [
+            {
+              "Identifier": "LULUCF",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2021_Austria_hrmsd_3857_COG.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2022",
+          "Assets": [
+            {
+              "Identifier": "LULUCF",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2022_Austria_hrmsd_3857_COG.tif"
+            }
+          ]
+        }
+        {
+          "Time": "2023",
+          "Assets": [
+            {
+              "Identifier": "LULUCF",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2023_Austria_hrmsd_3857_COG.tif"
             }
           ]
         }
