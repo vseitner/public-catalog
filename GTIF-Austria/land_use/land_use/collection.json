@@ -92,6 +92,14 @@
       ]
     },
     {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "LULUCF"
+      ]
+    },
+    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",

@@ -50,6 +50,14 @@
   },
   "links": [
     {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "LULUCF"
+      ]
+    },
+    {
       "rel": "root",
       "href": "../../../../catalog.json",
       "type": "application/json",

@@ -50,6 +50,14 @@
   },
   "links": [
     {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/NUTS2_styles.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "NUTS2_AT"
+      ]
+    },
+    {
       "rel": "root",
       "href": "../../../../catalog.json",
       "type": "application/json",
