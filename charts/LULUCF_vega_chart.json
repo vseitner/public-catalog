@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 400,
     "title": {
         "text": {
             "expr": "'LULUCF 2023 land cover type distribution for '+data('LULUCF_stats')[0].name"
