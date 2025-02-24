@@ -1,39 +1,89 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Relative change in land cover types over years",
-    "width": 600,
-    "height": 400,
-    "data": {
-        "name": "LULUCF_stats"
-    },
-    "transform": [{"filter": "datum.landtype !== 'other lands'"}],
-    "mark": "bar",
-    "params": [{
-      "name": "landtypeselect",
-      "select": {"type": "point", "fields": ["landtype"]},
-      "bind": "legend"
-    }],
-    "encoding": {
-      "x": {"field": "year", "type": "ordinal", "title": "Year"},
-      "y": {"field": "change", "type": "quantitative", "title": "Relative Change"},
-      "color": {
-        "condition": {
-          "param": "landtypeselect",
-          "field": "landtype",
-          "type": "nominal",
-          "scale": {
-            "domain": ["forestland", "cropland", "grassland", "wetlands", "settlements"],
-            "range": ["#006400", "#FFA500", "#228B22", "#4682B4", "#B22222"]
-          },
-          "title": "Land Type"
+    "width": 400,
+    "title": {
+        "text": {
+            "expr": "'LULUCF 2023 land cover type distribution for '+data('source_0')[0].name"
         },
-        "value": "lightgray"
-      },
-      "tooltip": [
-        {"field": "year", "type": "quantitative", "title": "Year"},
-        {"field": "landtype", "type": "nominal", "title": "Land Type"},
-        {"field": "area", "type": "quantitative", "title": "Area"},
-        {"field": "change", "type": "quantitative", "title": "Change"}
-      ]
-    }
-  }
+        "anchor": "start",
+        "fontSize": 14,
+        "fontWeight": "bold"
+    },
+    "description": "Bar chart displaying land use in 2023 with interactive highlighting.",
+    "data": {"name": "LULUCF_stats"},
+    "transform": [
+        {
+            "fold": [
+                "forestland",
+                "cropland",
+                "grassland",
+                "wetlands",
+                "settlements",
+                "other lands"
+            ],
+            "as": ["land_type", "area"]
+        },
+        {
+            "calculate": "datum.land_type === 'forestland' ? 'Forestland' : datum.land_type === 'cropland' ? 'Cropland' : datum.land_type === 'grassland' ? 'Grassland' : datum.land_type === 'wetlands' ? 'Wetlands' : datum.land_type === 'settlements' ? 'Settlements' : 'Other lands'",
+            "as": "land_type_capitalized"
+        }
+    ],
+    "mark": {"type": "bar", "tooltip": true, "cursor": "pointer"},
+    "encoding": {
+        "x": {
+            "field": "land_type_capitalized",
+            "type": "nominal",
+            "title": "Land Type",
+            "sort": "-y"
+        },
+        "y": {"field": "area", "type": "quantitative", "title": "Area (ha)"},
+        "color": {
+            "field": "land_type",
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                    "forestland",
+                    "grassland",
+                    "cropland",
+                    "other lands",
+                    "settlements",
+                    "wetlands"
+                ],
+                "range": [
+                    "#334F22",
+                    "#479B26",
+                    "#B88E14",
+                    "#7F7F7F",
+                    "#723B0A",
+                    "#1A4A92"
+                ]
+            },
+            "legend": null
+        },
+        "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.6},
+        "tooltip": [
+            {
+                "field": "land_type_capitalized",
+                "type": "nominal",
+                "title": "Land Type"
+            },
+            {
+                "field": "area",
+                "type": "quantitative",
+                "format": ",.2f",
+                "title": "Area (ha)"
+            }
+        ]
+    },
+    "params": [
+        {
+            "name": "hover",
+            "select": {
+                "type": "point",
+                "fields": ["land_type"],
+                "on": "mouseover",
+                "clear": "mouseout"
+            }
+        }
+    ]
+}
