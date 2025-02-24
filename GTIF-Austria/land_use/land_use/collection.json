@@ -106,7 +106,7 @@
       "title": "Land Use, Land Use Change and Forestry (LULUCF)"
     }
   ],
-  "thumbnail": "https://gtif-austria.github.io/public-catalog//https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg",
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg",
   "themes": [
     "TBD"
   ],
@@ -190,7 +190,7 @@
   "license": "other",
   "assets": {
     "thumbnail": {
-      "href": "https://gtif-austria.github.io/public-catalog//https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"
