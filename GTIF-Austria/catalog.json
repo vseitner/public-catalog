@@ -24,6 +24,9 @@
       "satellite": [
         "Combined"
       ],
+      "thumbnail": [
+        "https://gtif-austria.github.io/public-catalog//https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg"
+      ],
       "collection_group": "Capabilities"
     },
     {
