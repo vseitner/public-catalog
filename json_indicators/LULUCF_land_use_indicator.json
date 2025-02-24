@@ -2,7 +2,7 @@
     "Name": "land_use",
     "Title": "Land Use, Land Use Change and Forestry (LULUCF)",
     "EodashIdentifier": "LULUCF_indicator",
-    "Description": "TBD",
+    "Description": "Land Use, Land Use Change and Forestry (LULUCF) status map for the years 2015 - 2023 over Austria, at the Level 3 of the LULUCF Nomenclature. Derived by means of Artificial Intelligence, deep learning U-Net automated supervised classification algorithm and rule-based post-processing. The scope of the Austrian Space Applications Program (ASAP 18) flagship GHG-KIT project - &quot;Prototyping an EO-enabled kit supporting greenhouse gas reporting&quot; is to develop a scientific Proof-of-Concept (PoC) towards the first European Earth Observation (EO)- integrated CO2 and CH4 Monitoring Verification and Reporting (MVR) System using Copernicus satellite data and information products, including two prototypes: (i) The Verification Element based on atmospheric modelling, and (ii) LULUCF Inventory Reporter. https://ghg-kit.at/ This work is supported by The Austrian Research Promotion Agency (Forschungsförderungsgesellschaft, FFG).",
     "CollectionGroup": "Capabilities",
     "Attribution": "Developed within FFG project GHG-KIT [contract #FO999893432] https://ghg-kit.at/",
     "Themes": [
