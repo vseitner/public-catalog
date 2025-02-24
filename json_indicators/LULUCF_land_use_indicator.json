@@ -8,6 +8,7 @@
     "Themes": [
       "Land"
     ],
+    "Image": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg",
     "Process": {
         "Name": "LULUCF_statistics",
         "JsonForm": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/forms/LULUCF_form.json",
