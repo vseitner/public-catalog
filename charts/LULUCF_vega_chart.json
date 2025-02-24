@@ -2,10 +2,10 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
         "text": {
-            "expr": "'LULUCF 2023 land cover type distribution for '+data('LULUCF_stats')[0].name"
+            "expr": "'2023 land cover in '+data('LULUCF_stats')[0].name"
         },
         "anchor": "start",
-        "fontSize": 14,
+        "fontSize": 12,
         "fontWeight": "bold"
     },
     "description": "Bar chart displaying land use in 2023 with interactive highlighting.",
