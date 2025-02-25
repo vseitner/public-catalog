@@ -1,7 +1,9 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/attribution/v0.1.0/schema.json"
+  ],
   "id": "2020-01-01T00:00:00Z",
   "geometry": {
     "type": "FeatureCollection",
@@ -80,6 +82,7 @@
     "LULUCF": {
       "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2020_Austria_hrmsd_3857_COG.tif",
       "type": "image/tiff",
+      "attribution": "Developed within FFG project GHG-KIT [contract #FO999893432] https://ghg-kit.at/",
       "roles": [
         "data"
       ]
