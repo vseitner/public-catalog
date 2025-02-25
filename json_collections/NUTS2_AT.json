@@ -23,7 +23,7 @@
     {
       "Name": "FlatGeobuf source",
       "Style": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/NUTS2_styles.json",
-      "Bbox": [9.5, 44.5, 19.0, 50.9],
+      "Bbox": [9.5, 44.5, 20.0, 51.9],
       "TimeEntries": [
         {
           "Time": "2016",
