@@ -8,8 +8,11 @@
             "type": "string",
             "title": "Select administrative area on map",
             "options": {
-                "for": "eox-map#main",
-                "layerId": "NUTS2_AT;:;2016-01-01T00:00:00Z;:;0_selection",
+                "drawtools": {
+                    "for": "eox-map#main",
+                    "layerId": "NUTS2_AT;:;2016-01-01T00:00:00Z;:;0",
+                    "continuous": true
+                },
                 "type": "string",
                 "featureProperty": "ID"
             },
