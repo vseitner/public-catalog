@@ -160,8 +160,8 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "NUTS2_AT",
-      "LULUCF"
+      "LULUCF",
+      "NUTS2_AT"
     ],
     "themes": [
       "TBD"
@@ -170,7 +170,7 @@
       "Combined"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg"
+      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg"
     ]
   },
   "assets": {
