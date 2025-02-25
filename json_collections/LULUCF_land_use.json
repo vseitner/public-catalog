@@ -57,7 +57,7 @@
         {
             "Name": "COG source",
             "Style": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
-            "Bbox": [8, 43.5, 19.5, 51.9],
+            "Bbox": [9, 45.5, 18.5, 51.9],
             "Attribution": "Developed within FFG project GHG-KIT [contract #FO999893432] https://ghg-kit.at/",
             "TimeEntries": [
                 {
