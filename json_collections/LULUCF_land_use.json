@@ -52,7 +52,7 @@
         "scaleType": "categorical",
         "markType": "rectangle"
     },
-    "Image": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg",
+    "Image": "assets/LULUCF_preview.jpg",
     "Resources": [
         {
             "Name": "COG source",
