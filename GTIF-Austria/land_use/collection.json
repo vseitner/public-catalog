@@ -15,7 +15,7 @@
       "href": "./NUTS2_AT/collection.json",
       "type": "application/json",
       "title": "NUTS2 Austria (Gemeinden)",
-      "endpointtype": "FlatGeobuf source",
+      "endpointtype": "GeoJSON source",
       "code": "NUTS2_AT",
       "id": "NUTS2_AT",
       "themes": [
@@ -160,8 +160,8 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "LULUCF",
-      "NUTS2_AT"
+      "NUTS2_AT",
+      "LULUCF"
     ],
     "themes": [
       "TBD"

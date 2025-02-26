@@ -78,8 +78,8 @@
   ],
   "assets": {
     "NUTS2_AT": {
-      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/NUTS2_AT.fgb",
-      "type": "application/vnd.flatgeobuf",
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/NUTS2.geojson",
+      "type": "application/geo+json",
       "roles": [
         "data"
       ]

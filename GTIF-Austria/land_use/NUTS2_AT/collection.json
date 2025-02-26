@@ -16,7 +16,7 @@
       "type": "application/geo+json",
       "datetime": "2016-01-01T00:00:00Z",
       "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/NUTS2_AT.fgb"
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/NUTS2.geojson"
       ]
     },
     {
@@ -47,7 +47,7 @@
   "satellite": [
     "Combined"
   ],
-  "endpointtype": "FlatGeobuf source",
+  "endpointtype": "GeoJSON source",
   "title": "NUTS2 Austria (Gemeinden)",
   "extent": {
     "spatial": {
