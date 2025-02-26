@@ -25,6 +25,10 @@
         {
             "calculate": "datum.land_type === 'forestland' ? 'Forestland' : datum.land_type === 'cropland' ? 'Cropland' : datum.land_type === 'grassland' ? 'Grassland' : datum.land_type === 'wetlands' ? 'Wetlands' : datum.land_type === 'settlements' ? 'Settlements' : 'Other lands'",
             "as": "land_type_capitalized"
+        },
+        {
+          "calculate": "datum.area / 1000",
+          "as": "area_kha"
         }
     ],
     "mark": {"type": "bar", "tooltip": true, "cursor": "pointer"},
@@ -35,7 +39,7 @@
             "title": "Land Type",
             "sort": "-y"
         },
-        "y": {"field": "area", "type": "quantitative", "title": "Area (ha)"},
+        "y": {"field": "area_kha", "type": "quantitative", "title": "Area (kha)"},
         "color": {
             "field": "land_type",
             "type": "nominal",
@@ -67,10 +71,10 @@
                 "title": "Land Type"
             },
             {
-                "field": "area",
+                "field": "area_kha",
                 "type": "quantitative",
                 "format": ",.2f",
-                "title": "Area (ha)"
+                "title": "Area (kha)"
             }
         ]
     },
