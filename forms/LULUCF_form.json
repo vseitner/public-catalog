@@ -1,5 +1,7 @@
 {
-    "options": {},
+    "options": {
+        "execute": true
+    },
     "type": "object",
     "properties": {
         "feature": {
