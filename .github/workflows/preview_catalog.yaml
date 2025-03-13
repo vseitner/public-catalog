@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -U pip
-          pip install eodash_catalog pyyaml
+          pip install eodash_catalog pyyaml json2yaml
       - name: Convert JSON to YAML
         run: |
           mkdir -p collections
