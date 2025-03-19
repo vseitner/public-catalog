@@ -1,9 +1,14 @@
 import os
-from yaml import load, dump
+import yaml 
 from yaml.loader import SafeLoader
+import json
 
+json_collections_path = "json_collections/"
 collections_path =  "collections/"
+
+json_indicators_path = "json_indicators/"
 indicators_path = "indicators/"
+
 catalog_path = "catalogs/gtif-austria.yaml"
 
 ALL_CHANGED_FILES = os.environ.get("ALL_CHANGED_FILES")
@@ -11,26 +16,46 @@ changed_files = ALL_CHANGED_FILES.split(" ")
 print("ALL_CHANGED_FILES: ", changed_files)
 
 collections_files = [
-    file for file in changed_files if file.startswith(collections_path)
+    file for file in changed_files if file.startswith(json_collections_path)
 ]
-indicator_files = [file for file in changed_files if file.startswith(indicators_path)]
+indicator_files = [file for file in changed_files if file.startswith(json_indicators_path)]
 
 print("changed collections files: ", collections_files)
+print("changed indicator files: ", indicator_files)
+# convert json to yaml and move to their respective folders
+for i,file in enumerate(collections_files):
+    with open(file, "r") as f:
+        collection = json.load(f)
+        respective_file = indicators_path + file.split("/")[-1].split(".")[0] + ".yaml"
+        with open(respective_file, "w") as f:
+            yaml.dump(collection, f)
+        collections_files[i] = respective_file
+
+for i,file in enumerate(indicator_files):
+    with open(file, "r") as f:
+        collection = json.load(f)
+        respective_file = collections_path + file.split("/")[-1].split(".")[0] + ".yaml"
+        with open(respective_file, "w") as f:
+            yaml.dump(collection, f)
+        indicator_files[i] = respective_file           
+        
+    
+    
+    
 
 is_indicator = {file: False for file in collections_files}
 
-print("changed indicator files: ", indicator_files)
 # if the changed collection files doesnt exist in an indicator file, add it to the catalog
 for file in indicator_files:
     with open(file, "r") as f:
-        indicator = load(f, Loader=SafeLoader)
+        indicator = yaml.load(f, Loader=SafeLoader)
         if "Collections" not in indicator:
             continue
     for collection in indicator["Collections"]:
         if collection in collections_files:
             is_indicator[collection] = True
 with open(catalog_path, "r") as f:
-    catalog = load(f, Loader=SafeLoader)
+    catalog = yaml.load(f, Loader=SafeLoader)
     catalog["collections"] = []
     for key in is_indicator:
         if not is_indicator[key]:
@@ -44,4 +69,4 @@ with open(catalog_path, "r") as f:
 
 with open(catalog_path, "w") as f:
     print("adding the following as indicators to the catalog: ", catalog["collections"])
-    dump(catalog, f)
+    yaml.dump(catalog, f)

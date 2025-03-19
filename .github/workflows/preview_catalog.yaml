@@ -27,16 +27,6 @@ jobs:
         run: |
           pip install -U pip
           pip install eodash_catalog pyyaml json2yaml
-      - name: Convert JSON to YAML
-        run: |
-          mkdir -p collections
-          for file in json_collections/*.json; do
-            json2yaml "$file" > "collections/$(basename "$file" .json).yaml"
-          done
-          mkdir -p indicators
-          for file in json_indicators/*.json; do
-            json2yaml "$file" > "indicators/$(basename "$file" .json).yaml"
-          done
       - name: changed-files
         id: changed-files
         uses: tj-actions/changed-files@v45
