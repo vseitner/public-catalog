@@ -27,6 +27,7 @@ for i,file in enumerate(collections_files):
     with open(file, "r") as f:
         collection = json.load(f)
         respective_file = indicators_path + file.split("/")[-1].split(".")[0] + ".yaml"
+        os.makedirs(os.path.dirname(respective_file))
         with open(respective_file, "w") as f:
             yaml.dump(collection, f)
         collections_files[i] = respective_file
@@ -35,6 +36,7 @@ for i,file in enumerate(indicator_files):
     with open(file, "r") as f:
         collection = json.load(f)
         respective_file = collections_path + file.split("/")[-1].split(".")[0] + ".yaml"
+        os.makedirs(os.path.dirname(respective_file))
         with open(respective_file, "w") as f:
             yaml.dump(collection, f)
         indicator_files[i] = respective_file           
