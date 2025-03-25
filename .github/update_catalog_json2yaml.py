@@ -26,7 +26,7 @@ print("changed indicator files: ", indicator_files)
 for i,file in enumerate(collections_files):
     with open(file, "r") as f:
         collection = json.load(f)
-        respective_file = indicators_path + file.split("/")[-1].split(".")[0] + ".yaml"
+        respective_file = collections_path + file.split("/")[-1].split(".")[0] + ".yaml"
         os.makedirs(os.path.dirname(respective_file))
         with open(respective_file, "w") as f:
             yaml.dump(collection, f)
@@ -35,7 +35,7 @@ for i,file in enumerate(collections_files):
 for i,file in enumerate(indicator_files):
     with open(file, "r") as f:
         collection = json.load(f)
-        respective_file = collections_path + file.split("/")[-1].split(".")[0] + ".yaml"
+        respective_file = indicators_path + file.split("/")[-1].split(".")[0] + ".yaml"
         os.makedirs(os.path.dirname(respective_file))
         with open(respective_file, "w") as f:
             yaml.dump(collection, f)
@@ -56,6 +56,7 @@ for file in indicator_files:
     for collection in indicator["Collections"]:
         if collection in collections_files:
             is_indicator[collection] = True
+            
 with open(catalog_path, "r") as f:
     catalog = yaml.load(f, Loader=SafeLoader)
     catalog["collections"] = []
