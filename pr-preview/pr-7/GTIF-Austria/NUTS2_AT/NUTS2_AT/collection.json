@@ -38,10 +38,7 @@
   "sci:citation": "",
   "subtitle": "",
   "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
-  "themes": [
-    "Air",
-    "Atmosphere"
-  ],
+  "themes": [],
   "locations": true,
   "tags": [
     "land use"

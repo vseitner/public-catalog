@@ -18,10 +18,7 @@
       "subtitle": "",
       "code": "NUTS2_AT",
       "id": "NUTS2_AT",
-      "themes": [
-        "Air",
-        "Atmosphere"
-      ],
+      "themes": [],
       "subcode": "NUTS2_AT",
       "satellite": [
         "Combined"
