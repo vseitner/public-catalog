@@ -61,7 +61,7 @@
             "Attribution": "Developed within FFG project GHG-KIT [contract #FO999893432] https://ghg-kit.at/",
             "TimeEntries": [
                 {
-                    "Time": "01-01-2015",
+                    "Time": "2015",
                     "Assets": [
                         {
                             "Identifier": "LULUCF",
@@ -70,7 +70,7 @@
                     ]
                 },
                 {
-                    "Time": "01-01-2016",
+                    "Time": "2016",
                     "Assets": [
                         {
                             "Identifier": "LULUCF",
@@ -79,7 +79,7 @@
                     ]
                 },
                 {
-                    "Time": "01-01-2017",
+                    "Time": "2017",
                     "Assets": [
                         {
                             "Identifier": "LULUCF",
@@ -88,7 +88,7 @@
                     ]
                 },
                 {
-                    "Time": "01-01-2018",
+                    "Time": "2018",
                     "Assets": [
                         {
                             "Identifier": "LULUCF",
@@ -97,7 +97,7 @@
                     ]
                 },
                 {
-                    "Time": "01-01-2019",
+                    "Time": "2019",
                     "Assets": [
                         {
                             "Identifier": "LULUCF",
@@ -106,7 +106,7 @@
                     ]
                 },
                 {
-                    "Time": "01-01-2020",
+                    "Time": "2020",
                     "Assets": [
                         {
                             "Identifier": "LULUCF",
@@ -115,7 +115,7 @@
                     ]
                 },
                 {
-                    "Time": "01-01-2021",
+                    "Time": "2021",
                     "Assets": [
                         {
                             "Identifier": "LULUCF",
@@ -124,7 +124,7 @@
                     ]
                 },
                 {
-                    "Time": "01-01-2022",
+                    "Time": "2022",
                     "Assets": [
                         {
                             "Identifier": "LULUCF",
@@ -133,7 +133,7 @@
                     ]
                 },
                 {
-                    "Time": "01-01-2023",
+                    "Time": "2023",
                     "Assets": [
                         {
                             "Identifier": "LULUCF",
