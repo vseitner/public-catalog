@@ -19,7 +19,9 @@
       "subtitle": "",
       "code": "NUTS2_AT",
       "id": "NUTS2_AT",
-      "themes": [],
+      "themes": [
+        "TBD"
+      ],
       "locations": true,
       "tags": [
         "land use"
@@ -95,7 +97,9 @@
   "sci:citation": "",
   "subtitle": "",
   "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
-  "themes": [],
+  "themes": [
+    "TBD"
+  ],
   "locations": true,
   "tags": [
     "land use"
@@ -151,6 +155,9 @@
   "summaries": {
     "subcode": [
       "NUTS2_AT"
+    ],
+    "themes": [
+      "TBD"
     ],
     "satellite": [
       "Combined"

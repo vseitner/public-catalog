@@ -18,7 +18,9 @@
       "subtitle": "",
       "code": "NUTS2_AT",
       "id": "NUTS2_AT",
-      "themes": [],
+      "themes": [
+        "TBD"
+      ],
       "subcode": "NUTS2_AT",
       "satellite": [
         "Combined"
