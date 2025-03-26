@@ -160,8 +160,8 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "NUTS2_AT",
-      "LULUCF"
+      "LULUCF",
+      "NUTS2_AT"
     ],
     "themes": [
       "TBD"
