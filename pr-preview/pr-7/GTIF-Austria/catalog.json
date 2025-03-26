@@ -15,21 +15,31 @@
       "href": "./NUTS2_AT/collection.json",
       "type": "application/json",
       "title": "NUTS2 Austria (Gemeinden)",
+      "subtitle": "",
       "code": "NUTS2_AT",
       "id": "NUTS2_AT",
       "themes": [
-        "TBD"
+        "Air",
+        "Atmosphere"
       ],
       "subcode": "NUTS2_AT",
       "satellite": [
         "Combined"
       ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//"
+      ],
+      "locations": true,
       "tags": [
         "land use"
       ],
       "agency": [
         "None"
-      ]
+      ],
+      "collection_group": "",
+      "sensor": [],
+      "insituSources": [],
+      "otherSources": []
     },
     {
       "rel": "self",

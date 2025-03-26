@@ -34,9 +34,15 @@
       "title": "NUTS2 Austria (Gemeinden)"
     }
   ],
+  "sci:doi": "",
+  "sci:citation": "",
+  "subtitle": "",
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
   "themes": [
-    "TBD"
+    "Air",
+    "Atmosphere"
   ],
+  "locations": true,
   "tags": [
     "land use"
   ],
@@ -44,9 +50,22 @@
     "None"
   ],
   "subcode": "NUTS2_AT",
+  "collection_group": "",
+  "sensor": [],
   "satellite": [
     "Combined"
   ],
+  "insituSources": [],
+  "otherSources": [],
+  "eox:colorlegend": {
+    "domain": [],
+    "marktype": "rect",
+    "range": [],
+    "scaletype": "continuous",
+    "tickFormat": "",
+    "tickValues": [],
+    "title": ""
+  },
   "endpointtype": "GeoJSON source",
   "title": "NUTS2 Austria (Gemeinden)",
   "extent": {
@@ -55,7 +74,7 @@
         [
           9.5,
           44.5,
-          18.0,
+          18,
           49.9
         ]
       ]
@@ -69,5 +88,21 @@
       ]
     }
   },
-  "license": "other"
+  "license": "proprietary",
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
 }

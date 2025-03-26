@@ -1,7 +1,9 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/attribution/v0.1.0/schema.json"
+  ],
   "id": "2016-01-01T00:00:00Z",
   "geometry": {
     "type": "FeatureCollection",
@@ -17,11 +19,11 @@
                 44.5
               ],
               [
-                18.0,
+                18,
                 44.5
               ],
               [
-                18.0,
+                18,
                 49.9
               ],
               [
@@ -42,7 +44,7 @@
   "bbox": [
     9.5,
     44.5,
-    18.0,
+    18,
     49.9
   ],
   "properties": {
@@ -80,6 +82,7 @@
     "NUTS2_AT": {
       "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/NUTS2.geojson",
       "type": "application/geo+json",
+      "attribution": "",
       "roles": [
         "data"
       ]

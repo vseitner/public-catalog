@@ -16,11 +16,14 @@
       "type": "application/json",
       "title": "NUTS2 Austria (Gemeinden)",
       "endpointtype": "GeoJSON source",
+      "subtitle": "",
       "code": "NUTS2_AT",
       "id": "NUTS2_AT",
       "themes": [
-        "TBD"
+        "Air",
+        "Atmosphere"
       ],
+      "locations": true,
       "tags": [
         "land use"
       ],
@@ -28,9 +31,13 @@
         "None"
       ],
       "subcode": "NUTS2_AT",
+      "collection_group": "",
+      "sensor": [],
       "satellite": [
         "Combined"
-      ]
+      ],
+      "insituSources": [],
+      "otherSources": []
     },
     {
       "rel": "xyz",
@@ -87,9 +94,15 @@
       "title": "GTIF Austria"
     }
   ],
+  "sci:doi": "",
+  "sci:citation": "",
+  "subtitle": "",
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
   "themes": [
-    "TBD"
+    "Air",
+    "Atmosphere"
   ],
+  "locations": true,
   "tags": [
     "land use"
   ],
@@ -97,9 +110,22 @@
     "None"
   ],
   "subcode": "NUTS2_AT",
+  "collection_group": "",
+  "sensor": [],
   "satellite": [
     "Combined"
   ],
+  "insituSources": [],
+  "otherSources": [],
+  "eox:colorlegend": {
+    "domain": [],
+    "marktype": "rect",
+    "range": [],
+    "scaletype": "continuous",
+    "tickFormat": "",
+    "tickValues": [],
+    "title": ""
+  },
   "title": "NUTS2 Austria (Gemeinden)",
   "extent": {
     "spatial": {
@@ -107,13 +133,13 @@
         [
           9.5,
           44.5,
-          18.0,
+          18,
           49.9
         ],
         [
           9.5,
           44.5,
-          18.0,
+          18,
           49.9
         ]
       ]
@@ -127,16 +153,36 @@
       ]
     }
   },
-  "license": "other",
+  "license": "proprietary",
   "summaries": {
     "subcode": [
       "NUTS2_AT"
     ],
     "themes": [
-      "TBD"
+      "Air",
+      "Atmosphere"
     ],
     "satellite": [
       "Combined"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//"
     ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }
