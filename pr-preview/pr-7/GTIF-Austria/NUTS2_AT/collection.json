@@ -17,7 +17,7 @@
       "title": "NUTS2 Austria (Gemeinden)",
       "endpointtype": "GeoJSON source",
       "subtitle": "",
-      "code": "NUTS2_AT",
+      "code": "NUTS2_AT_EODASH_ID",
       "id": "NUTS2_AT",
       "themes": [
         "TBD"
@@ -29,7 +29,7 @@
       "agency": [
         "None"
       ],
-      "subcode": "NUTS2_AT",
+      "subcode": "NUTS2_AT_EODASH_ID",
       "collection_group": "",
       "sensor": [],
       "satellite": [
@@ -107,7 +107,7 @@
   "agency": [
     "None"
   ],
-  "subcode": "NUTS2_AT",
+  "subcode": "NUTS2_AT_EODASH_ID",
   "collection_group": "",
   "sensor": [],
   "satellite": [
@@ -154,7 +154,7 @@
   "license": "proprietary",
   "summaries": {
     "subcode": [
-      "NUTS2_AT"
+      "NUTS2_AT_EODASH_ID"
     ],
     "themes": [
       "TBD"

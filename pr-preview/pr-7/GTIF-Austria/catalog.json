@@ -16,12 +16,12 @@
       "type": "application/json",
       "title": "NUTS2 Austria (Gemeinden)",
       "subtitle": "",
-      "code": "NUTS2_AT",
+      "code": "NUTS2_AT_EODASH_ID",
       "id": "NUTS2_AT",
       "themes": [
         "TBD"
       ],
-      "subcode": "NUTS2_AT",
+      "subcode": "NUTS2_AT_EODASH_ID",
       "satellite": [
         "Combined"
       ],
