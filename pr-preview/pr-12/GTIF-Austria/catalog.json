@@ -1,0 +1,44 @@
+{
+  "type": "Catalog",
+  "id": "GTIF-Austria",
+  "stac_version": "1.1.0",
+  "description": "Green Transition Information Factory - Austria",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./land_use/collection.json",
+      "type": "application/json",
+      "title": "LULUCF Time Series test",
+      "code": "LULUCF",
+      "id": "land_use",
+      "themes": [
+        "TBD"
+      ],
+      "subcode": "LULUCF",
+      "satellite": [
+        "Combined"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg"
+      ],
+      "tags": [
+        "land use"
+      ],
+      "agency": [
+        "None"
+      ]
+    },
+    {
+      "rel": "self",
+      "href": "https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "title": "GTIF Austria"
+}

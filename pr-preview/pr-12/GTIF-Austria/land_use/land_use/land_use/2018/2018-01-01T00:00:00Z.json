@@ -1,0 +1,92 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/attribution/v0.1.0/schema.json"
+  ],
+  "id": "2018-01-01T00:00:00Z",
+  "geometry": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                9.5,
+                44.5
+              ],
+              [
+                18.0,
+                44.5
+              ],
+              [
+                18.0,
+                49.9
+              ],
+              [
+                9.5,
+                49.9
+              ],
+              [
+                9.5,
+                44.5
+              ]
+            ]
+          ]
+        },
+        "properties": {}
+      }
+    ]
+  },
+  "bbox": [
+    9.5,
+    44.5,
+    18.0,
+    49.9
+  ],
+  "properties": {
+    "datetime": "2018-01-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "LULUCF"
+      ]
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "LULUCF Time Series test"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "LULUCF Time Series test"
+    }
+  ],
+  "assets": {
+    "LULUCF": {
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2018_Austria_hrmsd_3857_COG.tif",
+      "type": "image/tiff",
+      "attribution": "Developed within FFG project GHG-KIT [contract #FO999893432] https://ghg-kit.at/",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "land_use"
+}

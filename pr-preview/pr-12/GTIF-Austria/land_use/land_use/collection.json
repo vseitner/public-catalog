@@ -1,0 +1,200 @@
+{
+  "type": "Collection",
+  "id": "land_use",
+  "stac_version": "1.1.0",
+  "description": "TBD",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2015/2015-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2015_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2016/2016-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2016_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2017/2017-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2017_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2018/2018-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2018_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2019/2019-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2019_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2020/2020-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2020_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2021/2021-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2021_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2022/2022-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2022_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./land_use/2023/2023-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2023_Austria_hrmsd_3857_COG.tif"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "LULUCF"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "LULUCF Time Series test"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
+  "themes": [
+    "TBD"
+  ],
+  "tags": [
+    "land use"
+  ],
+  "agency": [
+    "None"
+  ],
+  "subcode": "LULUCF",
+  "satellite": [
+    "Combined"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "Coniferous forest",
+      "Deciduous forest",
+      "Unstocked forest",
+      "Annual cropland",
+      "Viticulture",
+      "Orchards",
+      "Other perennial crops",
+      "Other woody biomass in cropland",
+      "Grassland",
+      "Other woody biomass in grassland",
+      "Water",
+      "Wetland",
+      "Unvegetated settlements",
+      "Trees in settlements",
+      "Grassland in settlements",
+      "Rocks and screes",
+      "Glaciers",
+      "Alpine dwarf shrub heaths"
+    ],
+    "markType": "rectangle",
+    "range": [
+      "#334f21",
+      "#538135",
+      "#659c40",
+      "#bf8f00",
+      "#dede62",
+      "#cfb05c",
+      "#b1954e",
+      "#d99f00",
+      "#5abe2f",
+      "#71e93a",
+      "#2f5496",
+      "#2fa396",
+      "#833c0b",
+      "#c23c0b",
+      "#c2650b",
+      "#9da18a",
+      "#dfdfdf",
+      "#61957f"
+    ],
+    "scaleType": "categorical",
+    "title": "Land cover classes"
+  },
+  "endpointtype": "COG source",
+  "title": "LULUCF Time Series test",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          44.5,
+          18.0,
+          49.9
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          "2023-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
