@@ -14,7 +14,7 @@
       "rel": "child",
       "href": "./land_use/collection.json",
       "type": "application/json",
-      "title": "LULUCF Time Series",
+      "title": "LULUCF Time Series test",
       "code": "LULUCF",
       "id": "land_use",
       "themes": [
