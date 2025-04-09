@@ -19,11 +19,11 @@
                 44.5
               ],
               [
-                18.0,
+                18,
                 44.5
               ],
               [
-                18.0,
+                18,
                 49.9
               ],
               [
@@ -44,7 +44,7 @@
   "bbox": [
     9.5,
     44.5,
-    18.0,
+    18,
     49.9
   ],
   "properties": {
@@ -53,7 +53,7 @@
   "links": [
     {
       "rel": "style",
-      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
+      "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/styles/harshness.json",
       "type": "text/cog-styles",
       "asset:keys": [
         "LULUCF"
@@ -69,13 +69,13 @@
       "rel": "collection",
       "href": "../../collection.json",
       "type": "application/json",
-      "title": "LULUCF Time Series"
+      "title": "LULUCF Time Series test"
     },
     {
       "rel": "parent",
       "href": "../../collection.json",
       "type": "application/json",
-      "title": "LULUCF Time Series"
+      "title": "LULUCF Time Series test"
     }
   ],
   "assets": {

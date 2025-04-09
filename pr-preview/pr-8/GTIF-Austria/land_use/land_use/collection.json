@@ -16,7 +16,7 @@
       "type": "application/geo+json",
       "datetime": "2015-01-01T00:00:00Z",
       "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2015_Austria_hrmsd_3857_COG.tif"
+        "https://obs.eu-nl.otc.t-systems.com/gtif-data-cerulean1/output-harshness/pygeoapi-job-3d642000-151e-11f0-9389-0255ac100043/harshness_2020_2021_3_50_0.08_0.08_-35.80078125000001_58.03867491432291_-25.781250000000004_64.40321571670327_NipTLzM1MCsyLjUqVy8xMTArMS41KihJPjAuMDEpKigxMisyKmxvZzEwKChJLzEwMDAwKSsxZS00MCkp.tif"
       ]
     },
     {
@@ -93,7 +93,7 @@
     },
     {
       "rel": "style",
-      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
+      "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/styles/harshness.json",
       "type": "text/cog-styles",
       "asset:keys": [
         "LULUCF"
@@ -103,13 +103,17 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "LULUCF Time Series"
+      "title": "LULUCF Time Series test"
     }
   ],
+  "sci:doi": "",
+  "sci:citation": "",
+  "subtitle": "",
   "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
   "themes": [
     "TBD"
   ],
+  "locations": true,
   "tags": [
     "land use"
   ],
@@ -117,9 +121,13 @@
     "None"
   ],
   "subcode": "LULUCF",
+  "collection_group": "",
+  "sensor": [],
   "satellite": [
     "Combined"
   ],
+  "insituSources": [],
+  "otherSources": [],
   "eox:colorlegend": {
     "domain": [
       "Coniferous forest",
@@ -142,6 +150,7 @@
       "Alpine dwarf shrub heaths"
     ],
     "markType": "rectangle",
+    "marktype": "rect",
     "range": [
       "#334f21",
       "#538135",
@@ -163,17 +172,20 @@
       "#61957f"
     ],
     "scaleType": "categorical",
+    "scaletype": "continuous",
+    "tickFormat": "",
+    "tickValues": [],
     "title": "Land cover classes"
   },
   "endpointtype": "COG source",
-  "title": "LULUCF Time Series",
+  "title": "LULUCF Time Series test",
   "extent": {
     "spatial": {
       "bbox": [
         [
           9.5,
           44.5,
-          18.0,
+          18,
           49.9
         ]
       ]
@@ -187,8 +199,15 @@
       ]
     }
   },
-  "license": "other",
+  "license": "proprietary",
   "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
     "thumbnail": {
       "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
       "type": "image/png",
