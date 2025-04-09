@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "land_use",
   "stac_version": "1.1.0",
-  "description": "TBD",
+  "description": "# some descritpion",
   "links": [
     {
       "rel": "root",
@@ -14,13 +14,15 @@
       "rel": "child",
       "href": "./land_use/collection.json",
       "type": "application/json",
-      "title": "LULUCF Time Series test",
+      "title": "title change",
       "endpointtype": "COG source",
+      "subtitle": "",
       "code": "LULUCF",
       "id": "land_use",
       "themes": [
         "TBD"
       ],
+      "locations": true,
       "tags": [
         "land use"
       ],
@@ -28,9 +30,13 @@
         "None"
       ],
       "subcode": "LULUCF",
+      "collection_group": "",
+      "sensor": [],
       "satellite": [
         "Combined"
-      ]
+      ],
+      "insituSources": [],
+      "otherSources": []
     },
     {
       "rel": "xyz",
@@ -87,10 +93,14 @@
       "title": "GTIF Austria"
     }
   ],
+  "sci:doi": "",
+  "sci:citation": "",
+  "subtitle": "",
   "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
   "themes": [
     "TBD"
   ],
+  "locations": true,
   "tags": [
     "land use"
   ],
@@ -98,9 +108,13 @@
     "None"
   ],
   "subcode": "LULUCF",
+  "collection_group": "",
+  "sensor": [],
   "satellite": [
     "Combined"
   ],
+  "insituSources": [],
+  "otherSources": [],
   "eox:colorlegend": {
     "domain": [
       "Coniferous forest",
@@ -123,6 +137,7 @@
       "Alpine dwarf shrub heaths"
     ],
     "markType": "rectangle",
+    "marktype": "rect",
     "range": [
       "#334f21",
       "#538135",
@@ -144,22 +159,25 @@
       "#61957f"
     ],
     "scaleType": "categorical",
+    "scaletype": "continuous",
+    "tickFormat": "",
+    "tickValues": [],
     "title": "Land cover classes"
   },
-  "title": "LULUCF Time Series test",
+  "title": "title change",
   "extent": {
     "spatial": {
       "bbox": [
         [
           9.5,
           44.5,
-          18.0,
+          18,
           49.9
         ],
         [
           9.5,
           44.5,
-          18.0,
+          18,
           49.9
         ]
       ]
@@ -173,7 +191,7 @@
       ]
     }
   },
-  "license": "other",
+  "license": "proprietary",
   "summaries": {
     "subcode": [
       "LULUCF"
@@ -189,6 +207,13 @@
     ]
   },
   "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
     "thumbnail": {
       "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
       "type": "image/png",

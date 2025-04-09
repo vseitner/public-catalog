@@ -14,7 +14,8 @@
       "rel": "child",
       "href": "./land_use/collection.json",
       "type": "application/json",
-      "title": "LULUCF Time Series test",
+      "title": "title change",
+      "subtitle": "",
       "code": "LULUCF",
       "id": "land_use",
       "themes": [
@@ -27,12 +28,17 @@
       "thumbnail": [
         "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg"
       ],
+      "locations": true,
       "tags": [
         "land use"
       ],
       "agency": [
         "None"
-      ]
+      ],
+      "collection_group": "",
+      "sensor": [],
+      "insituSources": [],
+      "otherSources": []
     },
     {
       "rel": "self",
