@@ -1,14 +1,34 @@
 {
   "type": "Collection",
-  "id": "",
+  "id": "wind_power_density",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "Wind Power Density - The wind power density (w m 2 ) is a measure of the available wind resource. Higher wind power density indicates greater wind power potential.",
   "links": [
     {
       "rel": "root",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./wind_power_density/collection.json",
+      "type": "application/json",
+      "title": "Wind Energy Assessment",
+      "endpointtype": "COG source_byoc",
+      "subtitle": "",
+      "code": "DHI1",
+      "id": "wind_power_density",
+      "themes": [],
+      "locations": true,
+      "tags": [],
+      "agency": [],
+      "subcode": "DHI1",
+      "collection_group": "",
+      "sensor": [],
+      "satellite": [],
+      "insituSources": [],
+      "otherSources": []
     },
     {
       "rel": "service",
@@ -70,7 +90,7 @@
     },
     {
       "rel": "parent",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "GTIF Austria"
     }
@@ -83,7 +103,7 @@
   "locations": true,
   "tags": [],
   "agency": [],
-  "subcode": "",
+  "subcode": "DHI1",
   "collection_group": "",
   "sensor": [],
   "satellite": [],
@@ -100,28 +120,42 @@
   },
   "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
   "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
-  "title": "",
+  "title": "Wind Energy Assessment",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          9.978753668096008,
+          45.791503409256876,
+          17.31470187720354,
+          49.19933750639548
+        ],
+        [
+          9.978753668096008,
+          45.791503409256876,
+          17.31470187720354,
+          49.19933750639548
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2025-04-15T07:14:12.640750Z",
-          null
+          "2018-01-01T00:00:00Z",
+          "2018-01-01T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
+  "summaries": {
+    "subcode": [
+      "DHI1"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//"
+    ]
+  },
   "assets": {
     "legend": {
       "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",

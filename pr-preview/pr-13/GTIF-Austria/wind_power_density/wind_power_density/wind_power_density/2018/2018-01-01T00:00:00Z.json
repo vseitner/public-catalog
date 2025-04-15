@@ -1,0 +1,113 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2018-01-01T00:00:00Z",
+  "geometry": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                9.978753668096008,
+                45.791503409256876
+              ],
+              [
+                17.31470187720354,
+                45.791503409256876
+              ],
+              [
+                17.31470187720354,
+                49.19933750639548
+              ],
+              [
+                9.978753668096008,
+                49.19933750639548
+              ],
+              [
+                9.978753668096008,
+                45.791503409256876
+              ]
+            ]
+          ]
+        },
+        "properties": {}
+      }
+    ]
+  },
+  "bbox": [
+    9.978753668096008,
+    45.791503409256876,
+    17.31470187720354,
+    49.19933750639548
+  ],
+  "properties": {
+    "datetime": "2018-01-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "style",
+      "href": "https://github.com/GTIF-Austria/public-assets/blob/main/assets/styles/DHI1.json?raw=true",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "windpowerdensity",
+        "elevation",
+        "slope",
+        "settlementdistance"
+      ]
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Wind Energy Assessment"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Wind Energy Assessment"
+    }
+  ],
+  "assets": {
+    "windpowerdensity": {
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/DHI/PowerDensity_100m_Austria_WGS84_COG_clipped_3857_fix.tif",
+      "type": "image/tiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "elevation": {
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/DHI/Copernicus_DSM_COG_10m_3857_fix.tif",
+      "type": "image/tiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "slope": {
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/DHI/Copernicus_10m_DSM_COG_Slope_3857_fix.tif",
+      "type": "image/tiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "settlementdistance": {
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/DHI/WSF_EucDist_Austria_3857_COG_fix.tif",
+      "type": "image/tiff",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "wind_power_density"
+}

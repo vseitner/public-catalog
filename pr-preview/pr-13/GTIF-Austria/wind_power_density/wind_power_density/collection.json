@@ -1,0 +1,105 @@
+{
+  "type": "Collection",
+  "id": "wind_power_density",
+  "stac_version": "1.1.0",
+  "description": "Wind Power Density - The wind power density (w m 2 ) is a measure of the available wind resource. Higher wind power density indicates greater wind power potential.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "item",
+      "href": "./wind_power_density/2018/2018-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/DHI/PowerDensity_100m_Austria_WGS84_COG_clipped_3857_fix.tif",
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/DHI/Copernicus_DSM_COG_10m_3857_fix.tif",
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/DHI/Copernicus_10m_DSM_COG_Slope_3857_fix.tif",
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/DHI/WSF_EucDist_Austria_3857_COG_fix.tif"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://github.com/GTIF-Austria/public-assets/blob/main/assets/styles/DHI1.json?raw=true",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "windpowerdensity",
+        "elevation",
+        "slope",
+        "settlementdistance"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Wind Energy Assessment"
+    }
+  ],
+  "sci:doi": "",
+  "sci:citation": "",
+  "subtitle": "",
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+  "themes": [],
+  "locations": true,
+  "tags": [],
+  "agency": [],
+  "subcode": "DHI1",
+  "collection_group": "",
+  "sensor": [],
+  "satellite": [],
+  "insituSources": [],
+  "otherSources": [],
+  "eox:colorlegend": {
+    "domain": [],
+    "marktype": "rect",
+    "range": [],
+    "scaletype": "continuous",
+    "tickFormat": "",
+    "tickValues": [],
+    "title": ""
+  },
+  "endpointtype": "COG source_byoc",
+  "title": "Wind Energy Assessment",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.978753668096008,
+          45.791503409256876,
+          17.31470187720354,
+          49.19933750639548
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-01-01T00:00:00Z",
+          "2018-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
