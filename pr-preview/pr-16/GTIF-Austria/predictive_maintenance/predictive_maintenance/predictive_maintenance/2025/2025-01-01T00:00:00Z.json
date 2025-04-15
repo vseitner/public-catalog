@@ -1,7 +1,9 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/attribution/v0.1.0/schema.json"
+  ],
   "id": "2025-01-01T00:00:00Z",
   "geometry": {
     "type": "FeatureCollection",
@@ -13,24 +15,24 @@
           "coordinates": [
             [
               [
-                -180,
-                -85
+                9.607703910147158,
+                47.28857258754364
               ],
               [
-                180,
-                -85
+                9.763577928600249,
+                47.28857258754364
               ],
               [
-                180,
-                85
+                9.763577928600249,
+                47.452296376710194
               ],
               [
-                -180,
-                85
+                9.607703910147158,
+                47.452296376710194
               ],
               [
-                -180,
-                -85
+                9.607703910147158,
+                47.28857258754364
               ]
             ]
           ]
@@ -40,10 +42,10 @@
     ]
   },
   "bbox": [
-    -180,
-    -85,
-    180,
-    85
+    9.607703910147158,
+    47.28857258754364,
+    9.763577928600249,
+    47.452296376710194
   ],
   "properties": {
     "datetime": "2025-01-01T00:00:00Z"
@@ -80,6 +82,7 @@
     "overview": {
       "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/A14_overview.geojson",
       "type": "application/geo+json",
+      "attribution": "",
       "roles": [
         "data"
       ]
