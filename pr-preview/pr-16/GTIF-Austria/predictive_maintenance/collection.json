@@ -1,14 +1,34 @@
 {
   "type": "Collection",
-  "id": "",
+  "id": "predictive_maintenance",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "To be defined",
   "links": [
     {
       "rel": "root",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./predictive_maintenance/collection.json",
+      "type": "application/json",
+      "title": "Predictive Maintenance",
+      "endpointtype": "GeoJSON source_byoc",
+      "subtitle": "",
+      "code": "AIT1",
+      "id": "predictive_maintenance",
+      "themes": [],
+      "locations": true,
+      "tags": [],
+      "agency": [],
+      "subcode": "AIT1",
+      "collection_group": "",
+      "sensor": [],
+      "satellite": [],
+      "insituSources": [],
+      "otherSources": []
     },
     {
       "rel": "service",
@@ -70,7 +90,7 @@
     },
     {
       "rel": "parent",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "GTIF Austria"
     }
@@ -83,7 +103,7 @@
   "locations": true,
   "tags": [],
   "agency": [],
-  "subcode": "",
+  "subcode": "AIT1",
   "collection_group": "",
   "sensor": [],
   "satellite": [],
@@ -100,28 +120,42 @@
   },
   "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
   "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
-  "title": "",
+  "title": "Predictive Maintenance",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          -180,
+          -85,
+          180,
+          85
+        ],
+        [
+          -180,
+          -85,
+          180,
+          85
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2025-04-15T16:15:27.460886Z",
-          null
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
+  "summaries": {
+    "subcode": [
+      "AIT1"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//"
+    ]
+  },
   "assets": {
     "legend": {
       "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
