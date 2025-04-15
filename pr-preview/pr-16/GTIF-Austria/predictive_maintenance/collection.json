@@ -32,9 +32,9 @@
     },
     {
       "rel": "service",
-      "href": "",
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/csv time series/{{feature}}.csv",
       "type": "",
-      "id": "",
+      "id": "timeseries",
       "method": "GET",
       "endpoint": "",
       "body": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
@@ -118,8 +118,8 @@
     "tickValues": [],
     "title": ""
   },
-  "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
-  "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
+  "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/forms/AIT1_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/AIT1.json",
   "title": "Predictive Maintenance",
   "extent": {
     "spatial": {
