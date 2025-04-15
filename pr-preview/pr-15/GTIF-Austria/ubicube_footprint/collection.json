@@ -1,14 +1,34 @@
 {
   "type": "Collection",
-  "id": "",
+  "id": "ubicube_footprint",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "under construction",
   "links": [
     {
       "rel": "root",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./ubicube_footprint/collection.json",
+      "type": "application/json",
+      "title": "Ubicube Footprint Run 1",
+      "endpointtype": "GeoJSON source_byoc",
+      "subtitle": "",
+      "code": "ubi-footprint-run1",
+      "id": "ubicube_footprint",
+      "themes": [],
+      "locations": true,
+      "tags": [],
+      "agency": [],
+      "subcode": "ubi-footprint-run1",
+      "collection_group": "",
+      "sensor": [],
+      "satellite": [],
+      "insituSources": [],
+      "otherSources": []
     },
     {
       "rel": "service",
@@ -70,7 +90,7 @@
     },
     {
       "rel": "parent",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "GTIF Austria"
     }
@@ -83,7 +103,7 @@
   "locations": true,
   "tags": [],
   "agency": [],
-  "subcode": "",
+  "subcode": "ubi-footprint-run1",
   "collection_group": "",
   "sensor": [],
   "satellite": [],
@@ -100,28 +120,42 @@
   },
   "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
   "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
-  "title": "",
+  "title": "Ubicube Footprint Run 1",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          -180,
+          -85,
+          180,
+          85
+        ],
+        [
+          -180,
+          -85,
+          180,
+          85
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2025-04-15T11:54:38.659558Z",
-          null
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
+  "summaries": {
+    "subcode": [
+      "ubi-footprint-run1"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//"
+    ]
+  },
   "assets": {
     "legend": {
       "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
