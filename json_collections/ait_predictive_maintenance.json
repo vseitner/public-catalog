@@ -38,7 +38,8 @@
               "Identifier": "overview",
               "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/A14_overview.geojson"
             }
-          ]
+          ],
+          "Attribution": ""
         }
       ],
       "EndPoint": "",
@@ -67,13 +68,13 @@
   },
   "CollectionGroup": "",
   "Process": {
-    "Name": "",
-    "JsonForm": "",
-    "VegaDefinition": "",
+    "Name": "timeseries",
+    "JsonForm": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/forms/AIT1_form.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/AIT1.json",
     "EndPoints": [
       {
-        "Identifier": "",
-        "Url": "",
+        "Identifier": "timeseries",
+        "Url": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/csv time series/{{feature}}.csv",
         "Type": "",
         "EndPoint": "",
         "Method": "GET",
