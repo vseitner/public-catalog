@@ -1,9 +1,9 @@
 {
-  "Name": "",
-  "Title": "",
-  "EodashIdentifier": "",
+  "Name": "predictive_maintenance",
+  "Title": "Predictive Maintenance",
+  "EodashIdentifier": "AIT1",
   "Subtitle": "",
-  "Description": "",
+  "Description": "To be defined",
   "Themes": [],
   "Tags": [],
   "DataSource": {
@@ -26,7 +26,27 @@
   "Image": "",
   "Legend": "",
   "Subcollections": [],
-  "Resources": [],
+  "Resources": [
+    {
+      "Name": "GeoJSON source",
+      "Style": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/AIT1.json",
+      "TimeEntries": [
+        {
+          "Time": "2025",
+          "Assets": [
+            {
+              "Identifier": "overview",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/A14_overview.geojson"
+            }
+          ]
+        }
+      ],
+      "EndPoint": "",
+      "Type": "byoc",
+      "CollectionId": "",
+      "LayerId": ""
+    }
+  ],
   "Services": [],
   "References": [],
   "Colorlegend": {
