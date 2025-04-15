@@ -1,7 +1,9 @@
 {
   "type": "Feature",
   "stac_version": "1.1.0",
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/attribution/v0.1.0/schema.json"
+  ],
   "id": "2018-01-01T00:00:00Z",
   "geometry": {
     "type": "FeatureCollection",
@@ -51,7 +53,7 @@
   "links": [
     {
       "rel": "style",
-      "href": "https://github.com/GTIF-Austria/public-assets/blob/main/assets/styles/DHI1.json?raw=true",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/DHI1.json",
       "type": "text/cog-styles",
       "asset:keys": [
         "windpowerdensity",
@@ -104,6 +106,7 @@
     "settlementdistance": {
       "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/DHI/WSF_EucDist_Austria_3857_COG_fix.tif",
       "type": "image/tiff",
+      "attribution": "",
       "roles": [
         "data"
       ]

@@ -24,7 +24,7 @@
     },
     {
       "rel": "style",
-      "href": "https://github.com/GTIF-Austria/public-assets/blob/main/assets/styles/DHI1.json?raw=true",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/DHI1.json",
       "type": "text/cog-styles",
       "asset:keys": [
         "windpowerdensity",
