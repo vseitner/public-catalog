@@ -1,0 +1,89 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2024-01-01T00:00:00Z",
+  "geometry": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                16.81310827113081,
+                47.9215061741687
+              ],
+              [
+                16.86388694219738,
+                47.9215061741687
+              ],
+              [
+                16.86388694219738,
+                47.96013779058797
+              ],
+              [
+                16.81310827113081,
+                47.96013779058797
+              ],
+              [
+                16.81310827113081,
+                47.9215061741687
+              ]
+            ]
+          ]
+        },
+        "properties": {}
+      }
+    ]
+  },
+  "bbox": [
+    16.81310827113081,
+    47.9215061741687,
+    16.86388694219738,
+    47.96013779058797
+  ],
+  "properties": {
+    "datetime": "2024-01-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/ubicube.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "ubi_detections"
+      ]
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Building stock update"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Building stock update"
+    }
+  ],
+  "assets": {
+    "ubi_detections": {
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/ubicube/ubicube_buildings_epsg4326.geojson",
+      "type": "application/geo+json",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "building_stock_update"
+}

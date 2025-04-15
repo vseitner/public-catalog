@@ -1,14 +1,34 @@
 {
   "type": "Collection",
-  "id": "",
+  "id": "building_stock_update",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "Great description TBD",
   "links": [
     {
       "rel": "root",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./building_stock_update/collection.json",
+      "type": "application/json",
+      "title": "Building stock update",
+      "endpointtype": "GeoJSON source_byoc",
+      "subtitle": "",
+      "code": "UBI1",
+      "id": "building_stock_update",
+      "themes": [],
+      "locations": true,
+      "tags": [],
+      "agency": [],
+      "subcode": "UBI1",
+      "collection_group": "",
+      "sensor": [],
+      "satellite": [],
+      "insituSources": [],
+      "otherSources": []
     },
     {
       "rel": "service",
@@ -70,7 +90,7 @@
     },
     {
       "rel": "parent",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "GTIF Austria"
     }
@@ -83,7 +103,7 @@
   "locations": true,
   "tags": [],
   "agency": [],
-  "subcode": "",
+  "subcode": "UBI1",
   "collection_group": "",
   "sensor": [],
   "satellite": [],
@@ -100,28 +120,42 @@
   },
   "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
   "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
-  "title": "",
+  "title": "Building stock update",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          16.81310827113081,
+          47.9215061741687,
+          16.86388694219738,
+          47.96013779058797
+        ],
+        [
+          16.81310827113081,
+          47.9215061741687,
+          16.86388694219738,
+          47.96013779058797
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2025-04-15T11:21:50.194944Z",
-          null
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
+  "summaries": {
+    "subcode": [
+      "UBI1"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//"
+    ]
+  },
   "assets": {
     "legend": {
       "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
