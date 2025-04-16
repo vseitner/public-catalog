@@ -40,7 +40,7 @@
     {
       "rel": "service",
       "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/geojson/{{feature}}.geojson",
-      "type": "application/json",
+      "type": "application/geo+json",
       "id": "reference_points",
       "method": "GET",
       "eox:flatstyle": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/AIT1_subfeatures.json"
