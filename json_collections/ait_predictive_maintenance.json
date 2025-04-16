@@ -76,7 +76,7 @@
         "Identifier": "timeseries",
         "Url": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/csv time series/{{feature}}.csv",
         "Type": "text/csv",
-        "Method": "GET",
+        "Method": "GET"
       }
     ]
   }
