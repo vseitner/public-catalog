@@ -33,12 +33,9 @@
     {
       "rel": "service",
       "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/csv time series/{{feature}}.csv",
-      "type": "",
+      "type": "text/csv",
       "id": "timeseries",
-      "method": "GET",
-      "endpoint": "",
-      "body": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
-      "eox:flatstyle": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/"
+      "method": "GET"
     },
     {
       "rel": "xyz",
