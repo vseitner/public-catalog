@@ -1,14 +1,34 @@
 {
   "type": "Collection",
-  "id": "",
+  "id": "new_dataste",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "# New dataset\nInteresting description",
   "links": [
     {
       "rel": "root",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./new_dataste/collection.json",
+      "type": "application/json",
+      "title": "New Dataset from New source",
+      "endpointtype": "GeoJSON source",
+      "subtitle": "",
+      "code": "ESA_NEWDS1",
+      "id": "new_dataste",
+      "themes": [],
+      "locations": true,
+      "tags": [],
+      "agency": [],
+      "subcode": "ESA_NEWDS1",
+      "collection_group": "",
+      "sensor": [],
+      "satellite": [],
+      "insituSources": [],
+      "otherSources": []
     },
     {
       "rel": "service",
@@ -70,7 +90,7 @@
     },
     {
       "rel": "parent",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "GTIF Austria"
     }
@@ -83,7 +103,7 @@
   "locations": true,
   "tags": [],
   "agency": [],
-  "subcode": "",
+  "subcode": "ESA_NEWDS1",
   "collection_group": "",
   "sensor": [],
   "satellite": [],
@@ -100,28 +120,42 @@
   },
   "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
   "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
-  "title": "",
+  "title": "New Dataset from New source",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          -180,
+          -85,
+          180,
+          85
+        ],
+        [
+          -180,
+          -85,
+          180,
+          85
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2025-04-23T14:21:43.880987Z",
-          null
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
+  "summaries": {
+    "subcode": [
+      "ESA_NEWDS1"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//"
+    ]
+  },
   "assets": {
     "legend": {
       "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
