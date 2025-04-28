@@ -121,27 +121,7 @@
     "Combined"
   ],
   "eox:colorlegend": {
-    "domain": [
-      "Coniferous forest",
-      "Deciduous forest",
-      "Unstocked forest",
-      "Annual cropland",
-      "Viticulture",
-      "Orchards",
-      "Other perennial crops",
-      "Other woody biomass in cropland",
-      "Grassland",
-      "Other woody biomass in grassland",
-      "Water",
-      "Wetland",
-      "Unvegetated settlements",
-      "Trees in settlements",
-      "Grassland in settlements",
-      "Rocks and screes",
-      "Glaciers",
-      "Alpine dwarf shrub heaths"
-    ],
-    "markType": "rectangle",
+    "title": "Land cover classes",
     "range": [
       "#334f21",
       "#538135",
@@ -162,8 +142,28 @@
       "#dfdfdf",
       "#61957f"
     ],
+    "domain": [
+      "Coniferous forest",
+      "Deciduous forest",
+      "Unstocked forest",
+      "Annual cropland",
+      "Viticulture",
+      "Orchards",
+      "Other perennial crops",
+      "Other woody biomass in cropland",
+      "Grassland",
+      "Other woody biomass in grassland",
+      "Water",
+      "Wetland",
+      "Unvegetated settlements",
+      "Trees in settlements",
+      "Grassland in settlements",
+      "Rocks and screes",
+      "Glaciers",
+      "Alpine dwarf shrub heaths"
+    ],
     "scaleType": "categorical",
-    "title": "Land cover classes"
+    "markType": "rectangle"
   },
   "endpointtype": "COG source",
   "title": "LULUCF Time Series",
