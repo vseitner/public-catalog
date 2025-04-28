@@ -1,0 +1,73 @@
+{
+  "type": "Collection",
+  "id": "NUTS2_AT",
+  "stac_version": "1.1.0",
+  "description": "NUTS2 Statistik Austria 2016",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "item",
+      "href": "./NUTS2_AT/2016/2016-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-01-01T00:00:00Z",
+      "assets": [
+        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/NUTS2.geojson"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/NUTS2_styles.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "NUTS2_AT"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "NUTS2 Austria (Gemeinden)"
+    }
+  ],
+  "themes": [
+    "TBD"
+  ],
+  "tags": [
+    "land use"
+  ],
+  "agency": [
+    "None"
+  ],
+  "subcode": "NUTS2_AT",
+  "satellite": [
+    "Combined"
+  ],
+  "endpointtype": "GeoJSON source",
+  "title": "NUTS2 Austria (Gemeinden)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          44.5,
+          18.0,
+          49.99
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-01-01T00:00:00Z",
+          "2016-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}
