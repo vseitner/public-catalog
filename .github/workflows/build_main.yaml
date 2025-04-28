@@ -27,7 +27,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -U pip
-          pip install json2yaml
           pip install eodash_catalog==0.1.9
       - name: Build
         env:
