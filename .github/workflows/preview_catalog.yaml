@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -U pip
-          pip install eodash_catalog pyyaml json2yaml
+          pip install eodash_catalog==0.1.9
       - name: changed-files
         id: changed-files
         uses: tj-actions/changed-files@v45
@@ -38,15 +38,12 @@ jobs:
       - name: List all changed files
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-        run: python .github/update_catalog_json2yaml.py
+        run: python .github/update_catalog_last_changes_pr.py
       - name: Build
         env:
           SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
           SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
           SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
-          SH_INSTANCE_ID_POLARTEP: ${{ secrets.SH_INSTANCE_ID_POLARTEP }}
-          SH_CLIENT_ID_POLARTEP: ${{ secrets.SH_CLIENT_ID_POLARTEP }}
-          SH_CLIENT_SECRET_POLARTEP: ${{ secrets.SH_CLIENT_SECRET_POLARTEP }}
         run: |
            eodash_catalog
       - name: Deploy preview
