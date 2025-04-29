@@ -1,0 +1,185 @@
+{
+  "type": "Collection",
+  "id": "land_use",
+  "stac_version": "1.1.0",
+  "description": "Land Use, Land Use Change and Forestry (LULUCF) status map for the years 2015 - 2023 over Austria, at the Level 3 of the LULUCF Nomenclature.\n\nDerived by means of Artificial Intelligence, deep learning U-Net automated supervised classification algorithm and rule-based post-processing. The scope of the Austrian Space Applications Program (ASAP 18) flagship GHG-KIT project - \"Prototyping an EO-enabled kit supporting greenhouse gas reporting\" is to develop a scientific Proof-of-Concept (PoC) towards the first European Earth Observation (EO)- integrated CO2 and CH4 Monitoring Verification and Reporting (MVR) System using Copernicus satellite data and information products, including two prototypes:\n\n1. The Verification Element based on atmospheric modelling, and\n2. LULUCF Inventory Reporter\n\nDeveloped within FFG project GHG-KIT [contract #FO999893432] https://ghg-kit.at/\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./NUTS2_AT/collection.json",
+      "type": "application/json",
+      "title": "NUTS2 Austria (Gemeinden)",
+      "endpointtype": "GeoJSON source",
+      "code": "NUTS2_AT",
+      "id": "NUTS2_AT",
+      "themes": [
+        "TBD"
+      ],
+      "tags": [
+        "land use"
+      ],
+      "agency": [
+        "None"
+      ],
+      "subcode": "NUTS2_AT",
+      "satellite": [
+        "Combined"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./land_use/collection.json",
+      "type": "application/json",
+      "title": "LULUCF Time Series",
+      "endpointtype": "COG source",
+      "code": "LULUCF",
+      "id": "land_use",
+      "themes": [
+        "TBD"
+      ],
+      "tags": [
+        "land use"
+      ],
+      "agency": [
+        "None"
+      ],
+      "subcode": "LULUCF",
+      "satellite": [
+        "Combined"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/statistics/{{feature}}.json",
+      "type": "application/json",
+      "id": "LULUCF_stats",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2022_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2022",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2022",
+      "attribution": "{ EOxCloudless 2022: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2022) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
+  "themes": [
+    "Land"
+  ],
+  "subcode": "LULUCF_indicator",
+  "collection_group": "Capabilities",
+  "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/forms/LULUCF_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/charts/LULUCF_vega_chart.json",
+  "title": "Land Use, Land Use Change and Forestry (LULUCF)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          44.5,
+          18.0,
+          49.9
+        ],
+        [
+          9.5,
+          44.5,
+          18.0,
+          49.9
+        ],
+        [
+          9.5,
+          44.5,
+          18.0,
+          49.9
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          "2023-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "NUTS2_AT",
+      "LULUCF"
+    ],
+    "themes": [
+      "TBD"
+    ],
+    "satellite": [
+      "Combined"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
