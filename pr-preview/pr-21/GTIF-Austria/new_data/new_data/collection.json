@@ -1,0 +1,99 @@
+{
+  "type": "Collection",
+  "id": "new_data",
+  "stac_version": "1.1.0",
+  "description": "## Description of data\n\nGreat description",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "item",
+      "href": "./new_data/2025/2025-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-01-01T00:00:00Z",
+      "assets": [
+        "https://gist.githubusercontent.com/wavded/1200773/raw/e122cf709898c09758aecfef349964a8d73a83f3/sample.json"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/GFC_Garissa_FloodExtent/style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "example_geojson"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "New Data To Be Submitted"
+    }
+  ],
+  "sci:doi": "",
+  "sci:citation": "",
+  "subtitle": "",
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+  "themes": [],
+  "locations": true,
+  "tags": [],
+  "agency": [],
+  "subcode": "AIT1",
+  "collection_group": "",
+  "sensor": [],
+  "satellite": [],
+  "insituSources": [],
+  "otherSources": [],
+  "eox:colorlegend": {
+    "title": "",
+    "range": [],
+    "domain": [],
+    "tickFormat": "",
+    "tickValues": [],
+    "scaletype": "continuous",
+    "marktype": "rect"
+  },
+  "endpointtype": "GeoJSON source",
+  "title": "New Data To Be Submitted",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -85,
+          180,
+          85
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
