@@ -15,7 +15,7 @@
       "href": "./new_data/collection.json",
       "type": "application/json",
       "title": "New Data To Be Submitted",
-      "endpointtype": "GeoJSON source",
+      "endpointtype": "GeoJSON source_byoc",
       "subtitle": "",
       "code": "AIT1",
       "id": "new_data",
@@ -125,16 +125,16 @@
     "spatial": {
       "bbox": [
         [
-          -180,
-          -85,
-          180,
-          85
+          97.88519637462232,
+          -14.900298795671262,
+          135.40785498489427,
+          13.92145347018976
         ],
         [
-          -180,
-          -85,
-          180,
-          85
+          97.88519637462232,
+          -14.900298795671262,
+          135.40785498489427,
+          13.92145347018976
         ]
       ]
     },

@@ -57,16 +57,16 @@
     "scaletype": "continuous",
     "marktype": "rect"
   },
-  "endpointtype": "GeoJSON source",
+  "endpointtype": "GeoJSON source_byoc",
   "title": "New Data To Be Submitted",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180,
-          -85,
-          180,
-          85
+          97.88519637462232,
+          -14.900298795671262,
+          135.40785498489427,
+          13.92145347018976
         ]
       ]
     },
