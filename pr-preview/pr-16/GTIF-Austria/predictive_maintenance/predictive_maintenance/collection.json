@@ -49,13 +49,13 @@
   "insituSources": [],
   "otherSources": [],
   "eox:colorlegend": {
-    "domain": [],
-    "marktype": "rect",
+    "title": "",
     "range": [],
-    "scaletype": "continuous",
+    "domain": [],
     "tickFormat": "",
     "tickValues": [],
-    "title": ""
+    "scaletype": "continuous",
+    "marktype": "rect"
   },
   "endpointtype": "GeoJSON source_byoc",
   "title": "Predictive Maintenance",
