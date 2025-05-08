@@ -1,0 +1,20 @@
+{
+  "type": "Catalog",
+  "id": "GTIF-Austria",
+  "stac_version": "1.1.0",
+  "description": "Green Transition Information Factory - Austria",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "self",
+      "href": "https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "title": "GTIF Austria"
+}
