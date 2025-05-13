@@ -1,3 +1,37 @@
 {
-  "Name": "WR-02 Solar Data"
+  "Name": "WR-02 Solar Data",
+  "Title": "WR 02 Solar Data",
+  "EodashIdentifier": "WR-02-solar-data",
+  "Description": "# WR 02 Solar Data",
+  "Themes": [],
+  "Tags": [],
+  "DataSource": {},
+  "Agency": [],
+  "License": "",
+  "Locations": [],
+  "Provider": [],
+  "Citation": {
+    "DOI": "",
+    "Citation": ""
+  },
+  "Image": "",
+  "Legend": "",
+  "Resources": [
+    {
+      "Name": "WR-02-data",
+      "Style": "ol/format/GeoJSON.js",
+      "Bbox": [
+        8.616160956791004,
+        44.97952752677371,
+        18.30797881993329,
+        50.04241745528087
+      ],
+      "TimeEntries": [
+        {
+          "Time": "2006-01-01--2023-12-31",
+          "Assets": []
+        }
+      ]
+    }
+  ]
 }
