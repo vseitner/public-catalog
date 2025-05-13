@@ -73,8 +73,8 @@
       "5 to 10 mm",
       "10 to 20 mm"
     ],
-    "scaletype": "categorical",
-    "marktype": "rect"
+    "scaleType": "categorical",
+    "markType": "rect"
   },
   "CollectionGroup": "",
   "Process": {
