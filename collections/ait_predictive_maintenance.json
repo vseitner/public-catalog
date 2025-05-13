@@ -58,12 +58,22 @@
   "Services": [],
   "References": [],
   "Colorlegend": {
-    "title": "",
-    "range": [],
-    "domain": [],
-    "tickFormat": "",
-    "tickValues": [],
-    "scaletype": "continuous",
+    "title": "Ground movement",
+    "range": [
+      "#8b0000",
+      "#e6b31a",
+      "#ffffff",
+      "#87cefa",
+      "#00008b"
+    ],
+    "domain": [
+      "-20 to -10 mm",
+      "-10 to -5 mm",
+      "-5 to 5 mm",
+      "5 to 10 mm",
+      "10 to 20 mm"
+    ],
+    "scaletype": "categorical",
     "marktype": "rect"
   },
   "CollectionGroup": "",
