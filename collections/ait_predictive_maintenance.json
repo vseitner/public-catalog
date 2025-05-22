@@ -1,0 +1,69 @@
+{
+  "Name": "predictive_maintenance",
+  "Title": "Predictive Maintenance",
+  "EodashIdentifier": "AIT1",
+  "Subtitle": "",
+  "Description": "The aim of this service is to provide satellite-derived geospatial indicators of the deformation status of roads, railways and bridges at well-defined instances in time. The service is based on interferometry measurements conducted in multiple Synthetic Aperture Radar satellite observations from the same location on Earth (InSAR). The European Ground Motion Service (EGMS) provides processed InSAR data from the Copernicus Sentinel-1 satellite mission. This data is combined with the geographic coordinates of the road infrastructure and its components such as bridges. The data is then grouped into clusters aligned with 50-meter intervals along the highway axis. For each zone, vertical settlements are calculated, and a linear trend is determined, along with an assessment of the data's reliability. Within the framework of the ESA - Green Transition Information Factories project the potentials of this capability are demonstrated on a corridor of approximately 45 km length. Any linear object of interest (road, railway, bridge, etc.) is represented by a series of points on the map along the axis of the infrastructure asset. For each of these points the measured ground movement is displayed, based on InSAR data provided by the EGMS. The points are color-coded, with white points showing no significant deformations, red points showing subsidence and blue points highlighting uplifts. Points are marked grey if no reliable data is available due to insignificant number of reflection points for the radar signal or unacceptably high scatter in the readings. The reliability of the point, as expressed by the number of available persistent scatterers in the segment, is expressed by the diameter of the circle used as a marker. If a particular point is selected, the location of all persistent scatterers which it represents can be displayed. Furthermore, the time history of deformations for the selected point may be plotted.",
+  "Image": "",
+  "Resources": [
+    {
+      "Name": "GeoJSON source",
+      "Style": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/AIT1.json",
+      "TimeEntries": [
+        {
+          "Time": "2025",
+          "Assets": [
+            {
+              "Identifier": "overview",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/A14_overview.geojson"
+            }
+          ]
+        }
+      ],
+      "Bbox": [
+        9.607703910147158,
+        47.28857258754364,
+        9.763577928600249,
+        47.452296376710194
+      ]
+    }
+  ],
+  "Colorlegend": {
+    "title": "Ground movement",
+    "range": [
+      "#8b0000",
+      "#e6b31a",
+      "#ffffff",
+      "#87cefa",
+      "#00008b"
+    ],
+    "domain": [
+      "-20 to -10 mm",
+      "-10 to -5 mm",
+      "-5 to 5 mm",
+      "5 to 10 mm",
+      "10 to 20 mm"
+    ],
+    "scaleType": "categorical",
+    "markType": "rect"
+  },
+  "Process": {
+    "Name": "timeseries",
+    "JsonForm": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/forms/AIT1_form.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/charts/AIT1_chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "timeseries",
+        "Url": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/csv time series/{{feature}}.csv",
+        "Type": "text/csv",
+        "Method": "GET"
+      },
+      {
+        "Identifier": "reference_points",
+        "Url": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/AIT/geojson/{{feature}}.geojson",
+        "Type": "application/geo+json",
+        "Flatstyle": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/AIT1_subfeatures.json"
+      }
+    ]
+  }
+}
