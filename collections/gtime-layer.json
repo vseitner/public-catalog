@@ -2,5 +2,35 @@
   "Name": "GTIME Layer",
   "Title": "GTIME Layer",
   "Description": "",
-  "Resources": []
+  "Resources": [
+    {
+      "Name": "GTIME Layer",
+      "Style": "",
+      "Bbox": [
+        9.5,
+        44.5,
+        18,
+        49.5
+      ],
+      "TimeEntries": [],
+      "EndPoint": "https://s3.spatial-services.com/gtime-layer/veg_clsn_shveg_notusedveg_filtrd_perc_3band_cog.tif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=O6JoDMwDAvsDfTTt91hG%2F20250612%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250612T080433Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=82d2e651dc8355f9c3fc79ee362c975386ae29a0cb06906f59373ec235d481fd",
+      "Type": "COG",
+      "CollectionId": "gtime",
+      "LayerId": "gtime-layer"
+    }
+  ],
+  "EodashIdentifier": "",
+  "Themes": [],
+  "Tags": [],
+  "DataSource": {},
+  "Agency": [],
+  "License": "",
+  "Locations": [],
+  "Provider": [],
+  "Citation": {
+    "DOI": "",
+    "Citation": ""
+  },
+  "Image": "",
+  "Legend": ""
 }
