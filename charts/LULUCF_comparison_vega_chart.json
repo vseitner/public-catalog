@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "2023 Land Cover by Region",
+    "anchor": "start",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "data": {"name": "LULUCF_stats"},
+  "transform": [
+    {
+      "fold": [
+        "forestland",
+        "cropland",
+        "grassland",
+        "wetlands",
+        "settlements",
+        "other lands"
+      ],
+      "as": ["land_type", "area"]
+    },
+    {
+      "calculate": "datum.area / 1000",
+      "as": "area_kha"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "land_type",
+      "type": "nominal",
+      "title": "Land Type",
+      "axis": {"labelAngle": -40}
+    },
+    "xOffset": {
+      "field": "name"
+    },
+    "y": {
+      "field": "area_kha",
+      "type": "quantitative",
+      "title": "Area (kha)"
+    },
+    "color": {
+      "field": "name",
+      "type": "nominal",
+      "title": "Region",
+      "scale": {
+        "scheme": "category10"
+      }
+    },
+    "tooltip": [
+      {"field": "name", "title": "Region"},
+      {"field": "land_type", "title": "Land Type"},
+      {"field": "area_kha", "title": "Area (kha)", "format": ",.2f"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "background": "transparent"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "options": {
+        "execute": true
+    },
+    "type": "object",
+    "properties": {
+        "feature": {
+            "type": "array",
+            "title": "Select administrative area on map",
+            "options": {
+                "drawtools": {
+                    "for": "eox-map#main",
+                    "layerId": "NUTS2_AT;:;2016-01-01T00:00:00Z;:;0",
+                    "featureNameKey": "NAME",
+                    "featureStyles" :{
+                        "click": {
+                          "fill-color": "rgba(51, 153, 204,0.5)",
+                          "stroke-color": "#3399CC",
+                          "stroke-width": 2.5
+                        }
+                      }
+                },
+                "type": "string",
+                "featureProperty": "ID"
+            },
+            "format": "features"
+        }
+    }
+}
