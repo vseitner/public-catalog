@@ -4,7 +4,7 @@
   "Description": "",
   "Resources": [
     {
-      "Name": "GTIME Layer",
+      "Name": "COG source",
       "Bbox": [
         9.5,
         44.5,
@@ -12,9 +12,15 @@
         49.5
       ],
       "EndPoint": "http://s3.spatial-services.com/gtime-layer/veg_clsn_shveg_notusedveg_filtrd_perc_3band_cog.tif",
-      "Type": "byoc",
       "CollectionId": "gtime",
-      "LayerId": "gtime-layer"
+      "LayerId": "gtime-layer",
+      "Style": "",
+      "TimeEntries": [
+        {
+          "Time": "",
+          "Assets": []
+        }
+      ]
     }
   ],
   "EodashIdentifier": "GTIME Layer",
