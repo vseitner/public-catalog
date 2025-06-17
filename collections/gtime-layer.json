@@ -20,7 +20,7 @@
           "Assets": [
             {
               "Identifier": "COG1",
-              "File": "http://s3.spatial-services.com/gtime-layer/veg_clsn_shveg_notusedveg_filtrd_perc_3band_cog.tif"
+              "File": "https://s3.spatial-services.com/gtime-layer/veg_clsn_shveg_notusedveg_filtrd_perc_3band_cog.tif"
             }
           ]
         }
