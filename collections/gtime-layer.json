@@ -6,19 +6,23 @@
     {
       "Name": "COG source",
       "Bbox": [
-        9.5,
+        9,
         44.5,
         18,
         49.5
       ],
-      "EndPoint": "http://s3.spatial-services.com/gtime-layer/veg_clsn_shveg_notusedveg_filtrd_perc_3band_cog.tif",
       "CollectionId": "gtime",
       "LayerId": "gtime-layer",
       "Style": "",
       "TimeEntries": [
         {
-          "Time": "",
-          "Assets": []
+          "Time": "2018/2021/2024",
+          "Assets": [
+            {
+              "Identifier": "COG1",
+              "File": "http://s3.spatial-services.com/gtime-layer/veg_clsn_shveg_notusedveg_filtrd_perc_3band_cog.tif"
+            }
+          ]
         }
       ]
     }
