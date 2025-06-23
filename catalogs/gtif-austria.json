@@ -5,7 +5,7 @@
   "endpoint": "https://gtif-austria.github.io/public-catalog/GTIF-Austria/",
   "default_base_layers": "layers/baselayers",
   "default_overlay_layers": "layers/overlays",
-  "assets_endpoint": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/",
+  "assets_endpoint": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main",
   "collections": [
     "LULUCF_land_use_indicator",
     "ait_predictive_maintenance"
