@@ -1,6 +1,6 @@
 {
   "Name": "GTIME Layer",
-  "Title": "GTIME Layer",
+  "Title": "Multitemporal Vegetation Change Dynamics 2018 – 2021 – 2024",
   "Description": "The RGB colour model is used to visualize vegetation status and changes across three user-defined time periods (in this case: T1: 2018, T2: 2021, and T3: 2024). This vegetation change model is based on a semantic Earth Observation (EO) data cube, utilizing all available Sentinel-2 observations within each time frame. It calculates the percentage of vegetation presence among valid (cloud- and snow-free) observations. As a result, the model not only depicts changes over time but also reflects variations in vegetation intensity and transitions between vegetation and non-vegetation. Vegetation percentages are represented as integer values within the respective colour channels.",
   "Resources": [
     {
