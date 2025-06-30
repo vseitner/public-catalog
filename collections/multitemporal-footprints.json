@@ -16,7 +16,11 @@
             }
           ]
         }
-      ]
+      ],
+      "EndPoint": "",
+      "Type": "byoc",
+      "CollectionId": "",
+      "LayerId": ""
     }
   ],
   "EodashIdentifier": "ubi-multitemporal",
