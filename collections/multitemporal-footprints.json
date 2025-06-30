@@ -17,10 +17,12 @@
           ]
         }
       ],
-      "EndPoint": "",
-      "Type": "byoc",
-      "CollectionId": "",
-      "LayerId": ""
+      "Bbox": [
+        16.247910107900907,
+        48.05417879014069,
+        16.33071432197898,
+        48.11285804065625
+      ]
     }
   ],
   "EodashIdentifier": "ubi-multitemporal",
