@@ -1,6 +1,36 @@
 {
   "Name": "multitemporal-footprints",
   "Title": "multitemporal-footprints",
-  "Description": "",
-  "Resources": []
+  "Description": "Building footprints with age",
+  "Resources": [
+    {
+      "Name": "GeoJSON source",
+      "Style": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/ubicube.json",
+      "TimeEntries": [
+        {
+          "Time": "2024",
+          "Assets": [
+            {
+              "Identifier": "ubifootprint",
+              "File": "https://gtif-multitemporal-footprints.s3.eu-central-1.amazonaws.com/ubicube_multitemporal_footprints.geojson"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "EodashIdentifier": "ubi-multitemporal",
+  "Themes": [],
+  "Tags": [],
+  "DataSource": {},
+  "Agency": [],
+  "License": "",
+  "Locations": [],
+  "Provider": [],
+  "Citation": {
+    "DOI": "",
+    "Citation": ""
+  },
+  "Image": "",
+  "Legend": ""
 }
