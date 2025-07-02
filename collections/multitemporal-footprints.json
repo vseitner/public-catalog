@@ -5,7 +5,7 @@
   "Resources": [
     {
       "Name": "GeoJSON source",
-      "Style": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/styles/ubicube.json",
+      "Style": "https://github.com/Taenja/public-assets/blob/main/assets/styles/ubicube.json",
       "TimeEntries": [
         {
           "Time": "2024",
