@@ -1,11 +1,11 @@
 {
   "Name": "multitemporal-footprints",
   "Title": "multitemporal-footprints",
-  "Description": "Building footprints with age",
+  "Description": "Temporal building footprint data for Lower Austria to visualize construction trends over time and space.",
   "Resources": [
     {
       "Name": "GeoJSON source",
-      "Style": "https://github.com/Taenja/public-assets/blob/main/assets/styles/ubicube.json",
+      "Style": "https://raw.githubusercontent.com/Taenja/public-assets/main/assets/styles/ubicube.json",
       "TimeEntries": [
         {
           "Time": "2024",
