@@ -1,14 +1,14 @@
 {
   "Name": "multitemporal-footprints",
   "Title": "multitemporal-footprints",
-  "Description": "Temporal building footprint data for Lower Austria to visualize construction trends over time and space.",
+  "Description": "Multi - temporal building footprint data for selected municipalities of Lower Austria to visualize construction trends over time and space.\nThe color intensity represents the construction year: lighter shades of red indicate older buildings (e.g., 2017), while darker shades signify more recent construction years (up to 2024)",
   "Resources": [
     {
       "Name": "GeoJSON source",
       "Style": "https://raw.githubusercontent.com/Taenja/public-assets/main/assets/styles/ubicube.json",
       "TimeEntries": [
         {
-          "Time": "2025",
+          "Time": "2024",
           "Assets": [
             {
               "Identifier": "ubifootprint",
