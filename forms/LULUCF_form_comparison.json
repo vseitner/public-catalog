@@ -1,6 +1,7 @@
 {
     "options": {
-        "execute": true
+        "execute": true,
+        "multiQuery": "feature"
     },
     "type": "object",
     "properties": {
