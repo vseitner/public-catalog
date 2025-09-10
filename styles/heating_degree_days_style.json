@@ -1,6 +1,6 @@
 {
   "legend": {
-    "title": "Heating Degree Days (HDD)",
+    "title": "Heating Degree Days (HDD) - °C",
     "range": [
       "rgba(0, 7, 40, 1.0)",
       "rgba(0, 8, 47, 1.0)",
