@@ -38,6 +38,11 @@
       22, 24, 26, 28, 30, 32, 34, 36, 40
     ]
   },
+  "jsonform": {
+        "type": "object",
+        "title": "Data configuration",
+        "properties": {}
+   },
   "color": [
     "case",
     ["<=", ["band", 1], 0],
