@@ -8,5 +8,9 @@
     "citytemperature",
     "coolingdegreedays",
     "heatingdegreedays"
+  ],
+  "Disable": [
+    "coolingdegreedays",
+    "heatingdegreedays"
   ]
 }
