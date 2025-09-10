@@ -9,6 +9,7 @@
   "collections": [
     "LULUCF_land_use_indicator",
     "ait_predictive_maintenance",
-    "gtime-layer"
+    "gtime-layer",
+    "city_temperature_indicator"
   ]
 }
