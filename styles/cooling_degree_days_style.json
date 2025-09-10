@@ -26,12 +26,10 @@
     ],
     "domainProperties": ["vmin", "vmax"]
   },
-
   "variables": {
     "vmin": 0,
     "vmax": 10
   },
-
   "jsonform": {
     "type": "object",
     "title": "Data configuration",
@@ -59,12 +57,10 @@
       }
     }
   },
-
   "color": [
     "case",
     ["<=", ["band", 3], 0],
     [0, 0, 0, 0],
-
     [
       "interpolate",
       ["linear"],
@@ -73,7 +69,6 @@
         ["-", ["band", 3], ["var", "vmin"]],
         ["-", ["var", "vmax"], ["var", "vmin"]]
       ],
-
       0.00, [102, 37, 6, 1.0],
       0.05, [153, 52, 4, 1.0],
       0.10, [236, 112, 20, 1.0],
