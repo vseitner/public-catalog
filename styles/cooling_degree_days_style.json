@@ -1,6 +1,6 @@
 {
   "legend": {
-    "title": "Cooling Degree Days (CDD)",
+    "title": "Cooling Degree Days (CDD - °C)",
     "range": [
       "rgba(102, 37, 6, 1.0)",
       "rgba(153, 52, 4, 1.0)",
