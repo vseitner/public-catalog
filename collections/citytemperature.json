@@ -5,7 +5,7 @@
   "Resources": [
     {
       "Name": "COG source",
-      "Style": "https://raw.githubusercontent.com/dneubauer-geosphere/public-catalog/refs/heads/dneubauer-geosphere/citytemperature_one_indicator/styles/city_temperature_style.json",
+      "Style": "https://raw.githubusercontent.com/dneubauer-geosphere/public-catalog/refs/heads/dneubauer-geosphere/citytemperatureoneindicator/styles/city_temperature_style.json",
       "Bbox": [
         16.04,
         47.94,
