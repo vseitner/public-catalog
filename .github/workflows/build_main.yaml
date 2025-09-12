@@ -32,7 +32,7 @@ jobs:
           SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
         # actually run the catalog generation
         run: |
-          docker run -v "$PWD:/workspace" -w "/workspace" ghcr.io/eodash/eodash_catalog:0.3.8 eodash_catalog
+          docker run -v "$PWD:/workspace" -w "/workspace" ghcr.io/eodash/eodash_catalog:0.3.8 eodash_catalog -gp
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
