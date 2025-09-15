@@ -112,5 +112,6 @@
   "Tags": [
     "city_temperature"
   ],
-  "EodashIdentifier": "cooling_degree_days"
+  "EodashIdentifier": "cooling_degree_days",
+  "Image": "https://workspace-ui-public.example.hub.eox.at/api/public/share/public/cooling_degree_days_preview.png"
 }
