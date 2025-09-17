@@ -1,0 +1,117 @@
+{
+  "Name": "heating_degree_days",
+  "Title": "Heating Degree Days",
+  "Description": "By integrating precise satellite-based data, air temperature is calculated on a 100-meter grid to simulate and forecast its spatial and hourly variations. The model integrates multiple high-resolution datasets to enhance forecast accuracy:\n* Satellite-based land cover data (e.g., Sentinel-2) to map surface properties and urban structures.\n* Building density and surface material analysis to account for urban heat storage and emission.\n* Vegetation and green space influence to assess cooling effects from parks and tree canopies.\n* Anthropogenic heat emissions from industry and residential heating/cooling.\n\n**Technical features**\n* Spatial gridding:\t100m\n* Temporal gridding:\t1 hour\n* Forecast range:\t+30 hours\n* Forecast time:\t00 UTC",
+  "Resources": [
+    {
+      "Name": "COG source",
+      "Style": "https://raw.githubusercontent.com/dneubauer-geosphere/public-catalog/refs/heads/dneubauer-geosphere/citytemperatureoneindicator/styles/heating_degree_days_style.json",
+      "Bbox": [
+        16.04,
+        47.94,
+        16.7,
+        48.48
+      ],
+      "TimeEntries": [
+        {
+          "Time": "2019-06-24",
+          "Assets": [
+            {
+              "Identifier": "20190624_00h00_h00",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_data_2019/20190624_00h00_h00.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-25",
+          "Assets": [
+            {
+              "Identifier": "20190625_00h00_h00",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_data_2019/20190625_00h00_h00.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-26",
+          "Assets": [
+            {
+              "Identifier": "20190626_00h00_h00",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_data_2019/20190626_00h00_h00.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-27",
+          "Assets": [
+            {
+              "Identifier": "20190627_00h00_h00",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_data_2019/20190627_00h00_h00.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-28",
+          "Assets": [
+            {
+              "Identifier": "20190628_00h00_h00",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_data_2019/20190628_00h00_h00.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-29",
+          "Assets": [
+            {
+              "Identifier": "20190629_00h00_h00",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_data_2019/20190629_00h00_h00.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-30",
+          "Assets": [
+            {
+              "Identifier": "20190630_00h00_h00",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_data_2019/20190630_00h00_h00.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-07-01",
+          "Assets": [
+            {
+              "Identifier": "20190701_00h00_h00",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_data_2019/20190701_00h00_h00.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-07-02",
+          "Assets": [
+            {
+              "Identifier": "20190702_00h00_h00",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_data_2019/20190702_00h00_h00.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-07-03",
+          "Assets": [
+            {
+              "Identifier": "20190703_00h00_h00",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_data_2019/20190703_00h00_h00.tif"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Agency": [
+    "GeoSphere Austria"
+  ],
+  "Tags": [
+    "city_temperature"
+  ],
+  "EodashIdentifier": "heating_degree_days",
+  "Image": ""
+}
