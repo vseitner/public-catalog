@@ -27,17 +27,15 @@
     }
   ],
   "EodashIdentifier": "ubi-multitemporal",
-  "Themes": [],
+  "Themes": ["Sustainable Cities"],
   "Tags": [],
   "DataSource": {},
   "Agency": [],
   "License": "",
   "Locations": [],
-  "Provider": [],
+  "Provider": ["ubicube"],
   "Citation": {
     "DOI": "",
     "Citation": ""
-  },
-  "Image": "",
-  "Legend": ""
+  }
 }
