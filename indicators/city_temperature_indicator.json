@@ -6,8 +6,8 @@
   "EodashIdentifier": "city_temperature_indicator",
   "Collections": [
     "citytemperaturecollection",
-    "coolingdegreedays_do_not_use",
-    "heatingdegreedays_do_not_use"
+    "coolingdegreedays",
+    "heatingdegreedays"
   ],
   "Disable": [
     "coolingdegreedays",
