@@ -1,5 +1,5 @@
 {
-  "Name": "city_temperature_collection",
+  "Name": "citytemperaturecollection",
   "Title": "City temperature forecast",
   "Description": "By integrating precise satellite-based data, air temperature is calculated on a 100-meter grid to simulate and forecast its spatial and hourly variations. The model integrates multiple high-resolution datasets to enhance forecast accuracy:\n* Satellite-based land cover data (e.g., Sentinel-2) to map surface properties and urban structures.\n* Building density and surface material analysis to account for urban heat storage and emission.\n* Vegetation and green space influence to assess cooling effects from parks and tree canopies.\n* Anthropogenic heat emissions from industry and residential heating/cooling.\n\n**Technical features**\n* Spatial gridding:\t100m\n* Temporal gridding:\t1 hour\n* Forecast range:\t+30 hours\n* Forecast time:\t00 UTC\n",
   "Resources": [
