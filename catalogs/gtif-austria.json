@@ -11,6 +11,7 @@
     "ait_predictive_maintenance",
     "gtime-layer",
     "city_temperature_indicator",
-    "multitemporal-footprints"
+    "multitemporal-footprints",
+    "wr02-pvpot"
   ]
 }
