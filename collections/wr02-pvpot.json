@@ -5,7 +5,7 @@
   "Resources": [
     {
       "Name": "COG source",
-      "Style": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public/WR-02-Site-Identification-Capabilities-REDIII/style_wr_02.json",
+      "Style": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII/style_wr_02.json",
       "Bbox": [
         9.144373204774606,
         45.32263166908202,
@@ -14,7 +14,7 @@
       ],
       "TimeEntries": [
         {
-          "Time": "2007-2023-DJF",
+          "Time": "0001",
           "Assets": [
             {
               "Identifier": "WR02-solar-DJF",
@@ -23,7 +23,7 @@
           ]
         },
         {
-          "Time": "2007-2023-MAM",
+          "Time": "0002",
           "Assets": [
             {
               "Identifier": "WR02-solar-MAM",
@@ -32,7 +32,7 @@
           ]
         },
         {
-          "Time": "2007-2023-JJA",
+          "Time": "0003",
           "Assets": [
             {
               "Identifier": "WR02-solar-JJA",
@@ -41,7 +41,7 @@
           ]
         },
         {
-          "Time": "2007-2023-SON",
+          "Time": "0004",
           "Assets": [
             {
               "Identifier": "WR02-solar-SON",
