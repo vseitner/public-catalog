@@ -14,7 +14,7 @@
       ],
       "TimeEntries": [
         {
-          "Time": "DJF",
+          "Time": "2007-2023-DJF",
           "Assets": [
             {
               "Identifier": "WR02-solar-DJF",
@@ -23,7 +23,7 @@
           ]
         },
         {
-          "Time": "MAM",
+          "Time": "2007-2023-MAM",
           "Assets": [
             {
               "Identifier": "WR02-solar-MAM",
@@ -32,7 +32,7 @@
           ]
         },
         {
-          "Time": "JJA",
+          "Time": "2007-2023-JJA",
           "Assets": [
             {
               "Identifier": "WR02-solar-JJA",
@@ -41,7 +41,7 @@
           ]
         },
         {
-          "Time": "SON",
+          "Time": "2007-2023-SON",
           "Assets": [
             {
               "Identifier": "WR02-solar-SON",
