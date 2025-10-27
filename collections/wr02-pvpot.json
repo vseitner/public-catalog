@@ -5,7 +5,7 @@
   "Resources": [
     {
       "Name": "COG source",
-      "Style": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII//style_wr_02.json",
+      "Style": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII/style_wr_02.json",
       "Bbox": [
         7.629639369543145,
         44.45488804457054,
@@ -14,8 +14,13 @@
       ],
       "TimeEntries": [
         {
-          "Time": "",
-          "Assets": []
+          "Time": "DJF",
+          "Assets": [
+            {
+              "Identifier": "WR02-solar-DJF",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII/pvpot_DJF.tif"
+            }
+          ]
         }
       ]
     }
