@@ -18,7 +18,7 @@
           "Assets": [
             {
               "Identifier": "WR02-solar-DJF",
-              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public/WR-02-Site-Identification-Capabilities-REDIII/pvpot_DJF.tif"
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII/pvpot_DJF.tif"
             }
           ]
         },
@@ -27,7 +27,7 @@
           "Assets": [
             {
               "Identifier": "WR02-solar-MAM",
-              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public/WR-02-Site-Identification-Capabilities-REDIII/pvpot_MAM.tif"
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII/pvpot_MAM.tif"
             }
           ]
         },
@@ -36,7 +36,7 @@
           "Assets": [
             {
               "Identifier": "WR02-solar-JJA",
-              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public/WR-02-Site-Identification-Capabilities-REDIII/pvpot_JJA.tif"
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII/pvpot_JJA.tif"
             }
           ]
         },
