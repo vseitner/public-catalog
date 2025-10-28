@@ -14,7 +14,7 @@
       ],
       "TimeEntries": [
         {
-          "Time": "01-12-2023",
+          "Time": "0001",
           "Assets": [
             {
               "Identifier": "WR02-solar-DJF",
@@ -23,7 +23,7 @@
           ]
         },
         {
-          "Time": "01-03-2024",
+          "Time": "0002",
           "Assets": [
             {
               "Identifier": "WR02-solar-MAM",
@@ -32,7 +32,7 @@
           ]
         },
         {
-          "Time": "01-06-2024",
+          "Time": "0003",
           "Assets": [
             {
               "Identifier": "WR02-solar-JJA",
@@ -41,7 +41,7 @@
           ]
         },
         {
-          "Time": "01-09-2024",
+          "Time": "0004",
           "Assets": [
             {
               "Identifier": "WR02-solar-SON",
