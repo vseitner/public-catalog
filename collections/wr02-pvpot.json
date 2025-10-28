@@ -47,7 +47,8 @@
               "Identifier": "WR02-solar-SON",
               "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII/pvpot_SON.tif"
             }
-          ]
+          ],
+          "Attribution": ""
         }
       ]
     }
