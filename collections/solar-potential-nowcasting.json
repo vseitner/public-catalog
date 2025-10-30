@@ -57,6 +57,15 @@
               "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/solar/run1/pvpot_fc_run1_1000.tif"
             }
           ]
+        },
+        {
+          "Time": "2025-10-23 10:15",
+          "Assets": [
+            {
+              "Identifier": "run1-pvpot-1015",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/solar/run1/pvpot_fc_run1_1015.tif"
+            }
+          ]
         }
       ]
     }
