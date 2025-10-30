@@ -1,7 +1,7 @@
 {
   "Name": "Solar-Potential-Nowcasting",
   "Title": "Solar Potential Nowcasting",
-  "Description": "# Solar Potential Nowcasting\n\nAdd description here....",
+  "Description": "Add description here....",
   "Resources": [
     {
       "Name": "COG source",
