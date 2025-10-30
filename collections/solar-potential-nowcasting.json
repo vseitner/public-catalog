@@ -2,5 +2,31 @@
   "Name": "Solar-Potential-Nowcasting",
   "Title": "Solar Potential Nowcasting",
   "Description": "# Solar Potential Nowcasting\n\nAdd description here....",
-  "Resources": []
+  "Resources": [
+    {
+      "Name": "COG source",
+      "Style": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/style_wr03_solar.json",
+      "Bbox": [
+        8.383369429519627,
+        45.11101811362841,
+        18.682829900682137,
+        50.283887028994
+      ],
+      "TimeEntries": [
+        {
+          "Time": "23-10-2025 09:00",
+          "Assets": [
+            {
+              "Identifier": "run1-pvpot-0900",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/solar/run1/pvpot_fc_run1_0900.tif"
+            },
+            {
+              "Identifier": "run1-glo-0900",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/solar/run1/glo_fc_run1_0900.tif"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
