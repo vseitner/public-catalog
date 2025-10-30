@@ -14,7 +14,7 @@
       ],
       "TimeEntries": [
         {
-          "Time": "2025-10-23",
+          "Time": "2025-10-23 09:00",
           "Assets": [
             {
               "Identifier": "run1-pvpot-0900",
@@ -23,7 +23,7 @@
           ]
         },
         {
-          "Time": "2025-10-24",
+          "Time": "2025-10-23 09:15",
           "Assets": [
             {
               "Identifier": "run1-pvpot-0915",
