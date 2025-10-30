@@ -66,6 +66,33 @@
               "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/solar/run1/pvpot_fc_run1_1015.tif"
             }
           ]
+        },
+        {
+          "Time": "2025-10-23 10:30",
+          "Assets": [
+            {
+              "Identifier": "run1-pvpot-1030",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/solar/run1/pvpot_fc_run1_1030.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2025-10-23 10:45",
+          "Assets": [
+            {
+              "Identifier": "run1-pvpot-1045",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/solar/run1/pvpot_fc_run1_1045.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2025-10-23 11:00",
+          "Assets": [
+            {
+              "Identifier": "run1-pvpot-1100",
+              "File": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/solar/run1/pvpot_fc_run1_1100.tif"
+            }
+          ]
         }
       ]
     }
