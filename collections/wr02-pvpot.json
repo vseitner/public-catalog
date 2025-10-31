@@ -1,7 +1,7 @@
 {
   "Name": "WR02-PVpot",
-  "Title": "Site identification for solar energy",
-  "Description": "Description needs to be added.",
+  "Title": "Solar Potential",
+  "Description": "The data layer *Solar Potential* shows the average available theoretical solar potential as mean from 2007 to 2023 on a seasonal basis. This is the data basis for selecting suitable locations for PV systems.\n\nThe calculation of the theoretical solar potential (PVpot) is based on the method of [Jerez et al (2025)](https://www.nature.com/articles/ncomms10014). The data is calculated by GeoSphere Austria's radiation model *STRAHLGRID*.\n\nThe theoretical solar potential ranges from 0 to 1. If the value of PVpot is equal to 1, the nominal PV production value specified by the system is achieved. If the cell temperature of the PV system is higher (lower) than 25°C and/or the global radiation is less (greater) than 1000 W/m², then the PV output is lower (greater) than the nominal power of the module. These threshold values can be adjusted to customer requirements.\n\nContact: solar@geosphere.at",
   "Resources": [
     {
       "Name": "COG source",
