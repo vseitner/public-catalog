@@ -1,0 +1,222 @@
+{
+  "type": "Collection",
+  "id": "GTIME",
+  "stac_version": "1.1.0",
+  "description": "The RGB colour model is employed to visualise vegetation conditions and their temporal dynamics across three user-defined periods (T1, T2, and T3). To ensure a consistent and unambiguous interpretation of the legend, the time periods - representing different years in this case - are assigned sequentially to the RGB channels.\n\nThe vegetation change model is derived from a semantic Earth Observation data cube and incorporates all available Sentinel-2 observations within each respective time period. For every pixel, the model computes the proportion of vegetation occurrences relative to all valid observations, excluding those affected by clouds or snow.\n\nConsequently, the model captures not only temporal changes in vegetation cover but also variations in vegetation intensity and transitions between vegetated and non-vegetated states. Vegetation proportions are encoded as integer values within the corresponding RGB colour channels, enabling the simultaneous representation of vegetation dynamics across the three time periods.\n\n![Legend](https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/Cube_legend_landscape_en.jpg)",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./GTIME_Layer/collection.json",
+      "type": "application/json",
+      "title": "Multitemporal Vegetation Change Dynamics 2018 – 2021 – 2024",
+      "endpointtype": "COG source",
+      "id": "GTIME_Layer",
+      "providers": [
+        "Univ. of Salzburg, Department of Geoinformatics – Z_GIS & Spatial Services"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/thumbnail_gtime_layer.png"
+      ],
+      "collection_group": "EO Adaptation Services"
+    },
+    {
+      "rel": "child",
+      "href": "./GTIME_Layer_212223/collection.json",
+      "type": "application/json",
+      "title": "Multitemporal Vegetation Change Dynamics 2021 – 2022 – 2023",
+      "endpointtype": "COG source",
+      "id": "GTIME_Layer_212223",
+      "providers": [
+        "Univ. of Salzburg, Department of Geoinformatics – Z_GIS & Spatial Services"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/thumbnail_gtime_layer.png"
+      ],
+      "collection_group": "EO Adaptation Services"
+    },
+    {
+      "rel": "child",
+      "href": "./GTIME_Layer_222324/collection.json",
+      "type": "application/json",
+      "title": "Multitemporal Vegetation Change Dynamics 2022 – 2023 – 2024",
+      "endpointtype": "COG source",
+      "id": "GTIME_Layer_222324",
+      "providers": [
+        "Univ. of Salzburg, Department of Geoinformatics – Z_GIS & Spatial Services"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/thumbnail_gtime_layer.png"
+      ],
+      "collection_group": "EO Adaptation Services"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2018_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2018",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2018",
+      "attribution": "{ EOxCloudless 2018: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2018) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2019_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2019",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2019",
+      "attribution": "{ EOxCloudless 2019: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2019) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2020",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2020",
+      "attribution": "{ EOxCloudless 2020: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2020) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2021_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2021",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2021",
+      "attribution": "{ EOxCloudless 2021: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2021) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2022_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2022",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2022",
+      "attribution": "{ EOxCloudless 2022: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2022) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2023_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2023",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2023",
+      "attribution": "{ EOxCloudless 2023: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2023) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2024",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2024",
+      "attribution": "{ EOxCloudless 2024: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "collection_group": "Sustainable Cities",
+  "title": "Multitemporal Vegetation Change Dynamics",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.0,
+          44.5,
+          18.0,
+          49.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/thumbnail_gtime_layer.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/gtime-layer-legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

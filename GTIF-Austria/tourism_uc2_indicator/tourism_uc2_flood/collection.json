@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "tourism_uc2_flood",
+  "stac_version": "1.1.0",
+  "description": "Flood hazard zones from HORA for Austria. The classes represent areas affected by approximately 30-year (high), 100-year (medium), and 300-year residual-risk (low) flood scenarios. This layer is provided as contextual information for the selected tourism location.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Snow Depth Anomaly"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "themes": [
+    "Climate Change & Tourism"
+  ],
+  "collection_group": "Climate Change & Tourism",
+  "endpointtype": "COG source",
+  "title": "Flood Hazard Zones",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.40356439416315,
+          46.345563479243154,
+          17.21172084373003,
+          49.03321991805956
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "HORA – Natural Hazard Overview & Risk Assessment Austria",
+      "url": "https://www.hora.gv.at/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 14806,
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

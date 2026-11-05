@@ -1,0 +1,96 @@
+{
+  "type": "Collection",
+  "id": "SNWMLT-L2-DEMO",
+  "stac_version": "1.1.0",
+  "description": "## Snow Melt\n\nSnow Melt shows how much water the snowpack is releasing, given here in millimetres per day. Meltwater makes its way into the ground, streams and rivers, making snowmelt a key driver of spring runoff and flooding — valuable for flood forecasting, reservoir operation and early-warning systems. This layer is a demonstration subset of Waterjade's Level-2 snow products, covering the 2022–2023 winter season over Tyrol, modelled daily at 500 m resolution with the SnowMaps processing chain and the GEOtop physical model. It builds on the snow-modelling work first developed within the Digital Twin of the Alps (DTA).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GTIF demo - Snow Melt"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "shortdescription": "Daily snowmelt water runoff.",
+  "eox:colorlegend": {
+    "title": "Snow Melt (mm/day)",
+    "tickFormat": ".0f",
+    "domain": [
+      0,
+      25
+    ],
+    "range": [
+      "#ffffff",
+      "#f7fbff",
+      "#c9dbf0",
+      "#a3cae2",
+      "#75afd8",
+      "#5d9dce",
+      "#5093c8",
+      "#3371b8",
+      "#2962b3",
+      "#1e529f",
+      "#163982"
+    ],
+    "markType": "rect",
+    "scaleType": "continuous"
+  },
+  "thumbnail": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT_GTIF_DEMO.png",
+  "collection_group": "Hydrology",
+  "endpointtype": "Sentinel Hub WMS",
+  "title": "GTIF demo - Snow Melt",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          10.41166,
+          46.716906,
+          11.977302,
+          47.615112
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-10-02T00:00:00Z",
+          "2023-09-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Waterjade",
+      "url": "https://waterjade.com/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 23364,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT_GTIF_DEMO.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

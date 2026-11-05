@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "06-wr08-energy_data",
+  "stac_version": "1.1.0",
+  "description": "The expansion of solar energy across Austria has entered a phase of rapid acceleration, characterized by a significant surge in new installations. When looking at total output and capacity, a clear hierarchy emerges among the federal states, driven by a mix of geographic scale and proactive policy.\nThis information has been published initially on https://www.energie.gv.at\nComparison of electricity generation from photovoltaics and electricity consumption in the federal states in 2024, source: Energy balance from Statistics Austria 2024 via energie.gv.at, accessed on: February 26, 2026, 10:37 a.m.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "PV Energy Production vs. Consumption"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/06/06-austrian_renewable_energy.png",
+  "collection_group": "Energy Dashboard",
+  "endpointtype": "GeoJSON source",
+  "title": "PV Energy Production vs. Consumption",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.56996766967788,
+          46.22190293950128,
+          17.340390138488996,
+          49.06479372463155
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 25972,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/06/06-austrian_renewable_energy.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

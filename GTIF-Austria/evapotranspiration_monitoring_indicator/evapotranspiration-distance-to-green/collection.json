@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "evapotranspiration-distance-to-green",
+  "stac_version": "1.1.0",
+  "description": "**Evapotranspiration Monitoring Demonstrator for Austria**\nThe [UN World Water Report](https://unesdoc.unesco.org/ark:/48223/pf0000388948) draws attention to the increasing water consumption, which affects global food security and economic growth. Understanding hydrological processes, especially evapotranspiration (ET), is crucial for the functionality and sustainability of green spaces and influences water and energy balances. Actual evapotranspiration (ETa) is an important measure of water transfer from the Earth's surface and includes both soil evaporation and plant transpiration.\nThe methodology to perform evapotranspiration estimation is based on the use of [foundation models such as Prithvi](https://arxiv.org/abs/2412.02732) that performs a regression analysis of Sentinel-2 multispectral bands and climatic ancillary data (temperature, precipitation and other data), to retrieve an estimation of evapotranspiration measurements obtained from ECOSTRESS.\n\nECOSTRESS is showing lower resolution than the input Sentinel-2 which necessitates pre-processing impacting potentially the measurements. Moreover ECOSTRESS is showing some artefacts in its raw format, this has impact on the machine learning prediction and may reduce quality of the desired output.\n\n© 2025 Sistema GmbH. All rights reserved. When using data or information derived from the “High Resolution Evapotranspiration Service” in publications, websites, or other media, please include the following citation: \"Data provided by Sistema GmbH “High Resolution Evapotranspiration service”, part of the [GTIF-AT initiative](https://gtif-austria.info/narratives/evapotranspiration-monitoring).\"",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Evapotranspiration Monitoring Demonstrator for Austria"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring/assets/triebnigg/evapotranspirationcover-1749285117579.png",
+  "collection_group": "Carbon Accounting",
+  "endpointtype": "COG source",
+  "title": "Distance to the closest green&refreshing areas",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          10.040413513663806,
+          45.860352891576,
+          17.397020060526515,
+          49.46746319842481
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-07-01T00:00:00Z",
+          "2025-07-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Sistema",
+      "url": "https://www.sistema.at/applications/technology/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 15084,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring/assets/triebnigg/evapotranspirationcover-1749285117579.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

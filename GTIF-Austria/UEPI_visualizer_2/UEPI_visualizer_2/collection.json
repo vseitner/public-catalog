@@ -1,0 +1,76 @@
+{
+  "type": "Collection",
+  "id": "UEPI_visualizer_2",
+  "stac_version": "1.1.0",
+  "description": "**UEPI (Urban Energy Performance Index)** combines heat‑loss signals (from LST analysis), building age, and building size into a relative retrofit‑priority score.  \n**Scale 0–100:** **0 = high retrofit need (high priority)**, **100 = good (low priority)**.  \n**Weighting:** heat loss **50%**, age **30%**, size **20%**. Critical cases (high loss + old building) and very large buildings receive additional amplification.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Urban energy performance monitor"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-04-Urban-Energy-Performance-Monitor/Energy-performance-of-buildings-hero-1749975057844.jpg",
+  "themes": [
+    "Sustainable Cities",
+    "Energy Transition"
+  ],
+  "collection_group": "Sustainable Cities",
+  "endpointtype": "GeoJSON source",
+  "title": "Urban energy performance monitor",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          16.255767946312947,
+          48.08438283145376,
+          16.316170870817853,
+          48.10503139601241
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Austrian Institute of Technology - Digital resilient cities and regions",
+      "url": "https://www.ait.ac.at/en/solutions/sustainable-cities-regions-and-living-spaces"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 14805,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-04-Urban-Energy-Performance-Monitor/Energy-performance-of-buildings-hero-1749975057844.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

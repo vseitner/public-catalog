@@ -1,0 +1,127 @@
+{
+  "type": "Collection",
+  "id": "07-wr08-energy_data",
+  "stac_version": "1.1.0",
+  "description": "**Wind Energy Expansion: Bridging the Gap Between Potential and Production**\nWhile solar energy has seen a rapid \"boom\" in recent years, wind power represents the second vital pillar of Austria’s renewable energy strategy. Despite possessing immense natural potential, the wind sector has not yet achieved the same expansion velocity as photovoltaics. This disparity is largely attributed to the regulatory and administrative landscape; the project planning and permitting phases for wind turbines are significantly more complex and time-consuming than those for solar installations.\n**Geographic Imbalance and the Need for \"Tailwind\"**\nCurrently, Austria’s wind energy landscape is characterized by a sharp geographic divide. Development is heavily concentrated in the eastern regions, while the western and southern provinces continue to lag behind. To move the needle, a stronger \"tailwind\" from regional governments is essential to modernize the current infrastructure.\nThis information has been published initially on https://www.energie.gv.at\nElectricity generation from wind power in GWh, source: Data on output from EAG Monitoring Report 2025 by E-Control, data on generation from Energy Balance 2024 by Statistics Austria via energie.gv.at, accessed on: February 26, 2026, 10:38 a.m.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./07-wr08-energy_data/collection.json",
+      "type": "application/json",
+      "title": "Wind Energy Production",
+      "endpointtype": "GeoJSON source",
+      "id": "07-wr08-energy_data",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/07/07-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "service",
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/07/features/{{feature}}.json",
+      "type": "application/json",
+      "id": "07-wr08-energy_production_statistics",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/07/07-austrian_renewable_energy.png",
+  "collection_group": "Energy Dashboard",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/07/07-wr08-form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/07/07-wr08-vega_chart.json",
+  "title": "Wind Energy Production",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.34588358830795,
+          46.12151015188523,
+          17.414809171798623,
+          49.474700873516944
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/07/07-austrian_renewable_energy.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/07/07-austrian_renewable_energy.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

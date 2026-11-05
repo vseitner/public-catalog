@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "04-wr08-energy_data",
+  "stac_version": "1.1.0",
+  "description": "Photovoltaic capacity installed varies between Federal States in Austria. The differences between the states come down to their specific legal requirements. For example, Styria requires solar panels on all new buildings and has clear zoning laws for solar farms. Vienna is now trying to catch up by making PV mandatory for both new builds and major renovations.\nThis information has been published initially on https://www.energie.gv.at\nInstalled capacity with PV in MWp, source: EAG Monitoring Report 2025 by E-Control via energie.gv.at, accessed on: February 26, 2026, 10:33 a.m.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Photovoltaic Capacity per Federal State"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/04/04-austrian_renewable_energy.png",
+  "collection_group": "Energy Dashboard",
+  "endpointtype": "GeoJSON source",
+  "title": "Photovoltaic Capacity per Federal State",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.682753413298151,
+          45.49825098796226,
+          17.156292181396612,
+          49.647028056274294
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 25181,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/04/04-austrian_renewable_energy.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "11-wr08-heating_systems",
+  "stac_version": "1.1.0",
+  "description": "**Residential Heating in Austria: National Trends and Regional Diversity**\nIn the broader context of Austria’s energy balance, thermal energy is a heavyweight: more than half of the country's final energy consumption is dedicated to heat production. A significant portion of this energy fuels the heating systems of Austria’s roughly four million primary residences.\n**The National Heating Mix**\nWhile the transition to renewables is underway, fossil fuels still maintain a significant footprint. As of the current reporting period, the national breakdown of heating systems across all primary residences is as follows:\nThis information has been published initially on https://www.energie.gv.at\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Primary Heating System in Dwellings"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/11/11-austrian_renewable_energy.png",
+  "collection_group": "Energy Dashboard",
+  "endpointtype": "GeoJSON source",
+  "title": "Primary Heating System in Dwellings",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.408147578785538,
+          45.84677419354837,
+          17.08685626441198,
+          50.06336405529952
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-01-01T00:00:00Z",
+          "2023-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 15123,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/11/11-austrian_renewable_energy.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

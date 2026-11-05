@@ -1,0 +1,154 @@
+{
+  "type": "Collection",
+  "id": "evapotranspiration_monitoring_indicator",
+  "stac_version": "1.1.0",
+  "description": "**Evapotranspiration Monitoring Demonstrator for Austria**\nThe [UN World Water Report](https://unesdoc.unesco.org/ark:/48223/pf0000388948) draws attention to the increasing water consumption, which affects global food security and economic growth. Understanding hydrological processes, especially evapotranspiration (ET), is crucial for the functionality and sustainability of green spaces and influences water and energy balances. Actual evapotranspiration (ETa) is an important measure of water transfer from the Earth's surface and includes both soil evaporation and plant transpiration.\nThe methodology to perform evapotranspiration estimation is based on the use of [foundation models such as Prithvi](https://arxiv.org/abs/2412.02732) that performs a regression analysis of Sentinel-2 multispectral bands and climatic ancillary data (temperature, precipitation and other data), to retrieve an estimation of evapotranspiration measurements obtained from ECOSTRESS.\n\nECOSTRESS is showing lower resolution than the input Sentinel-2 which necessitates pre-processing impacting potentially the measurements. Moreover ECOSTRESS is showing some artefacts in its raw format, this has impact on the machine learning prediction and may reduce quality of the desired output.\n\n Distance to Green&Refreshing map \n- This map represents, for each pixel, the distance to the closest green&refreshing area in meters\n - the green&refreshing areas are identified as 'areas where evapotranspiration is equal or higher than 3mm/day'\n - the evapotranspiration map used if from the month of July 2025 (greenest of the year). We took  July since winter green&refreshing areas are way less so distances can result higher \n - The distance is computed as 'walking distance' using the attached road network and rules for crossing points\n\n© 2025 Sistema GmbH. All rights reserved. When using data or information derived from the “High Resolution Evapotranspiration Service” in publications, websites, or other media, please include the following citation: \"Data provided by Sistema GmbH “High Resolution Evapotranspiration service”, part of the [GTIF-AT initiative](https://gtif-austria.info/narratives/evapotranspiration-monitoring).\"",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./evapotranspiration-monitoring/collection.json",
+      "type": "application/json",
+      "title": "Evapotranspiration Monitoring Demonstrator for Austria",
+      "endpointtype": "COG source",
+      "id": "evapotranspiration-monitoring",
+      "providers": [
+        "Sistema"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring/assets/triebnigg/evapotranspirationcover-1749285117579.png"
+      ],
+      "collection_group": "Carbon Accounting"
+    },
+    {
+      "rel": "child",
+      "href": "./evapotranspiration-distance-to-green/collection.json",
+      "type": "application/json",
+      "title": "Distance to the closest green&refreshing areas",
+      "endpointtype": "COG source",
+      "id": "evapotranspiration-distance-to-green",
+      "providers": [
+        "Sistema"
+      ],
+      "roles": [
+        "disable"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring/assets/triebnigg/evapotranspirationcover-1749285117579.png"
+      ],
+      "collection_group": "Carbon Accounting"
+    },
+    {
+      "rel": "service",
+      "href": "https://statistics.gtif.eox.at/geoparquet-stats/?geoparquet_url=https://gtif-austria.github.io/public-catalog/GTIF-Austria/evapotranspiration_monitoring_indicator/evapotranspiration-monitoring/items.parquet&bbox={{bbox.0}}&bbox={{bbox.1}}&bbox={{bbox.2}}&bbox={{bbox.3}}#.json",
+      "type": "application/json",
+      "id": "cogstats",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring/assets/triebnigg/evapotranspirationcover-1749285117579.png",
+  "collection_group": "Carbon Accounting",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-at-get-it.hub-otc.eox.at/api/public/share/public-ebxe9szx-v1/evapotrans_monit/form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-at-get-it.hub-otc.eox.at/api/public/share/public-ebxe9szx-v1/evapotrans_monit/chart.json",
+  "title": "Evapotranspiration Monitoring Demonstrator for Austria",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          10.040413513663806,
+          45.860352891576,
+          17.397020060526515,
+          49.46746319842481
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-12-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Sistema",
+      "url": "https://www.sistema.at/applications/technology/"
+    }
+  ],
+  "summaries": {
+    "thumbnail": [
+      "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring/assets/triebnigg/evapotranspirationcover-1749285117579.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring/assets/triebnigg/evapotranspirationcover-1749285117579.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

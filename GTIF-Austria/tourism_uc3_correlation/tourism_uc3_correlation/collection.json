@@ -1,0 +1,84 @@
+{
+  "type": "Collection",
+  "id": "tourism_uc3_correlation",
+  "stac_version": "1.1.0",
+  "description": "### GTIF AT EA – Austrian Climate Change Explorer for Tourism\n\n\n\n\n\n*Tourism indicators: Tourism and climate correlation analysis*\n\n\n\nDaily precipitation sum, maximum temperature, and snow depth data are spatially aggregated to Austrian tourism destinations for the period 2023-2026 during winter (November-April) and summer (May-October) seasons. Snow depth values are considered only during the winter season. The climate variables are subsequently linked with forecasted overnight stays for the corresponding tourism regions.\n\n\n\nBy selecting a tourist destination on the map, the graphical representations of the relationship between overnight stays and climate factors (mean precipitation sum, maximum temperature, and mean snow depth) during the winter and/or summer seasons can be explored.\n\n\n\nRead narrative (general) and (use case 3) for a more detailed description.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Tourism & Climate Correlation Analysis"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://picsum.photos/seed/picsum/536/354",
+  "themes": [
+    "Climate Change & Tourism"
+  ],
+  "tags": [
+    "mobility",
+    "tourism",
+    "climate"
+  ],
+  "collection_group": "Climate Change & Tourism",
+  "endpointtype": "VectorTile source",
+  "title": "Tourism & Climate Correlation Analysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          44.5,
+          18.0,
+          49.9
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-01-01T00:00:00Z",
+          "2026-02-15T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoVille",
+      "url": "https://www.geoville.com/"
+    },
+    {
+      "name": "Austria Tourism",
+      "url": "https://b2b.austria.info/uk/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 132032,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://picsum.photos/seed/picsum/536/354",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

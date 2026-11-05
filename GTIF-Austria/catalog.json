@@ -15,19 +15,1188 @@
       "href": "./land_use/collection.json",
       "type": "application/json",
       "title": "Land Use, Land Use Change and Forestry (LULUCF)",
-      "code": "LULUCF_indicator",
       "id": "land_use",
       "themes": [
-        "Land"
+        "Carbon Accounting"
       ],
-      "subcode": "LULUCF_indicator",
+      "providers": [
+        "GeoVille"
+      ],
       "satellite": [
         "Combined"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg"
+        "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg"
       ],
-      "collection_group": "Capabilities"
+      "collection_group": "Carbon Accounting"
+    },
+    {
+      "rel": "child",
+      "href": "./predictive_maintenance/collection.json",
+      "type": "application/json",
+      "title": "Transport Infrastructure Predictive Maintenance",
+      "id": "predictive_maintenance",
+      "providers": [
+        "AIT Center for Transport Technologies"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-10-Transport-Infrastructure-Predictive-Maintenance/WR10_thumbnail.jpg"
+      ],
+      "collection_group": "Mobility Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./GTIME/collection.json",
+      "type": "application/json",
+      "title": "Multitemporal Vegetation Change Dynamics",
+      "id": "GTIME",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/thumbnail_gtime_layer.png"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "child",
+      "href": "./city_temperature_indicator/collection.json",
+      "type": "application/json",
+      "title": "Temperature Forecast, Cooling/Heating Degree Days for Cities in Austria",
+      "id": "city_temperature_indicator",
+      "themes": [
+        "Sustainable Cities"
+      ],
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_preview2.png"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "child",
+      "href": "./geothermal_energy_potential/collection.json",
+      "type": "application/json",
+      "title": "Geothermal Energy Potential",
+      "id": "geothermal_energy_potential",
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-07-Geothermal-Energy-Potential-Assessment/geothermal_potential_energy_preview.jpg"
+      ],
+      "collection_group": "Energy Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./multitemporal-footprints/collection.json",
+      "type": "application/json",
+      "title": "Multitemporal Footprints",
+      "id": "multitemporal-footprints",
+      "themes": [
+        "Sustainable Cities"
+      ],
+      "providers": [
+        "ubicube"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-sc.hub-otc.eox.at/api/public/share/public-4wazei3y-02/multitemporal_footprints/Extraction_partial.png"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "child",
+      "href": "./air_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Air Source Heat Pump",
+      "id": "air_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AEE INTEC",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Heat%20Pump.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./aquifer_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Ground Source Heat Pump: Open Systems (Aquifer)",
+      "id": "aquifer_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AEE INTEC",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Heat%20Pump.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./closed_systems_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Ground Source Heat Pump: Closed Systems (Collectors, Probes)",
+      "id": "closed_systems_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AEE INTEC",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Heat%20Pump.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./wind_eepot_w23/collection.json",
+      "type": "application/json",
+      "title": "Wind Power",
+      "id": "wind_eepot_w23",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "Energiewerkstatt",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Wind%20Power.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./hydro_2_eepot_w23/collection.json",
+      "type": "application/json",
+      "title": "Hydropower",
+      "id": "hydro_2_eepot_w23",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "Umweltbundesamt",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Hydropower.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./excess_heat_hp_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Excess Heat - Utilization via Heat Pumps",
+      "id": "excess_heat_hp_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AEE INTEC",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Waste%20heat.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./excess_heat_dir_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Excess Heat - Direct Utilization",
+      "id": "excess_heat_dir_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AEE INTEC",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Waste%20heat.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./river_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Flowing Water Bodies (Aquathermy)",
+      "id": "river_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AEE INTEC",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Heat%20Pump.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./pv_buildings_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Building-Integrated PV Systems",
+      "id": "pv_buildings_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "Umweltbundesamt",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/PV-building-integrated.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./pv_ground_mounted_sealed_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Ground-Mounted PV Systems on Sealed Land",
+      "id": "pv_ground_mounted_sealed_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "Umweltbundesamt",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/PV-ground-mounted.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./pv_ground_mounted_unsealed_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Ground-Mounted PV Systems on Unsealed Land",
+      "id": "pv_ground_mounted_unsealed_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "Umweltbundesamt",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/PV-ground-mounted.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./pv_total_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "PV Systems in Total",
+      "id": "pv_total_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "Umweltbundesamt",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/PV-building-integrated.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./st_buildings_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Building-integrated Solar Thermal Collectors",
+      "id": "st_buildings_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AEE INTEC",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Solar%20Thermal%20Collectors.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./st_ground_mounted_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Ground-mounted Solar Thermal Collectors",
+      "id": "st_ground_mounted_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AEE INTEC",
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Solar%20Thermal%20Collectors.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./comparison_generated_heat_absolut_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Heat Generation Potential",
+      "id": "comparison_generated_heat_absolut_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AIT Center for Energy",
+        "AEE INTEC"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Energy%20Planning%20-%20Heat.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./comparison_generated_heat_share_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Heat Demand Share",
+      "id": "comparison_generated_heat_share_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AIT Center for Energy",
+        "AEE INTEC"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Energy%20Planning%20-%20Heat.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./comparison_electricity_e_absolut_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Electricity Generation Potential",
+      "id": "comparison_electricity_e_absolut_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AIT Center for Energy",
+        "Umweltbundesamt"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Energy%20Planning%20-%20Electricity.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./comparison_electricity_e_share_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Electricity Demand Share",
+      "id": "comparison_electricity_e_share_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AIT Center for Energy",
+        "Umweltbundesamt"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Energy%20Planning%20-%20Electricity.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./comparison_electricity_lcoe_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Levelized Cost of Energy",
+      "id": "comparison_electricity_lcoe_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AIT Center for Energy",
+        "Umweltbundesamt"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Energy%20Planning%20-%20Electricity.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./comparison_electricity_mv_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Market Value",
+      "id": "comparison_electricity_mv_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AIT Center for Energy",
+        "Umweltbundesamt"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Energy%20Planning%20-%20Electricity.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./comparison_grid_c_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Grid Capacity and Electricity Potential in Capacity Terms",
+      "id": "comparison_grid_c_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "Energiewerkstatt",
+        "AIT Center for Energy",
+        "Umweltbundesamt",
+        "ebUtilities"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Grid%20Capacity%20and%20Potentials.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./comparison_grid_e_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Grid Capacity and Electricity Generation Potential",
+      "id": "comparison_grid_e_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "Energiewerkstatt",
+        "AIT Center for Energy",
+        "Umweltbundesamt",
+        "ebUtilities"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Grid%20Capacity%20and%20Potentials.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "child",
+      "href": "./evapotranspiration_monitoring_indicator/collection.json",
+      "type": "application/json",
+      "title": "Evapotranspiration Monitoring Demonstrator for Austria",
+      "id": "evapotranspiration_monitoring_indicator",
+      "providers": [
+        "Sistema"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring/assets/triebnigg/evapotranspirationcover-1749285117579.png"
+      ],
+      "collection_group": "Carbon Accounting"
+    },
+    {
+      "rel": "child",
+      "href": "./mobility_ihr_pm25_pm10/collection.json",
+      "type": "application/json",
+      "title": "Mobility Impact on PM2.5 and PM10 Concentrations",
+      "id": "mobility_ihr_pm25_pm10",
+      "themes": [
+        "mobility-transition"
+      ],
+      "providers": [
+        "AIT Center for Transport Technologies"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_Image_pm2-5-10.jpg"
+      ],
+      "tags": [
+        "mobility"
+      ],
+      "collection_group": "Mobility Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./mobility_asfinag/collection.json",
+      "type": "application/json",
+      "title": "Monthly traffic volume",
+      "id": "mobility_asfinag",
+      "themes": [
+        "mobility-transition"
+      ],
+      "providers": [
+        "AIT Center for Transport Technologies"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_monthly_traffic.jpg"
+      ],
+      "tags": [
+        "mobility"
+      ],
+      "collection_group": "Mobility Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./mobility_no2/collection.json",
+      "type": "application/json",
+      "title": "Daily mobility vs NO2",
+      "id": "mobility_no2",
+      "themes": [
+        "mobility-transition"
+      ],
+      "providers": [
+        "AIT Center for Transport Technologies"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_traffic_no2_2.jpg"
+      ],
+      "tags": [
+        "mobility"
+      ],
+      "collection_group": "Mobility Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./mobility_daily_traffic/collection.json",
+      "type": "application/json",
+      "title": "Daily Traffic Volume",
+      "id": "mobility_daily_traffic",
+      "themes": [
+        "mobility-transition"
+      ],
+      "providers": [
+        "AIT Center for Transport Technologies"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_monthly_daily.jpg"
+      ],
+      "tags": [
+        "mobility"
+      ],
+      "collection_group": "Mobility Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./gtif-wind-atlas/collection.json",
+      "type": "application/json",
+      "title": "Wind Atlas",
+      "id": "gtif-wind-atlas",
+      "providers": [
+        "Energiewerkstatt"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind%20Atlas/Thumbnail/Thumbnail%20Wind%20Atlas.png"
+      ],
+      "collection_group": "Energy Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./wr02solar/collection.json",
+      "type": "application/json",
+      "title": "Solar Energy Potential",
+      "id": "wr02solar",
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/Enefit-Greeni-Purtse-hybriidpark-Ida-Virumaal-1749907570161.webp"
+      ],
+      "collection_group": "Energy Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./pvpot_fc/collection.json",
+      "type": "application/json",
+      "title": "Nowcasting of theoretical PV potential",
+      "id": "pvpot_fc",
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/solar-potential-1749907032353.webp"
+      ],
+      "collection_group": "Energy Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./n_vision_indicator/collection.json",
+      "type": "application/json",
+      "title": "Rooftop Characterisation",
+      "id": "n_vision_indicator",
+      "themes": [
+        "Sustainable Cities"
+      ],
+      "providers": [
+        "N Vision"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/refs/heads/main/assets/nvisionpublic/nvision-solar-panels-cover.webp"
+      ],
+      "tags": [
+        "Green Roofs",
+        "Solar Roofs"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "child",
+      "href": "./brownfield_recovery_potential/collection.json",
+      "type": "application/json",
+      "title": "Brownfield Recovery Potential",
+      "id": "brownfield_recovery_potential",
+      "themes": [
+        "Sustainable Cities"
+      ],
+      "providers": [
+        "Fraunhofer IIS"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/brownfield/assets/triebnigg/brownfieldcover-1749915393864.jpg"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "child",
+      "href": "./01-wr08_energy_data/collection.json",
+      "type": "application/json",
+      "title": "Renewable Energy Production per State",
+      "id": "01-wr08_energy_data",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/01/01-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./02-wr08_energy_data/collection.json",
+      "type": "application/json",
+      "title": "Installed Renewable Energy Capacity by Federal State",
+      "id": "02-wr08_energy_data",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/02/02-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./03-wr08-energy_data/collection.json",
+      "type": "application/json",
+      "title": "Solar Energy Production",
+      "id": "03-wr08-energy_data",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/03/03-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./04-wr08-energy_data/collection.json",
+      "type": "application/json",
+      "title": "Photovoltaic Capacity per Federal State",
+      "id": "04-wr08-energy_data",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/04/04-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./05-wr08-energy_data/collection.json",
+      "type": "application/json",
+      "title": "Yearly Photovoltaik Production per Federal State",
+      "id": "05-wr08-energy_data",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/05/05-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./06-wr08-energy_data/collection.json",
+      "type": "application/json",
+      "title": "PV Energy Production vs. Consumption",
+      "id": "06-wr08-energy_data",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/06/06-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./07-wr08-energy_data/collection.json",
+      "type": "application/json",
+      "title": "Wind Energy Production",
+      "id": "07-wr08-energy_data",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/07/07-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./08-wr08-energy_data/collection.json",
+      "type": "application/json",
+      "title": "Wind Capacity per Federal State",
+      "id": "08-wr08-energy_data",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/08/08-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./09-wr08-energy_data/collection.json",
+      "type": "application/json",
+      "title": "Yearly Wind Energy Production per Federal State",
+      "id": "09-wr08-energy_data",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/09/09-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./10-wr08-wind_production/collection.json",
+      "type": "application/json",
+      "title": "Wind Energy Production vs. Consumption",
+      "id": "10-wr08-wind_production",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/10/10-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./11-wr08-heating_systems/collection.json",
+      "type": "application/json",
+      "title": "Primary Heating System in Dwellings",
+      "id": "11-wr08-heating_systems",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/11/11-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./wr03_wind_nowcasting/collection.json",
+      "type": "application/json",
+      "title": "Wind Speed and Power Nowcasting",
+      "id": "wr03_wind_nowcasting",
+      "providers": [
+        "GeoSphere"
+      ],
+      "collection_group": "Energy Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./UEPI_visualizer_2/collection.json",
+      "type": "application/json",
+      "title": "Urban energy performance monitor",
+      "id": "UEPI_visualizer_2",
+      "themes": [
+        "Sustainable Cities",
+        "Energy Transition"
+      ],
+      "providers": [
+        "Austrian Institute of Technology - Digital resilient cities and regions"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-04-Urban-Energy-Performance-Monitor/Energy-performance-of-buildings-hero-1749975057844.jpg"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "child",
+      "href": "./gtif-site-itentification-wind/collection.json",
+      "type": "application/json",
+      "title": "Site Identification Wind",
+      "id": "gtif-site-itentification-wind",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind Atlas/Thumbnail/Thumbnail Wind Potential.png"
+      ],
+      "collection_group": "Energy Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./heatrisk_vienna/collection.json",
+      "type": "application/json",
+      "title": "Hitzeriskobewertung nach IPCC",
+      "shortdescription": "Hitzerisikobewertung nach Risikokonzept des IPCC für das Beispiel Wien. Die Klimagefahr wird abgebildet durch eine Kombination von Klimadaten und Stadtklimaanalysen und mit Expostionsdaten der Bevölkerung nach Altersgruppen zu hochaufgelösten Hitzeexpostionskarten verschnitten. Die Risikobewertung wird durch Vulnerabilität in Form einen Overlaylayers besonders vulnerabler Einrichtungen und relevanter Infrastruktur vervollständigt.",
+      "id": "heatrisk_vienna",
+      "themes": [
+        "Sustainable Cities"
+      ],
+      "providers": [
+        "AIT Center for Energy"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/heatrisk/Mockup_heatrisk.png"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "child",
+      "href": "./SCA/collection.json",
+      "type": "application/json",
+      "title": "DTA - Snow Covered Area",
+      "shortdescription": "Binary mask of snow covered area per pixel.",
+      "id": "SCA",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SCA.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "child",
+      "href": "./HS/collection.json",
+      "type": "application/json",
+      "title": "DTA - Snow Height",
+      "shortdescription": "Depth of the snowpack on the ground.",
+      "id": "HS",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/HS.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "child",
+      "href": "./SNWMLT/collection.json",
+      "type": "application/json",
+      "title": "DTA - Snow Melt",
+      "shortdescription": "Melt rate in mm/day.",
+      "id": "SNWMLT",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "child",
+      "href": "./SWE/collection.json",
+      "type": "application/json",
+      "title": "DTA - Snow Water Equivalent",
+      "shortdescription": "Amount of water if the snowpack were melted.",
+      "id": "SWE",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SWE.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "child",
+      "href": "./SCA-L2-DEMO/collection.json",
+      "type": "application/json",
+      "title": "GTIF demo - Snow Covered Area",
+      "shortdescription": "Binary snow cover classification.",
+      "id": "SCA-L2-DEMO",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SCA_GTIF_DEMO.png"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "child",
+      "href": "./HS-L2-DEMO/collection.json",
+      "type": "application/json",
+      "title": "GTIF demo - Snow Height",
+      "shortdescription": "Depth of snow on the ground.",
+      "id": "HS-L2-DEMO",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/HS_GTIF_DEMO.png"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "child",
+      "href": "./SWE-L2-DEMO/collection.json",
+      "type": "application/json",
+      "title": "GTIF demo - Snow Water Equivalent",
+      "shortdescription": "Amount of water if the snowpack were melted.",
+      "id": "SWE-L2-DEMO",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SWE_GTIF_DEMO.png"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "child",
+      "href": "./SNWMLT-L2-DEMO/collection.json",
+      "type": "application/json",
+      "title": "GTIF demo - Snow Melt",
+      "shortdescription": "Daily snowmelt water runoff.",
+      "id": "SNWMLT-L2-DEMO",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT_GTIF_DEMO.png"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "child",
+      "href": "./climate_indicators/collection.json",
+      "type": "application/json",
+      "title": "Climate Indicators",
+      "id": "climate_indicators",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "GeoVille",
+        "Austria Tourism"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/gtif-at-ea/gtif_at_ea.png"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc3/collection.json",
+      "type": "application/json",
+      "title": "Alpine Tourism & Climate Dynamics",
+      "id": "tourism_uc3",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "GeoVille",
+        "Austria Tourism"
+      ],
+      "thumbnail": [
+        "https://picsum.photos/seed/tourismmap/300/300"
+      ],
+      "tags": [
+        "mobility"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc3_correlation/collection.json",
+      "type": "application/json",
+      "title": "Tourism & Climate Correlation Analysis",
+      "id": "tourism_uc3_correlation",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "GeoVille",
+        "Austria Tourism"
+      ],
+      "thumbnail": [
+        "https://picsum.photos/seed/picsum/536/354"
+      ],
+      "tags": [
+        "mobility",
+        "tourism",
+        "climate"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc2_indicator/collection.json",
+      "type": "application/json",
+      "title": "Snow Depth Anomaly",
+      "id": "tourism_uc2_indicator",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "GeoVille"
+      ],
+      "thumbnail": [
+        "https://picsum.photos/seed/picsum/536/354"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "child",
+      "href": "./dailytemperatureforecast/collection.json",
+      "type": "application/json",
+      "title": "Hourly urban temperature forecast",
+      "id": "dailytemperatureforecast",
+      "themes": [
+        "Sustainable Cities"
+      ],
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_preview2.png"
+      ],
+      "tags": [
+        "daily_city_temperature"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "child",
+      "href": "./gtif_at_ew_snow_basin_data_indicator/collection.json",
+      "type": "application/json",
+      "title": "Alpine Hydropower Snow Potential Energy",
+      "id": "gtif_at_ew_snow_basin_data_indicator",
+      "themes": [
+        "Hydrology"
+      ],
+      "providers": [
+        "Waterjade",
+        "TIWAG",
+        "Sinergise Austria"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ew/assets/achensee-thumbnail.jpg"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc2_stats/collection.json",
+      "type": "application/json",
+      "title": "Climate Hazards Statistics",
+      "id": "tourism_uc2_stats",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "GeoVille",
+        "Austria Tourism"
+      ],
+      "thumbnail": [
+        "https://picsum.photos/seed/picsum/536/354"
+      ],
+      "tags": [
+        "mobility",
+        "tourism",
+        "climate"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Climate Change & Tourism"
     },
     {
       "rel": "self",

@@ -1,0 +1,63 @@
+{
+  "type": "Collection",
+  "id": "Geothermal-energy-potential",
+  "stac_version": "1.1.0",
+  "description": "# Geothermal Energy Potential \nThermal conductivity is the ability of a ground to conduct heat from one location to another without the movement of the soil conducting the heat. It is expressed in watts per meter kelvin (W/mK). The thermal diffusivity is a measure that represents how fast heat diffuses through the soil. It is measured as mm2/sec. The two models were calculated using remote sensing data  (Sentinel-1, Sentinel-3) and interpolated ground data  (bulk density, soil texture, slope DEM, organic content, land use map, natura2000) by applying a model of water distribution to the first meter of the soil profile. The thermal conductivity layer was calculated for the whole Austria for 2024 and 2025.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Geothermal Energy Potential"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "endpointtype": "COG source",
+  "title": "Geothermal Energy Potential ",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.531202171084608,
+          45.37377564328037,
+          18.365981367262602,
+          49.29204018510405
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoSphere",
+      "url": "https://www.geosphere.at/en"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 19890,
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

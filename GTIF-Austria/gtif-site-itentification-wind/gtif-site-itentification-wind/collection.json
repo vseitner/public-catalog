@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "gtif-site-itentification-wind",
+  "stac_version": "1.1.0",
+  "description": "For the identification of potential wind energy areas, a number of parameters and criteria can be selected in the left-hand box:\n\n**Terrain: elevation and terrain slope:**\n\nStrongly inclined and perturbed flow conditions are unsuitable for the operation of wind turbines.\n\nAlpine sites at high elevation might also be unsuitable for wind energy use.\n\nUsed data: 10m DEM data.\n\n**Standoff distance to settlements:**\n\nThe minimum distance to settlements can be selected in a range from 400m to 1200m.\n\nUsed data: Settlement data provided by Energiewerkstatt.\n\n**Standoff distance to roads, railways and overhead power lines:**\n\nIn order to hazards for public road traffic, standoff distances from wind turbines to major public roads can be specified.\n\nAs the potential hazard to road traffic very much depends on the traffic density and the driving speed, minor roads (residential roads, service roads, tracks, paths, etc.) are not taken into account.\n\nUsed data: OpenStreetMap\n\n**Nature preservation areas:**\n\nNature preservation areas can be selected as exclusion criteria:\n\nIUCN I to IV are national parks and nature preservation areas.\n\nIUCN V and VI are protected landscapes and areas.\n\nUsed data: UBA\n\n**Airports:**\n\nSelect Airports (with 4 km buffer) and Airfields (with 2 km buffer) as exclusion criteria.\n\nUsed data: OpenStreetMap and Austro Control\n\n**Water bodies:**\n\nSelect water bodies, including glaciated areas, as exclusion criteria.\n\nUsed data: OpenStreetMap\n\n**Military areas:**\n\nSelect military training areas as exclusion criteria.\n\nUsed data: OpenStreetMap\n\nFor the calculation of wind energy potentials, the area of interest can be specified by opening a rectangle in the map view. The parameters for this calculation can be selected in the right-hand box.\n\nWithin the specified box, hypothetical wind turbines with the specified characteristics (hub height, rotor diameter, rated power) are positioned by an algorithm seeking the optimum locations within the available area. The minimum distance between the individual turbines’ positions can be specified between three and five rotor diameters.\n\nFor each wind turbine, the annual energy production is then calculated based on the local wind power density and assuming typical production characteristics for a wind turbine of the current generation.\n\nThe wind energy potential in the considered domain is then expressed as a number of wind turbines that fit into that area and as the total annual energy, that these turbines might produce at these locations.The wind data presented on this page is based on long-term meteorological simulations, that have been interpolated and adjusted according to terrain, ground cover and in-situ wind measurements. The accuracy of the results very much depends on the local terrain complexity and the coverage of wind data. In addition, local wind systems, e.g. katabatic winds, are not covered by the numerical simulation. The data should thus be interpreted as a first indication only. In particular in complex terrain or at alpine sites, an on-site wind measurement with an adequate measurement height and duration is required to assess the wind energy potential.\n\nNo liability is assumed for the accuracy of the data.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Site Identification Wind"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind Atlas/Thumbnail/Thumbnail Wind Potential.png",
+  "collection_group": "Energy Transition",
+  "endpointtype": "COG source",
+  "title": "Site Identification Wind",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.425247028117266,
+          46.15092956805772,
+          17.33428513130213,
+          49.22046434390927
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 43853,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind Atlas/Thumbnail/Thumbnail Wind Potential.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

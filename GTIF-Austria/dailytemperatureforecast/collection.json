@@ -1,0 +1,151 @@
+{
+  "type": "Collection",
+  "id": "dailytemperatureforecast",
+  "stac_version": "1.1.0",
+  "description": "High-resolution hourly air temperature forecasts at 100 m resolution based on the AROME weather model and SURFEX urban surface modelling. Physical downscaling incorporates urban characteristics such as land cover, building density, vegetation, and anthropogenic heat emissions to represent neighbourhood-scale temperature variations and urban heat hotspots.\n\n**Resolution:** 100 m · **Update:** daily · **Forecast range:** +30 h · **Time step:** 1 h\n\nAll forecast timestamps are provided in Coordinated Universal Time (UTC).\n\nFurther background and context are available in the [narrative](https://gtif-austria.info/narratives/temperature-forecast).\n\n**Displayed variables**\n\n* 2 m Air Temperature (°C).\nHourly air temperature at pedestrian level, provided on a 100 m grid.\n\n**Purpose and use**\n* Assessment of urban heat exposure and identification of local heat hotspots\n* Support for urban climate adaptation and heat risk management\n* Analysis of neighbourhood-scale temperature variations\n \n**Note:** This dataset is provided as a pre-operational demonstration product for testing and evaluation purposes. While every effort is made to ensure data quality, no guarantee is given regarding the accuracy, completeness, or availability of the information, and GeoSphere Austria accepts no liability for its use.\n\n**Licence:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/legalcode)",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./dailytemperatureforecast/collection.json",
+      "type": "application/json",
+      "title": "Hourly urban temperature forecast",
+      "endpointtype": "COG source",
+      "id": "dailytemperatureforecast",
+      "themes": [
+        "Sustainable Cities"
+      ],
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_preview2.png"
+      ],
+      "tags": [
+        "daily_city_temperature"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "service",
+      "href": "https://statistics.gtif.eox.at/geoparquet-stats/?geoparquet_url={{{process_parquet_url}}}&bbox={{bbox.0}}&bbox={{bbox.1}}&bbox={{bbox.2}}&bbox={{bbox.3}}#.json",
+      "type": "application/json",
+      "id": "cogstats",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_preview2.png",
+  "themes": [
+    "Sustainable Cities"
+  ],
+  "tags": [
+    "daily_city_temperature"
+  ],
+  "collection_group": "Sustainable Cities",
+  "eodash:jsonform": "https://workspace-ui-public.aducat.hub-otc-sc.eox.at/api/public/share/public-3bmaz2ur-01/daily_temperature_forecast/process/form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.aducat.hub-otc-sc.eox.at/api/public/share/public-3bmaz2ur-01/daily_temperature_forecast/process/vega.json",
+  "title": "Hourly urban temperature forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          16.04,
+          47.94,
+          16.7,
+          48.48
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-11-05T00:00:00Z",
+          "2026-11-06T06:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoSphere",
+      "url": "https://www.geosphere.at/en"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "Sustainable Cities"
+    ],
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_preview2.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_preview2.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

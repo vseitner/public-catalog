@@ -1,0 +1,75 @@
+{
+  "type": "Collection",
+  "id": "brownfield_recovery_potential",
+  "stac_version": "1.1.0",
+  "description": "This dataset, officially titled \"Gewerbliche und industrielle Brachflächen – Wahrscheinlichkeitskarte (Version für Österreich 2024),\" represents a nationwide inventory of potential industrial and commercial brownfields across Austria.\nDeveloped by the Environment Agency Austria (Umweltbundesamt) in collaboration with Fraunhofer IIS, it utilizes Artificial Intelligence (AI) and remote sensing data (digital orthophotos) to identify sealed, underutilized surfaces, assigning each plot a probability score (e.g., Brownfield_Total) to prioritize areas for land recycling and reduce soil sealing.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Brownfield Recovery Potential"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/brownfield/assets/triebnigg/brownfieldcover-1749915393864.jpg",
+  "themes": [
+    "Sustainable Cities"
+  ],
+  "collection_group": "Sustainable Cities",
+  "endpointtype": "GeoJSON source",
+  "title": "Brownfield Recovery Potential",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.489274390469427,
+          45.934319198418606,
+          17.366799269340135,
+          49.61178781509044
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Fraunhofer IIS",
+      "url": "https://www.iis.fraunhofer.de/en.html"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 14993,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/brownfield/assets/triebnigg/brownfieldcover-1749915393864.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

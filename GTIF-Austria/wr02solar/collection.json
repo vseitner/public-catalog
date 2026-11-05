@@ -1,0 +1,149 @@
+{
+  "type": "Collection",
+  "id": "wr02solar",
+  "stac_version": "1.1.0",
+  "description": "The data layer *Solar Potential* shows the average available theoretical solar potential as mean from 2007 to 2023 on a seasonal basis. The solar potential can provide a quantitative foundation for the selection of suitable locations for PV systems.\n\nTime step 0001 refers to winter (DJF), 0002 to spring (MAM), 0003 to summer (JJA) and 0004 to autumn (SON).\n\nFirst, the global solar radiation is calculated with GeoSphere Austria's solar radiation model *STRAHLGRID* ([Seitner et al (2024)](https://doi.org/10.5194/ems2024-366)). The data of global radiation is provided in 15min temporal and 100m spatial resolution. In combination with temperature and wind data from GeoSphere Austria's *INCA* model ([Haiden et al (2011)](https://doi.org/10.1175/2010WAF2222451.1)) the theoretical solar potential is calculated. The calculation of the theoretical solar potential (PVpot) is based on the method of [Jerez et al (2015)](https://www.nature.com/articles/ncomms10014).\n\nThe theoretical solar potential ranges from 0 to 1. If the value of PVpot is equal to 1, the nominal PV production value specified by the system is achieved. If the cell temperature of the PV system is higher (lower) than 25°C and/or the global radiation is less (greater) than 1000 W/m², then the PV output is lower (greater) than the nominal power of the module. These threshold values can be adjusted to customer requirements.\n\nThe layer *National Parks* presents the national parks in Austria. The data can be downloaded from [data.gv.at](https://docs.umweltbundesamt.at/s/C5AKbtBp9BTPiMK).\n\nContact: [solar@geosphere.at](mailto:solar@geosphere.at)",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./WR02-PVpot/collection.json",
+      "type": "application/json",
+      "title": "Solar Potential",
+      "endpointtype": "COG source",
+      "id": "WR02-PVpot",
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/Enefit-Greeni-Purtse-hybriidpark-Ida-Virumaal-1749907570161.webp"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./WR-02-Solar-Nature/collection.json",
+      "type": "application/json",
+      "title": "National Parks",
+      "endpointtype": "COG source",
+      "id": "WR-02-Solar-Nature",
+      "providers": [
+        "Umweltbundesamt"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/Enefit-Greeni-Purtse-hybriidpark-Ida-Virumaal-1749907570161.webp"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://statistics.gtif.eox.at/geoparquet-stats/?geoparquet_url=https://gtif-austria.github.io/public-catalog/GTIF-Austria/wr02solar/WR02-PVpot/items.parquet&bbox={{bbox.0}}&bbox={{bbox.1}}&bbox={{bbox.2}}&bbox={{bbox.3}}#.json",
+      "type": "application/json",
+      "id": "cogstats",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/Enefit-Greeni-Purtse-hybriidpark-Ida-Virumaal-1749907570161.webp",
+  "collection_group": "Energy Transition",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII/process/form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII/process/solar_pot_vega.json",
+  "title": "Solar Energy Potential",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.144373204774606,
+          45.32263166908202,
+          18.06091477860709,
+          50.13400803885565
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "0001-01-01T00:00:00Z",
+          "0004-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoSphere",
+      "url": "https://www.geosphere.at/en"
+    }
+  ],
+  "summaries": {
+    "thumbnail": [
+      "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/Enefit-Greeni-Purtse-hybriidpark-Ida-Virumaal-1749907570161.webp"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/Enefit-Greeni-Purtse-hybriidpark-Ida-Virumaal-1749907570161.webp",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

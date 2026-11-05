@@ -1,0 +1,158 @@
+{
+  "type": "Collection",
+  "id": "SNWMLT",
+  "stac_version": "1.1.0",
+  "description": "## Snow Melt\n\nThis product was developed within the Digital Twin of Alps (DTA), a demonstration platform built by a Sinergise-led consortium and funded by the European Space Agency under Regional Initiative 3 (EXPRO+), ESA Contract No. 4000139281/22/I-DT. Running for two years from September 2022, the DTA combined Earth observation, numerical modelling and artificial intelligence into a single decision-support platform for water and risk management in the Alps, and serves as a stepping stone towards future Digital Twins  focused on mountainous regions. The Snow products available here were produced by Waterjade S.r.l. and serve as a development basis for the newer products available in the GTIF platform. These products are included in the GTIF platform for demonstration purposes.\n\nSnow Melt shows how much water the snowpack is being released.  Meltwater leaves the snow and makes its way into the ground, streams and rivers, and consequently into the downstream river basin. Snow Melt is a key driver of spring runoff and flooding, and it also affects slope stability, since meltwater seeping into the ground can help trigger shallow landslides. A clear view of melt is therefore valuable for flood forecasting, reservoir operation and early-warning systems for geohazards.\n\nSnow Melt was one of the latest additions in the DTA and was not available in earlier Alpine snow services. It was produced at 250 metre resolution. The product comes from the SnowMaps processing chain and the GEOtop physical model that drive the other snow layers, assimilating satellite observations and weather data and updating in near real time.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./SNWMLT/collection.json",
+      "type": "application/json",
+      "title": "DTA - Snow Melt",
+      "endpointtype": "Sentinel Hub WMS",
+      "shortdescription": "Melt rate in mm/day.",
+      "id": "SNWMLT",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "shortdescription": "Melt rate in mm/day.",
+  "eox:colorlegend": {
+    "title": "Snow Melt (mm/day)",
+    "tickFormat": ".0f",
+    "domain": [
+      0,
+      25
+    ],
+    "range": [
+      "#ffffff",
+      "#f7fbff",
+      "#c9dbf0",
+      "#a3cae2",
+      "#75afd8",
+      "#5d9dce",
+      "#5093c8",
+      "#3371b8",
+      "#2962b3",
+      "#1e529f",
+      "#163982"
+    ],
+    "markType": "rect",
+    "scaleType": "continuous"
+  },
+  "thumbnail": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT.jpg",
+  "agency": [
+    "ESA"
+  ],
+  "collection_group": "Hydrology",
+  "title": "DTA - Snow Melt",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          8.983152841195214,
+          46.12248935673261,
+          17.067990398270908,
+          48.55685052214071
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-10-02T00:00:00Z",
+          "2022-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Waterjade",
+      "url": "https://waterjade.com/"
+    }
+  ],
+  "summaries": {
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

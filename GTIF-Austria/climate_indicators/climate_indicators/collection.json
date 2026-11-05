@@ -1,0 +1,79 @@
+{
+  "type": "Collection",
+  "id": "climate_indicators",
+  "stac_version": "1.1.0",
+  "description": "### GTIF AT EA – Austrian Climate Change Explorer for Tourism\n\n\n\n\n\n*Climate changes*\n\n\n\nVisualization of projected climate changes in precipitation, temperature and wind using indicators that are relevant and useful for the tourism sector: hot days, tropical nights, beach/lake Days, Ice days, heat wave duration index, strong precipitation days, dry days and strong wind days.\n\n\n\nFor every decade between 1951 and 2100, the days that meet the climate indicators criteria are counted for each month. Monthly averages are then calculated across all years in the decade and summarized for each region (Gemeinde), elevation zone (lowest (≤10th altitude percentile), mid (45th-55th altitude percentile), highest (≥90th altitude percentile)) and average), and tourism destination, providing one value per month and decade for each location. The information is provided for Representative Concentration Pathway 4.5 (medium-emissions scenario) and 8.5 (very high-emissions scenario).\n\n\n\nRead narrative (general) and (use case 1) for a more detailed description.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Climate Indicators"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/gtif-at-ea/gtif_at_ea.png",
+  "themes": [
+    "Climate Change & Tourism"
+  ],
+  "collection_group": "Climate Change & Tourism",
+  "endpointtype": "VectorTile source",
+  "title": "Climate Indicators",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          46.4,
+          17.1,
+          49.1
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-05-26T00:00:00Z",
+          "2026-05-26T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoVille",
+      "url": "https://www.geoville.com/"
+    },
+    {
+      "name": "Austria Tourism",
+      "url": "https://b2b.austria.info/uk/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 14019,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/gtif-at-ea/gtif_at_ea.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "gtif-wind-atlas",
+  "stac_version": "1.1.0",
+  "description": "This page shows the distribution of the mean wind speed in Austria.\n\nThe wind data presented on this page is the result of numerical modelling and only an approximation to the real-world wind conditions. The accuracy of the result very much depends on the local terrain complexity and the coverage of in-situ data. In addition, local wind systems, e.g. katabatic winds, are not covered by the numerical simulation. The data should thus be interpreted as a first indication only. In particular in complex terrain or at alpine sites, an on-site wind measurement with adequate measurement height and duration is required to assess the wind energy potential. No liability is assumed for the accuracy of the data\n\nIn the creation of the wind data, coarse‑resolution (3 km) wind fields from a COSMO-CLM meteorological model have been transferred in a first step to a high‑resolution target grid (100m) using statistical downscaling based on Generalized Additive Models (GAMs). The GAM acts as a transfer function, that relates large‑scale wind patterns to fine‑scale terrain characteristics, allowing non‑linear terrain effects to be represented more realistically than with purely linear interpolation approaches.\n\nResidual differences between the downscaled wind field and station observations (including meteorological measurements (GeoSphere, DWD), energy production data (E-Control), avalanche warning stations (LWD) and AuWiPot 2013 data) are subsequently corrected using geostatistical modelling via kriging with consideration of measurement quality. This approach prevents uncertain station values from dominating local corrections while still exploiting spatially coherent information from the observation network.\n\nIn a final step, remaining small‑scale and non‑stationary errors are addressed through a non‑linear, machine‑learning‑based local correction using Bayesian Additive Regression Trees (BART). This step is applied as a subsequent fine‑scale adjustment on top of the already downscaled and geostatistical corrected wind field and therefore represents comparatively small but systematic local corrections. The model is trained on residual information from the preceding steps in combination with terrain‑related covariates (including elevation, relative height, slope, curvature (based on 10m DEM data), topographic openness and CORINE land cover data) as well as the spatial coordinates of the measurement stations.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Wind Atlas"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind%20Atlas/Thumbnail/Thumbnail%20Wind%20Atlas.png",
+  "collection_group": "Energy Transition",
+  "endpointtype": "COG source",
+  "title": "Wind Atlas",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.329330840752046,
+          46.18972579652253,
+          17.27805928781191,
+          49.2375054222361
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Energiewerkstatt",
+      "url": "https://energiewerkstatt.org/?lang=en"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 14935,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind%20Atlas/Thumbnail/Thumbnail%20Wind%20Atlas.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "type": "Collection",
+  "id": "geothermal_energy_potential",
+  "stac_version": "1.1.0",
+  "description": "Thermal conductivity is the ability of a ground to conduct heat from one location to another without the movement of the soil conducting the heat. It is expressed in watts per meter kelvin (W/mK). The thermal diffusivity is a measure that represents how fast heat diffuses through the soil. It is measured as mm2/sec. The two models were calculated using remote sensing data  (Sentinel-1, Sentinel-3) and interpolated ground data  (bulk density, soil texture, slope DEM, organic content, land use map, natura2000) by applying a model of water distribution to the first meter of the soil profile. The thermal conductivity layer was calculated for the whole Austria for 2024 and 2025.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./austria_geothermal_stats/collection.json",
+      "type": "application/json",
+      "title": "Geothermal statistics",
+      "endpointtype": "GeoJSON source",
+      "id": "austria_geothermal_stats",
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-07-Geothermal-Energy-Potential-Assessment/geothermal_potential_energy_preview.jpg"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Geothermal-energy-potential/collection.json",
+      "type": "application/json",
+      "title": "Geothermal Energy Potential ",
+      "endpointtype": "COG source",
+      "id": "Geothermal-energy-potential",
+      "providers": [
+        "GeoSphere"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Geothermal-diffusivity/collection.json",
+      "type": "application/json",
+      "title": "Geothermal Diffusivity",
+      "endpointtype": "COG source",
+      "id": "Geothermal-diffusivity",
+      "providers": [
+        "GeoSphere"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-07-Geothermal-Energy-Potential-Assessment/csv/{{year}}/{{feature.values_.BDLNAME}}.csv",
+      "type": "text/csv",
+      "id": "geothermal_stats",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-07-Geothermal-Energy-Potential-Assessment/geothermal_potential_energy_preview.jpg",
+  "collection_group": "Energy Transition",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-07-Geothermal-Energy-Potential-Assessment/process/form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-07-Geothermal-Energy-Potential-Assessment/process/vega2025.json",
+  "title": "Geothermal Energy Potential",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          44.5,
+          18.365981367262602,
+          49.9
+        ],
+        [
+          9.5,
+          44.5,
+          18.0,
+          49.9
+        ],
+        [
+          9.531202171084608,
+          45.37377564328037,
+          18.365981367262602,
+          49.29204018510405
+        ],
+        [
+          9.531202171084608,
+          45.37377564328037,
+          18.365981367262602,
+          49.29204018510405
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoSphere",
+      "url": "https://www.geosphere.at/en"
+    }
+  ],
+  "summaries": {
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-07-Geothermal-Energy-Potential-Assessment/geothermal_potential_energy_preview.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-07-Geothermal-Energy-Potential-Assessment/geothermal_potential_energy_preview.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

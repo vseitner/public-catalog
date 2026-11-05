@@ -1,0 +1,115 @@
+{
+  "type": "Collection",
+  "id": "UEPI_visualizer_2",
+  "stac_version": "1.1.0",
+  "description": "**UEPI (Urban Energy Performance Index)** combines heat‑loss signals (from LST analysis), building age, and building size into a relative retrofit‑priority score.  \n**Scale 0–100:** **0 = high retrofit need (high priority)**, **100 = good (low priority)**.  \n**Weighting:** heat loss **50%**, age **30%**, size **20%**. Critical cases (high loss + old building) and very large buildings receive additional amplification.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./UEPI_visualizer_2/collection.json",
+      "type": "application/json",
+      "title": "Urban energy performance monitor",
+      "endpointtype": "GeoJSON source",
+      "id": "UEPI_visualizer_2",
+      "themes": [
+        "Sustainable Cities",
+        "Energy Transition"
+      ],
+      "providers": [
+        "Austrian Institute of Technology - Digital resilient cities and regions"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-04-Urban-Energy-Performance-Monitor/Energy-performance-of-buildings-hero-1749975057844.jpg"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://mapsneu.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{z}/{y}/{x}.jpeg",
+      "type": "image/png",
+      "title": "Geoland Basemap Orthofoto",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "bmaporthofoto30cm",
+      "attribution": "{ Datenquelle: <a href=\"https://basemap.at\" target=\"_blank\" property=\"dct:title\">basemap.at</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-04-Urban-Energy-Performance-Monitor/Energy-performance-of-buildings-hero-1749975057844.jpg",
+  "themes": [
+    "Sustainable Cities",
+    "Energy Transition"
+  ],
+  "collection_group": "Sustainable Cities",
+  "title": "Urban energy performance monitor",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          16.255767946312947,
+          48.08438283145376,
+          16.316170870817853,
+          48.10503139601241
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Austrian Institute of Technology - Digital resilient cities and regions",
+      "url": "https://www.ait.ac.at/en/solutions/sustainable-cities-regions-and-living-spaces"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "Sustainable Cities",
+      "Energy Transition"
+    ],
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-04-Urban-Energy-Performance-Monitor/Energy-performance-of-buildings-hero-1749975057844.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-04-Urban-Energy-Performance-Monitor/Energy-performance-of-buildings-hero-1749975057844.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

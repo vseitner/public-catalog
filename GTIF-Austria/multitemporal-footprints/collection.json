@@ -1,0 +1,136 @@
+{
+  "type": "Collection",
+  "id": "multitemporal-footprints",
+  "stac_version": "1.1.0",
+  "description": "Ubicube provides a powerful way to monitor and analyze urban development with our multi-temporal building footprint dataset. This interactive tool allows you to explore how construction activity has evolved across a selected municipality of Lower Austria from 2017 to 2025. \n\nUsing the time slider, you can move year by year to see where new buildings have appeared. The color intensity of each footprint reflects the construction year: \n* Lighter red shades represent buildings identified in earlier years (e.g., 2017–2018). \n* Darker red shades highlight the most recent constructions (up to 2025). \n![](https://gtif-multitemporal-footprints.s3.eu-central-1.amazonaws.com/Screenshot+from+2025-09-25+11-57-50.png)\n\nThis makes it easy to spot growth patterns and development hotspots over time.\n\nOur unique advantage is the ability to detect and deliver new constructions on a yearly basis. Leveraging Copernicus Sentinel-1 and Sentinel-2 satellite data, Ubicube monitors changes in land use over time. These changes are then validated and extracted from high-resolution imagery, ensuring precise and reliable building footprint datasets. \n\nThis combination of temporal monitoring + high-resolution extraction provides a detailed, trustworthy view of construction trends that can support urban planning, market analysis, infrastructure development, and investment decisions. ",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./multitemporal-footprints/collection.json",
+      "type": "application/json",
+      "title": "Multitemporal Footprints",
+      "endpointtype": "GeoJSON source",
+      "id": "multitemporal-footprints",
+      "themes": [
+        "Sustainable Cities"
+      ],
+      "providers": [
+        "ubicube"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-sc.hub-otc.eox.at/api/public/share/public-4wazei3y-02/multitemporal_footprints/Extraction_partial.png"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-at-sc.hub-otc.eox.at/api/public/share/public-4wazei3y-02/multitemporal_footprints/Extraction_partial.png",
+  "themes": [
+    "Sustainable Cities"
+  ],
+  "collection_group": "Sustainable Cities",
+  "title": "Multitemporal Footprints",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          16.247910107900907,
+          48.05417879014069,
+          16.33071432197898,
+          48.11285804065625
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ubicube",
+      "url": "https://www.ubicube.eu/"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "Sustainable Cities"
+    ],
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-at-sc.hub-otc.eox.at/api/public/share/public-4wazei3y-02/multitemporal_footprints/Extraction_partial.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-at-sc.hub-otc.eox.at/api/public/share/public-4wazei3y-02/multitemporal_footprints/Extraction_partial.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

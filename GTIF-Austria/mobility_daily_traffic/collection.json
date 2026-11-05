@@ -1,0 +1,151 @@
+{
+  "type": "Collection",
+  "id": "mobility_daily_traffic",
+  "stac_version": "1.1.0",
+  "description": "## Purpose and Context\nThis layer presents daily traffic volumes for the entire high-level road network and represents the spatially complete and temporally high-resolution outcome of the HFLB data scaling procedure.\nIt builds directly on the monthly calibration against ASFINAG traffic count data and enables detailed analysis of short-term temporal dynamics in traffic patterns.\n\nThis layer provides a consistent, network-wide, and daily-resolved traffic dataset, enabling analysis of weekday–weekend and holiday effects, assessment of temporal variability in traffic intensity, and integration with high-resolution EO-based environmental and air quality data. It forms a key input for analyses requiring fine temporal granularity across the entire road network.\n\n## Data Basis\nThe layer is based exclusively on HFLB mobility data and visualizes two traffic volume representations:\n- Trajectories (max): Raw, unscaled HFLB traffic volumes describing relative daily traffic intensity.\n- Trajectories (scaled): Daily traffic volumes derived by applying the previously determined global scaling factor, resulting in calibrated traffic estimates.\nBoth variables are available for all road segments of the high-level road network and for the full analysis period.\n\n## Visualization and Interaction\nDaily traffic volumes are displayed on the map for all road segments.\nWhen selecting a road segment, a time series of daily traffic volumes is shown in a line chart covering the full observation period.\nThe visualization differentiates between weekdays, weekends, and public holidays. This supports the identification of recurring daily and weekly traffic patterns, short-term fluctuations, and differences between raw and scaled traffic volumes.\n\n## Interpretation and Limitations\nThe scaled daily traffic volumes represent calibrated estimates derived from monthly reference data. While this approach enables high temporal resolution analyses, it also implies that absolute daily traffic volumes are inferred rather than directly observed. Local, short-term deviations cannot be validated against daily reference counts.\nThe layer is therefore intended for pattern analysis and comparative assessments, rather than for precise daily traffic quantification at individual road segments.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./mobility_daily_traffic/collection.json",
+      "type": "application/json",
+      "title": "Daily Traffic Volume",
+      "endpointtype": "tipg",
+      "id": "mobility_daily_traffic",
+      "themes": [
+        "mobility-transition"
+      ],
+      "providers": [
+        "AIT Center for Transport Technologies"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_monthly_daily.jpg"
+      ],
+      "tags": [
+        "mobility"
+      ],
+      "collection_group": "Mobility Transition"
+    },
+    {
+      "rel": "service",
+      "href": "https://eoapi.workspace.gtif-eox.hub-otc.eox.at/vector/collections/public.timeseries_mobility_daily_by_id/items?target_id={{feature.values_.unique_id }}&f=json&limit=10000&geom-column=#.json",
+      "type": "text/csv",
+      "id": "timeseries",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_monthly_daily.jpg",
+  "themes": [
+    "mobility-transition"
+  ],
+  "tags": [
+    "mobility"
+  ],
+  "collection_group": "Mobility Transition",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/test/form_daily_volume.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/test/chart_daily_volume.json",
+  "title": "Daily Traffic Volume",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          15.0,
+          47.69,
+          17.7,
+          48.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-07-01T00:00:00Z",
+          "2022-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "AIT Center for Transport Technologies",
+      "url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-transport-technologies"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "mobility-transition"
+    ],
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_monthly_daily.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_monthly_daily.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

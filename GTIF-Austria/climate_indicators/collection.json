@@ -1,0 +1,150 @@
+{
+  "type": "Collection",
+  "id": "climate_indicators",
+  "stac_version": "1.1.0",
+  "description": "### GTIF AT EA – Austrian Climate Change Explorer for Tourism\n\n\n\n\n\n*Climate changes*\n\n\n\nVisualization of projected climate changes in precipitation, temperature and wind using indicators that are relevant and useful for the tourism sector: hot days, tropical nights, beach/lake Days, Ice days, heat wave duration index, strong precipitation days, dry days and strong wind days.\n\n\n\nFor every decade between 1951 and 2100, the days that meet the climate indicators criteria are counted for each month. Monthly averages are then calculated across all years in the decade and summarized for each region (Gemeinde), elevation zone (lowest (≤10th altitude percentile), mid (45th-55th altitude percentile), highest (≥90th altitude percentile)) and average), and tourism destination, providing one value per month and decade for each location. The information is provided for Representative Concentration Pathway 4.5 (medium-emissions scenario) and 8.5 (very high-emissions scenario).\n\n\n\nRead narrative (general) and (use case 1) for a more detailed description.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./climate_indicators/collection.json",
+      "type": "application/json",
+      "title": "Climate Indicators",
+      "endpointtype": "VectorTile source",
+      "id": "climate_indicators",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "GeoVille",
+        "Austria Tourism"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/gtif-at-ea/gtif_at_ea.png"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "service",
+      "href": "https://eoapi.workspace.gtif-eox.hub-otc.eox.at/vector/collections/public.climate_flat_geoms_master/items?limit=500&bbox-only=true&filter=id%20%3D%20%27{{feature}}%27",
+      "type": "application/json",
+      "id": "timeseries",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/gtif-at-ea/gtif_at_ea.png",
+  "themes": [
+    "Climate Change & Tourism"
+  ],
+  "collection_group": "Climate Change & Tourism",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ea/uc1/form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ea/uc1/chart.json",
+  "title": "Climate Indicators",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          46.4,
+          17.1,
+          49.1
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-05-26T00:00:00Z",
+          "2026-05-26T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoVille",
+      "url": "https://www.geoville.com/"
+    },
+    {
+      "name": "Austria Tourism",
+      "url": "https://b2b.austria.info/uk/"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "Climate Change & Tourism"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/gtif-at-ea/gtif_at_ea.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/gtif-at-ea/gtif_at_ea.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

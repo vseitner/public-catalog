@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "01-wr08_energy_data",
+  "stac_version": "1.1.0",
+  "description": "Austria’s energy transition is progressing rapidly. From 2023 to 2024, electricity generation from renewable energy sources increased by 13 percent. The strongest relative growth within individual federal states was recorded in Vorarlberg, Tyrol, and Carinthia. By energy source, solar power saw the largest increase in installed capacity at 18 percent, followed by wind power (15 percent) and hydropower (12 percent). However, expansion differs significantly between the federal states.\nHydropower remains Austria’s most important renewable electricity source. Accordingly, Tyrol, Upper Austria, and Lower Austria lead in renewable generation, largely due to major hydropower plants along the Danube, Inn, Drau, Enns, and Mur rivers. The greatest expansion potential lies in photovoltaics and wind energy, where there is still considerable room for improvement. For example, in 2024 Lower Austria alone generated more electricity from photovoltaics than four western federal states combined. Additionally, five western states together accounted for only 1.60 percent of total wind energy production. To meet its national targets, Austria will need stronger efforts in certain regions, including the designation of more suitable areas for wind farms and large-scale PV systems, as well as further expansion of grids, storage systems, and flexibility options.\nThe data depicted is based on information published on the energie.gv.at website.\nElectricity generation from renewable energies in the federal states in GWh 2024, source: Energy balance of Statistics Austria 2024 via energie.gv.at, accessed on: March 4, 2026, 11:13 a.m.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Renewable Energy Production per State"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/01/01-austrian_renewable_energy.png",
+  "collection_group": "Energy Dashboard",
+  "endpointtype": "GeoJSON source",
+  "title": "Renewable Energy Production per State",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.54356624389958,
+          46.23366880427099,
+          17.214922341866227,
+          49.02111030223346
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 25476,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/01/01-austrian_renewable_energy.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

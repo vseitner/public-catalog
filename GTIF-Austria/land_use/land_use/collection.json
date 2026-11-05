@@ -11,114 +11,14 @@
       "title": "GTIF Austria"
     },
     {
-      "rel": "item",
-      "href": "./land_use/2015/2015-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-01-01T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2015_Austria_hrmsd_3857_COG.tif"
-      ]
-    },
-    {
-      "rel": "item",
-      "href": "./land_use/2016/2016-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-01-01T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2016_Austria_hrmsd_3857_COG.tif"
-      ]
-    },
-    {
-      "rel": "item",
-      "href": "./land_use/2017/2017-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-01-01T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2017_Austria_hrmsd_3857_COG.tif"
-      ]
-    },
-    {
-      "rel": "item",
-      "href": "./land_use/2018/2018-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-01-01T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2018_Austria_hrmsd_3857_COG.tif"
-      ]
-    },
-    {
-      "rel": "item",
-      "href": "./land_use/2019/2019-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-01-01T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2019_Austria_hrmsd_3857_COG.tif"
-      ]
-    },
-    {
-      "rel": "item",
-      "href": "./land_use/2020/2020-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-01-01T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2020_Austria_hrmsd_3857_COG.tif"
-      ]
-    },
-    {
-      "rel": "item",
-      "href": "./land_use/2021/2021-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-01-01T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2021_Austria_hrmsd_3857_COG.tif"
-      ]
-    },
-    {
-      "rel": "item",
-      "href": "./land_use/2022/2022-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-01-01T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2022_Austria_hrmsd_3857_COG.tif"
-      ]
-    },
-    {
-      "rel": "item",
-      "href": "./land_use/2023/2023-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-01-01T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/GHG-KIT_LULUCF_AD_2023_Austria_hrmsd_3857_COG.tif"
-      ]
-    },
-    {
-      "rel": "style",
-      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/LULUCF_style.json",
-      "type": "text/cog-styles",
-      "asset:keys": [
-        "LULUCF"
-      ]
-    },
-    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
       "title": "Land Use, Land Use Change and Forestry (LULUCF)"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
-  "themes": [
-    "TBD"
-  ],
-  "tags": [
-    "land use"
-  ],
-  "agency": [
-    "None"
-  ],
-  "subcode": "LULUCF",
-  "satellite": [
-    "Combined"
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "eox:colorlegend": {
     "title": "Land cover classes",
@@ -163,8 +63,21 @@
       "Alpine dwarf shrub heaths"
     ],
     "scaleType": "categorical",
-    "markType": "rectangle"
+    "markType": "rect"
   },
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg",
+  "themes": [
+    "TBD"
+  ],
+  "tags": [
+    "land use"
+  ],
+  "agency": [
+    "None"
+  ],
+  "satellite": [
+    "Combined"
+  ],
   "endpointtype": "COG source",
   "title": "LULUCF Time Series",
   "extent": {
@@ -188,9 +101,24 @@
     }
   },
   "license": "other",
+  "providers": [
+    {
+      "name": "GeoVille",
+      "url": "https://www.geoville.com/"
+    }
+  ],
   "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 16145,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

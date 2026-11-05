@@ -1,0 +1,91 @@
+{
+  "type": "Collection",
+  "id": "predictive_maintenance",
+  "stac_version": "1.1.0",
+  "description": "The aim of this service is to provide satellite-derived geospatial indicators of the deformation status of roads, railways and bridges at well-defined instances in time.\n\nThe service is based on interferometry measurements conducted in multiple Synthetic Aperture Radar satellite observations from the same location on Earth (InSAR).\n\nThe European Ground Motion Service (EGMS) provides processed InSAR data from the Copernicus Sentinel-1 satellite mission. This data is combined with the geographic coordinates of the road infrastructure and its components such as bridges. The data is then grouped into clusters aligned with 50-meter intervals along the highway axis.\n\nFor each zone, vertical settlements are calculated, and a linear trend is determined, along with an assessment of the data's reliability.\n\nWithin the framework of the ESA - Green Transition Information Factories project the potentials of this capability are demonstrated on a corridor of approximately 45 km length.\n\nAny linear object of interest (road, railway, bridge, etc.) is represented by a series of points on the map along the axis of the infrastructure asset. For each of these points the measured ground movement is displayed, based on InSAR data provided by the EGMS. The points are color-coded, with white points showing no significant deformations, red points showing subsidence and blue points highlighting uplifts. Points are marked grey if no reliable data is available due to insignificant number of reflection points for the radar signal or unacceptably high scatter in the readings.\n\nThe reliability of the point, as expressed by the number of available persistent scatterers in the segment, is expressed by the diameter of the circle used as a marker.\n\nIf a particular point is selected, the location of all persistent scatterers which it represents can be displayed. Furthermore, the time history of deformations for the selected point may be plotted.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Transport Infrastructure Predictive Maintenance"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "eox:colorlegend": {
+    "title": "Ground movement",
+    "range": [
+      "#8b0000",
+      "#e6b31a",
+      "#ffffff",
+      "#87cefa",
+      "#00008b"
+    ],
+    "domain": [
+      "-20 to -10 mm/year",
+      "-10 to -5 mm/year",
+      "-5 to 5 mm/year",
+      "5 to 10 mm/year",
+      "10 to 20 mm/year"
+    ],
+    "scaleType": "categorical",
+    "markType": "rect"
+  },
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-10-Transport-Infrastructure-Predictive-Maintenance/WR10_thumbnail.jpg",
+  "collection_group": "Mobility Transition",
+  "endpointtype": "GeoJSON source",
+  "title": "Transport Infrastructure Predictive Maintenance",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.607703910147158,
+          47.28857258754364,
+          9.763577928600249,
+          47.452296376710194
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "AIT Center for Transport Technologies",
+      "url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-transport-technologies"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 14617,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-10-Transport-Infrastructure-Predictive-Maintenance/WR10_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

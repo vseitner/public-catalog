@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "10-wr08-wind_production",
+  "stac_version": "1.1.0",
+  "description": "This description for a data publication analyzes the relationship between regional electricity consumption and wind power generation, highlighting the varying levels of energy self-sufficiency across Austria.\n**Wind Energy and Regional Energy Autonomy**\nWhen comparing electricity consumption directly to wind power generation, a striking hierarchy of regional self-sufficiency emerges, mirroring the disparities observed in the photovoltaic sector. This metric reveals which provinces are successfully decoupling their energy needs from external sources and which remain heavily reliant on imports.\n**The Net Exporters and Regional Leaders**\nBurgenland stands as a unique outlier and the undisputed national leader in energy autonomy. The state currently produces approximately 187% of its total electricity demand through wind power alone. This surplus allows Burgenland to function as a vital net exporter of renewable energy, supporting the wider national grid.\nLower Austria secures the second position in the national ranking. The province currently covers 44.5% of its total internal electricity consumption through wind generation, marking it as a critical pillar of regional energy security and a successful model for large-scale integration.\nThis information has been published initially on https://www.energie.gv.at\nComparison of electricity generation from wind power and electricity consumption in the federal states in 2024, source: Energy balance 2024 from Statistics Austria via energie.gv.at, accessed on: February 26, 2026, 10:38 a.m.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Wind Energy Production vs. Consumption"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/10/10-austrian_renewable_energy.png",
+  "collection_group": "Energy Dashboard",
+  "endpointtype": "GeoJSON source",
+  "title": "Wind Energy Production vs. Consumption",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.561311497636542,
+          46.309689940845686,
+          17.188098254092136,
+          49.16426472440946
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 25475,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/10/10-austrian_renewable_energy.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

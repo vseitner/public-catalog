@@ -1,0 +1,169 @@
+{
+  "type": "Collection",
+  "id": "HS",
+  "stac_version": "1.1.0",
+  "description": "## Snow Depth (Snow Height)\n\nThis product was developed within the Digital Twin of Alps (DTA), a demonstration platform built by a Sinergise-led consortium and funded by the European Space Agency under Regional Initiative 3 (EXPRO+), ESA Contract No. 4000139281/22/I-DT. Running for two years from September 2022, the DTA combined Earth observation, numerical modelling and artificial intelligence into a single decision-support platform for water and risk management in the Alps, and serves as a stepping stone towards future Digital Twins  focused on mountainous regions. The Snow products available here were produced by Waterjade S.r.l. and serve as a development basis for the newer products available in the GTIF platform. These products are included in the GTIF platform for demonstration purposes.\n\nSnow Depth, also referred to as snow height, is the most intuitive snow measurement: how much snow is lying on the ground, given as a height (here in cm). This measurement gives an immediate picture of how the snowpack is building up or thinning out across the mountains through the winter, and it is a familiar reference point for a wide range of users, from civil protection and the tourism sector to researchers and anyone following the season.\n\nThe Snow Depth was modelled daily through the winter season (October to June) at 250 metre resolution across the entire Alps (here provided over Austria), with the full record covering the 2017 to 2022 winters. They were produced with the SnowMaps processing chain and the GEOtop physical model, blending reanalysis and locally downscaled weather data with satellite-derived snow-cover information from Sentinel-1 and Sentinel-2, and correcting the result against ground measurements from weather stations and snow gauges. Snow Depth is used as an input to the hydrological models behind the platform's river discharge and drought-monitoring services.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./HS/collection.json",
+      "type": "application/json",
+      "title": "DTA - Snow Height",
+      "endpointtype": "Sentinel Hub WMS",
+      "shortdescription": "Depth of the snowpack on the ground.",
+      "id": "HS",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/HS.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "shortdescription": "Depth of the snowpack on the ground.",
+  "eox:colorlegend": {
+    "title": "Snow Height (cm)",
+    "tickFormat": ".0f",
+    "domain": [
+      "2-5 cm",
+      "6-10 cm",
+      "11-20 cm",
+      "21-40 cm",
+      "41-60 cm",
+      "61-80 cm",
+      "81-100 cm",
+      "101-120 cm",
+      "121-160 cm",
+      "161-200 cm",
+      "201-250 cm",
+      "> 250 cm"
+    ],
+    "range": [
+      "#ffffad",
+      "#ffdd2f",
+      "#99ff81",
+      "#1dd307",
+      "#00ffff",
+      "#0078ff",
+      "#000096",
+      "#7f007f",
+      "#ef0aff",
+      "#ff7300",
+      "#996633",
+      "#ff0000"
+    ],
+    "markType": "rect",
+    "scaleType": "categorical"
+  },
+  "thumbnail": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/HS.jpg",
+  "agency": [
+    "ESA"
+  ],
+  "collection_group": "Hydrology",
+  "title": "DTA - Snow Height",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          8.983152841195214,
+          46.12248935673261,
+          17.067990398270908,
+          48.55685052214071
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-10-02T00:00:00Z",
+          "2022-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Waterjade",
+      "url": "https://waterjade.com/"
+    }
+  ],
+  "summaries": {
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/HS.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/HS.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

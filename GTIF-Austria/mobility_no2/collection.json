@@ -1,0 +1,151 @@
+{
+  "type": "Collection",
+  "id": "mobility_no2",
+  "stac_version": "1.1.0",
+  "description": "## Purpose and Context\nThis layer explores the relationship between daily mobility indicators and atmospheric NO₂ concentrations by jointly analyzing HFLB-based mobility metrics and EO-based air quality data. \nEarth observation satellites, such as the TROPOMI instrument on Copernicus Sentinel-5P, provide spatially continuous measurements of tropospheric nitrogen dioxide (NO₂), a pollutant commonly associated with traffic and industrial activities.\nThe layer is designed as an exploratory analysis tool to support the identification of potential spatial and temporal associations between mobility patterns and air quality indicators, rather than to establish causal relationships.\n\n## Data Basis\nThe analysis integrates two main data sources:\n1) HFLB Mobility Indicators (daily resolution):\n - Speed\n - Motorized Share\n - Motorized Count\n - Trajectories (max)\n - Trajectories (scaled)\n\n2) EO-based NO₂ Concentrations (Sentinel-5P / TROPOMI): Tropospheric NO₂ concentrations derived from satellite observations.\nTo reduce atmospheric and observational disturbances, a quality masking procedure is applied to the NO₂ data. Only pixels with a Quality Assurance value ≥ 75 are considered, excluding measurements affected by clouds, aerosols, or unfavorable viewing conditions.\n\n## Spatial and Temporal Harmonization\nSatellite observations are acquired under varying viewing geometries, resulting in differing pixel footprints. To ensure spatial comparability NO₂ data are regridded onto a fixed, regular grid. An equirectangular grid with a resolution of 0.022° (~3 km) is used. Regridding is performed using a nearest neighbour approach on masked data.\nDue to strong day-to-day variability driven by meteorological conditions, NO₂ concentrations are temporally aggregated using a 14-day averaging window.\nOnly grid cells with at least two valid observations within the averaging period are considered.\nThis temporal aggregation reduces meteorological noise and enhances the visibility of signals related to human activity.\n\nTo enable a consistent spatial comparison between mobility and air quality indicators, mobility indicators are aggregated onto the same regular spatial grid.\n\n## Visualization and Interaction\nThe map visualizes gridded daily mobility indicators and NO₂ concentrations. By selecting an individual grid cell, scatter plots are generated showing the correlation between each mobility indicator and the corresponding NO₂ concentration.\nThis interactive functionality allows users to explore indicator-specific relationships, compare the explanatory behavior of different mobility metrics, and to identify outliers and non-linear patterns.\n\n## Interpretation and Limitations\nObserved correlations should be interpreted with caution. Atmospheric NO₂ concentrations are influenced by multiple factors, including meteorological conditions or background pollution levels. As a result, the displayed relationships represent statistical associations rather than direct emission–immission linkages.\nThe layer is therefore intended for hypothesis generation and comparative exploration, not for quantitative impact assessment.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./mobility_no2/collection.json",
+      "type": "application/json",
+      "title": "Daily mobility vs NO2",
+      "endpointtype": "tipg",
+      "id": "mobility_no2",
+      "themes": [
+        "mobility-transition"
+      ],
+      "providers": [
+        "AIT Center for Transport Technologies"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_traffic_no2_2.jpg"
+      ],
+      "tags": [
+        "mobility"
+      ],
+      "collection_group": "Mobility Transition"
+    },
+    {
+      "rel": "service",
+      "href": "https://eoapi.workspace.gtif-eox.hub-otc.eox.at/vector/collections/public.timeseries_mobility_no2_by_id/items?target_id={{feature.values_.object_id }}&f=json&limit=10000&geom-column=#.json",
+      "type": "text/csv",
+      "id": "timeseries",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_traffic_no2_2.jpg",
+  "themes": [
+    "mobility-transition"
+  ],
+  "tags": [
+    "mobility"
+  ],
+  "collection_group": "Mobility Transition",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/test/form_no2.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/test/chart_no2.json",
+  "title": "Daily mobility vs NO2",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          15.0,
+          47.69,
+          17.7,
+          48.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-07-01T00:00:00Z",
+          "2022-12-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "AIT Center for Transport Technologies",
+      "url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-transport-technologies"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "mobility-transition"
+    ],
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_traffic_no2_2.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_traffic_no2_2.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

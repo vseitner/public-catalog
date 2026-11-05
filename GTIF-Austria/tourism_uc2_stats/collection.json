@@ -1,0 +1,142 @@
+{
+  "type": "Collection",
+  "id": "tourism_uc2_stats",
+  "stac_version": "1.1.0",
+  "description": "**GTIF AT EA – Technical description of use cases for the Austrian Climate Change Explorer**\n\nClimate change poses enormous challenges for tourism regions. Planning and evaluating scenarios and climate-smart options for action require specific climate data and indicators to supplement tourism-specific data. The “Climate Change Explorer” is designed to provide decision-makers in tourism regions with a user-friendly presentation of the expected impacts of climate change and an assessment of risk factors in tourism regions based on geodata. The Climate Change Explorer on GTIF provides a comprehensive tool for analyzing and visualizing the impacts of climate change on tourism in Austria, featuring three layers — corresponding to three use cases. \n\n1. **Climatic Changes** \n\nGeneral description  \nProjection of evolution of key climate variables [^1] over time for temperature, precipitation and wind, including the analysis of long-term trends and derived indicators:\n\n* Hot days: Number of days with daily maximum temperature above 30°C  \n* Tropical nights: Number of days with daily minimum temperature above 20°C  \n* Beach/Lake Days: Number of days with daily maximum temperature above 23°C and daily mean radiation more than 250 W/m²  \n* Ice days: Number of days with daily maximum temperature below 0°C   \n* Heat wave duration index (HWDI): Annual count of days with at least 3 consecutive days when daily maximum temperature exceeds the 90th percentile threshold (based on reference period 1961-01-01 to 1990-12-30) for the years 1991 to 2100\\.  \n* Strong precipitation days: Number of days with daily precipitation amount equal to or higher than 10 mm   \n* Dry days: Number of days with less than 1mm precipitation  \n* Strong wind​: Number of days when mean wind speed exceeds 11,1 m/s\n\nThe explorer can display each of these indicators in respective layers of this use case.\n\nInput \n\n* Global warming layers\n\nThe projections are based on the ÖKS15 dataset[^2] from GeoSphere Austria, resulting from the Representative Concentration Pathways, namely “scenarios that include time series of emissions and concentrations of the full suite of greenhouse gases and aerosols and chemically active gases, as well as land use/land cover (Moss et al.,2008; van Vuuren et al., 2011). \\[…\\] Four RCPs produced from integrated assessment models were selected from the published literature and used in the IPCC Fifth Assessment \\[…\\], spanning the range from approximately below 2°C warming to high (\\>4°C) warming best-estimates by the end of the 21st century: RCP2.6, RCP4.5 and RCP6.0 and RCP8.5.”[^3] The two for which ÖKS15 is available have been selected for the project:\n\n- RCP4.5: “intermediate stabilisation pathways in which radiative forcing is limited at approximately 4.5 Wm–2 in 2100”3 .   \n- RCP8.5: “high pathway which leads to \\>8.5 W m–2 in 2100”3\n\nThe scenario data of the used CORDEX models for maximum temperature, minimum temperature, mean relative humidity, total precipitation, global radiation and mean 10-m wind are available as specific rasters with a daily temporal resolution from 01.01.2011 to 31.12.2100 and a spatial resolution of 1km on the GeoSphere’s website[^4]. On the GTIF platform, users can select one of them to display climatic changes according to the degree of global warming.  \n\n* LAU2 municipalities layer \n\nThe visualization of municipalities is based on polygons vectors matching the lower local administrative units (LAU2), which conforms to a spatial resolution of 1:1 million. The data is owned by Eurostat and updated every year (in this case the data from the year 2024 [^5] has been used).\n\n* Touristic destination layer\n\nThe visualization of touristic destinations as a polygons layer is based on the LAU2 municipalities layer (see above, same metadata), merged together when belonging to the same tourism region (tourism regions map provided by Österreich Werbung).\n\nProcessing method\n\nFor each decade (1951–2100), the days fulfilling the climatic indicator criterion are counted for each month. The monthly counts are then averaged across all years within the respective decade to obtain a monthly climatology. The grid cell values are then spatially averaged within the defined spatial units (LAU2 regions and elevation zones, touristic destinations) to obtain one indicator value per polygon, month, and decade.\n\nOutput  \nThe metrics for the indicators are being derived in format Geojson with the following resolution:\n\n* Spatial resolution: Municipality (LAU2) level; across three elevation zones – valley bottom (10% lowest elevation or under the 10th percentile), mid-altitude (10% mean elevation or between 45th and 55th percentile), mountain peaks (10% highest elevation or above the 90th percentile) – and the mean of the whole municipality area.  \n* Temporal resolution: Monthly values aggregated into decadal averages, projected until 2100\\.\n\nData licenses\n\n2. **Climate threats**\n\nAssessment of the increasing exposure of tourism destinations to climate-related hazards. In this use case, the term “threat” refers to the impact of temperature changes for tourism. In the scope of the project, snow loss has been assessed as one example of these threats. The development of this indicator aims at completing those provided by the Platform HORA[^6] [of the BMLUK, already assessing natural hazards and risks all over Austria.](https://hora.gv.at/) \n\nInput\n\nThe data for snow depth comes from the public dataset SNOWGRID-CL (SNOWGRID Climate Version 2.1)[^7] owned by GeoSphere Austria providing daily updated analyses of daily snow depth and snow water equivalent (SWE) on a 1x1 km grid covering all of Austria since 01.01.1961.\n\nProcessing method:\n\nAverage snow depth between November and April across Austria is compared between a historical reference period (1961–1990) and recent years (2011–2026) at a spatial resolution of 1 km. For each location, the snow depth anomaly is calculated as both an absolute change in centimeters and a percentage change relative to the historical average.\n\nOutput\n\nThe layer “snow depth changes” shows the percentage of recent gain or loss of snow depth in centimeters.\n\n* Spatial resolution: 1km grid  \n* Temporal resolution: mean of November bis April from 2011 to 2026 compared to November bis April from 1961 to 1990\n\n3. **Tourism indicators / Climate Change Impact on Tourism Metrics**\n\nLink of climate change metrics with tourism-relevant indicators in order to inform and let professionals of the tourism sector assess the potential sectoral impacts of climate change. This use case is merely descriptive (and not analyzing) to avoid any misleading causality conclusions and to serve any type of inquiry and need of interpretation of tourism professionals.   \n\nInput\n\n* Precipitation from SPARTACUS v2.1[^8] , a gridded, daily-updated dataset by GeoSphere Austria showing the spatial distribution of observed precipitation (RR) on a day-to-day basis since 1961, with a resolution of one kilometer, covering Austria.  \n* Maximal temperature from SPARTACUS v2.1[^9] , a gridded, daily-updated dataset by GeoSphere Austria showing the spatial distribution of observed maximum temperatures (TX) on a day-to-day basis since 1961, with a resolution of one kilometer, covering Austria.  \n* Snow depth from SNOWGRID-CL (SNOWGRID Climate Version 2.1)[^10], a gridded, daily-updated dataset by GeoSphere Austria showing the snow depth and snow water equivalent (SWE) on a day-to-day basis since 1961, with a resolution of one kilometer, covering Austria.  \n* Touristic destination layer: The visualization of touristic destinations as a polygons layer is based on the LAU2 municipalities layer (see above use case 1, same metadata), merged together when belonging to the same tourism region (tourism regions map provided by Österreich Werbung).  \n* Overnight stay forecast *(Nächtigungsprognose)[^11]*: Daily overnight stay forecast for hotels and vacation rentals in Austrian tourism regions. The model was implemented in R by a team from the Joanneum Research, the Vienna University of Technology, and the AAU, and is made freely available with the support of Österreich Werbung.\n\nProcessing method  \nDaily snow depth, maximum temperature, and precipitation are spatially averaged over each Austrian tourism region for the period 2023–2026. Snow depth values are masked outside the winter season (November–April). The resulting daily per-region values are then combined with forecasted tourist overnight stays, producing a single table.  \nAlso the overnight stay forecast have been merged to tourism regions.\n\nOutput  \nFor each day between 01.01.2023 and 15.02.2026, the explorer can show for each tourism region following layers:\n\n* the tourism region’s maximum temperature   \n* the tourism region’s precipitation  \n* the tourism region’s mean snow depth​   \n* ​the tourism region’s total overnight stays [^12], based on \n\nThese layers all have the same resolution:\n\n* Spatial resolution: tourism destination (see above use case 1, same metadata)  \n* Temporal resolution: daily, divided by winter and summer seasons between 2023 and 2026 (limited by the availability of data for overnight stays)\n\n[^1]:  selected from the list p. 15-17 of the project end report *ÖKS15 – Klimaszenarien für Österreich. Daten, Methoden und Klimaanalyse* by GeoSphere Austria (Chimani B., Heinrich G., Hofstätter M., Kerschbaumer M., Kienberger S., Leuprecht A., Lexer A., Peßenteiner S., Poetsch M.S., Salzmann M., Spiekermann R., Switanek M. und H.Truhetz, 2016, Wien). Available online: [https://data.hub.geosphere.at/dataset/oks15\\_endbericht](https://data.hub.geosphere.at/dataset/oks15_endbericht) \n\n[^2]:  Data source: ÖKS15 GeoSphere Austria (Leuprecht A., Truhetz, H.), 2018\\. Available online: [https://data.hub.geosphere.at/group/oks15](https://data.hub.geosphere.at/group/oks15) \n\n[^3]:  APCC (2025), Second Austrian Assessment Report on Climate Change (AAR2). D. Huppmann, M. Keiler, K. Riahi, H. Rieder (eds.). Austrian Academy of Sciences Press, Vienna, Austria. Glossar. Available online: [https://aar2.ccca.ac.at/glossar](https://aar2.ccca.ac.at/glossar) \n\n[^4]:  Scenario data modeled from the RCP4.5 by GeoSphere Austria. Available online: [https://data.hub.geosphere.at/dataset/climaproof\\_original\\_rcp](https://data.hub.geosphere.at/dataset/climaproof_original_rcp) \n\n[^5]:  Eurostat Local administrative units (LAU). Available online: [https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/local-administrative-units)  \t\n\n[^6]:  Natural Hazard Overview & Risk Assessment Austria by the Bundesministerium für Landwirtschaft, Regionen und Tourismus. Available online: [https://hora.gv.at/\\#/chwrz:-/bgrau/a-/@47.72463,13.50823,7z](https://hora.gv.at/#/chwrz:-/bgrau/a-/@47.72463,13.50823,7z) \n\n[^7]:  Data source: SNOWGRID-CL (SNOWGRID Climate Version 2.1) by GeoSphere Austria 2022\\. Available online: [https://data.hub.geosphere.at/dataset/snowgrid\\_cl-v2-1d-1km](https://data.hub.geosphere.at/dataset/snowgrid_cl-v2-1d-1km) \n\n[^8]:  Data source: SPARTACUS v2.1 Tagesdaten by GeoSphere Austria 2020\\. Available online: [https://data.hub.geosphere.at/dataset/spartacus-v2-1d-1km](https://data.hub.geosphere.at/dataset/spartacus-v2-1d-1km)\n\n[^9]:  Data source: SPARTACUS v2.1 Tagesdaten by GeoSphere Austria 2020\\. Available online: [https://data.hub.geosphere.at/dataset/spartacus-v2-1d-1km](https://data.hub.geosphere.at/dataset/spartacus-v2-1d-1km)\n\n[^10]:  Data source: SNOWGRID-CL (SNOWGRID Climate Version 2.1) by GeoSphere Austria 2022\\. Available online: [https://data.hub.geosphere.at/dataset/snowgrid\\_cl-v2-1d-1km](https://data.hub.geosphere.at/dataset/snowgrid_cl-v2-1d-1km) \n\n[^11]:  Data source: Nicholas Katz – JR POLICIES, Karsten Reichold – TU Wien, Martin Wagner – AAU 25.08.2025. Available online: [https://github.com/kan-jr/Naechtigungsprognose/tree/main](https://github.com/kan-jr/Naechtigungsprognose/tree/main) \n\n[^12]:  Data source: Österreich Werbung",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc2_stats/collection.json",
+      "type": "application/json",
+      "title": "Climate Hazards Statistics",
+      "endpointtype": "VectorTile source",
+      "id": "tourism_uc2_stats",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "GeoVille",
+        "Austria Tourism"
+      ],
+      "thumbnail": [
+        "https://picsum.photos/seed/picsum/536/354"
+      ],
+      "tags": [
+        "mobility",
+        "tourism",
+        "climate"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "service",
+      "href": "https://eoapi.workspace.gtif-eox.hub-otc.eox.at/vector/collections/public.tourism_risk_stats_new/items?limit=1&bbox-only=true&filter=id%20%3D%20%27{{feature}}%27",
+      "type": "application/json",
+      "id": "timeseries",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://mapsneu.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Geoland Basemap",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "geoland_base",
+      "attribution": "{ Datenquelle: <a href=\"https://basemap.at\" target=\"_blank\" property=\"dct:title\">basemap.at</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://picsum.photos/seed/picsum/536/354",
+  "themes": [
+    "Climate Change & Tourism"
+  ],
+  "tags": [
+    "mobility",
+    "tourism",
+    "climate"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "collection_group": "Climate Change & Tourism",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ea/uc2/tourism_risk_stats_jsonform.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ea/uc2/tourism_risk_stats_chart.json",
+  "title": "Climate Hazards Statistics",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          46.4,
+          17.1,
+          49.1
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2030-01-01T00:00:00Z",
+          "2030-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoVille",
+      "url": "https://www.geoville.com/"
+    },
+    {
+      "name": "Austria Tourism",
+      "url": "https://b2b.austria.info/uk/"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "Climate Change & Tourism"
+    ],
+    "thumbnail": [
+      "https://picsum.photos/seed/picsum/536/354"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://picsum.photos/seed/picsum/536/354",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

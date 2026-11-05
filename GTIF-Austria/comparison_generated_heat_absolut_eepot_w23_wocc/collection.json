@@ -1,0 +1,196 @@
+{
+  "type": "Collection",
+  "id": "comparison_generated_heat_absolut_eepot_w23_wocc",
+  "stac_version": "1.1.0",
+  "description": "**Heating Technologies and their Potential**\n\nEnergy potentials from **solar thermal energy**, **air-source heat pumps**, **aquathermal energy, ground-source heat pumps** (open and closed systems), and **excess heat** (direct utilization and utilization via heat pumps) in Austria for the current status (2023), future projections (2030 & 2040), and the technical potential at LAU 2 level.\n\nThe map contains information on **annual heat supplied to heating systems**, in GWh per year (**Energy)**\n\n**Technical potential** represents the maximum energy flow under physical and technical constraints, such as efficiency and spatial limitations. **Realisable potential for 2030 and 2040** considers practical barriers like implementation timing, market conditions, and economic feasibility.\n\nRealizable potential for 2030 and 2040 are provided with defined ranges: ***Low*** (conservative and less ambitious), ***Medium*** (realistic with a high likelihood of occurrence) and ***High*** (optimistic and ambitious).\n\nThe map includes **potentials without considering climate change effects** (WOCC).\n\nThe underlying study, “Renewable Energy Potentials in Austria for 2030 and 2040,” was conducted on behalf of the Austrian Climate and Energy Fund and was financed with appropriations from the former Federal Ministry for Climate Action, Environment, Energy, Mobility, Innovation and Technology (BMK).\n\nNote: Biomass is an important heat source in Austria; however, due to its high mobility and flexible supply chains, it cannot be accurately allocated to individual municipalities. Therefore, biomass is not represented as a spatially resolved potential at the LAU 2 level.\n\n[download raw absolut compare data as GeoJSON](https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/KLIEN-studie/ambient/comparison/comparison_generated_heat_absolut_EEPOT_W23.geojson)\n\n[download raw absolut compare data as CSV](https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/KLIEN-studie/ambient/comparison/EEPOT_W23_generated%20heat_absolut.csv)\n\n[download raw share compare data as GeoJSON](https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/KLIEN-studie/ambient/comparison/comparison_generated_heat_share_EEPOT_W23.geojson)\n\n[download raw share compare data as CSV](https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/KLIEN-studie/ambient/comparison/EEPOT_W23_generated%20heat_share.csv)\n\n**Please cite the source when using these data:**\nG. Resch, B. Mayr, B., Gahleitner, E. Haslinger, S. Böhmer, M. B. Broer, C. Brendle, G. Eisenkölb, S. Nemetz, C. Elser-Amann, A. Storch, D. Trauner, P. Weiss, R. Wasserbauer, A. Stökl, A. Krenn, F. Mauthner, W. Gruber-Glatzl, J. Pfleger, A. Stöger, L. Kranzl, F. Radosits, F. Schipfer, P. Valent, 2026. Erneuerbare Energiepotenziale in Österreich für 2030 und 2040.\n\nLicense: Released under the CC BY 4.0 licence.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./comparison_generated_heat_absolut_eepot_w23_wocc/collection.json",
+      "type": "application/json",
+      "title": "Heat Generation Potential",
+      "endpointtype": "VectorTile source",
+      "id": "comparison_generated_heat_absolut_eepot_w23_wocc",
+      "themes": [
+        "Energy Transition"
+      ],
+      "providers": [
+        "AIT Center for Energy",
+        "AEE INTEC"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Energy%20Planning%20-%20Heat.jpg"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Study on Renewable Energy Potentials"
+    },
+    {
+      "rel": "service",
+      "href": "https://eoapi.workspace.gtif-eox.hub-otc.eox.at/vector/collections/public.comparison_generated_heat_absolut_eepot_w23/items?limit=1&bbox-only=true&filter=id%20%3D%20%27{{feature}}%27",
+      "type": "application/json",
+      "id": "timeseries",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:narratives": {
+    "t70-comparison-heat": {
+      "href": "https://gtif-austria.info/narratives/t70-comparison-heat",
+      "type": "text/markdown",
+      "title": "Narrative Support for Energy Planning – Heat Demand and Supply Potentials",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/main/t70-comparison-heat.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Energy%20Planning%20-%20Heat.jpg",
+  "themes": [
+    "Energy Transition"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "collection_group": "Study on Renewable Energy Potentials",
+  "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/forms/comparison_generated_heat_absolut_eepot_form_comparison.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/charts/comparison_generated_heat_absolut_eepot_chart.json",
+  "title": "Heat Generation Potential",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          46.4,
+          17.1,
+          49.1
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2030-01-01T00:00:00Z",
+          "2030-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "AIT Center for Energy",
+      "url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-energy"
+    },
+    {
+      "name": "AEE INTEC",
+      "url": "https://www.aee-intec.at/"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "Energy Transition"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Energy%20Planning%20-%20Heat.jpg"
+    ]
+  },
+  "assets": {
+    "t70-comparison-heat": {
+      "href": "https://gtif-austria.info/narratives/t70-comparison-heat",
+      "type": "text/markdown",
+      "title": "Narrative Support for Energy Planning – Heat Demand and Supply Potentials",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/main/t70-comparison-heat.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-assets/refs/heads/main/assets/thumbnails/klien_data/Energy%20Planning%20-%20Heat.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

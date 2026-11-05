@@ -11,28 +11,14 @@
       "title": "GTIF Austria"
     },
     {
-      "rel": "item",
-      "href": "./NUTS2_AT/2016/2016-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-01-01T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/LULUCF/NUTS2.geojson"
-      ]
-    },
-    {
-      "rel": "style",
-      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/NUTS2_styles.json",
-      "type": "text/vector-styles",
-      "asset:keys": [
-        "NUTS2_AT"
-      ]
-    },
-    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
       "title": "Land Use, Land Use Change and Forestry (LULUCF)"
     }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "themes": [
     "TBD"
@@ -43,7 +29,6 @@
   "agency": [
     "None"
   ],
-  "subcode": "NUTS2_AT",
   "satellite": [
     "Combined"
   ],
@@ -69,5 +54,16 @@
       ]
     }
   },
-  "license": "other"
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 14134,
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
 }

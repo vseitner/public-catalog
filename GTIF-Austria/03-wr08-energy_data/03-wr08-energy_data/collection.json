@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "03-wr08-energy_data",
+  "stac_version": "1.1.0",
+  "description": "Based on the provided data, here is an overview of the solar energy landscape in Austria for 2024, focusing on regional performance and the regulatory factors driving growth.\n\n**Austria’s Solar Landscape: Regional Performance and Regulatory Drivers**\nThe year 2024 marked a significant milestone for Austrian renewable energy, with total domestic photovoltaic (PV) generation reaching 8,143 GWh. However, the distribution of this output varies greatly across the federal states, driven largely by geographic scale and local legislative initiatives.\n\n**Regional Leaders and Output Trends**\nThe \"Big Three\"—Lower Austria, Upper Austria, and Styria—currently dominate the national rankings in both total installed capacity and actual solar power generation. In contrast, states like Burgenland, Carinthia, and Tyrol contribute more moderate shares to the national grid. Due to its unique status as a densely populated urban center with limited surface area, Vienna records the lowest figures for PV generation, though it remains a focal point for innovative urban solar integration.\nThis information has been published initially on https://www.energie.gv.at\nElectricity generation from PV in GWh, source: Energy balance from Statistics Austria 2023 via energie.gv.at, accessed on: February 26, 2026, 10:33 a.m.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Solar Energy Production"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/03/03-austrian_renewable_energy.png",
+  "collection_group": "Energy Dashboard",
+  "endpointtype": "GeoJSON source",
+  "title": "Solar Energy Production",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.449323364490283,
+          46.25304525187856,
+          17.4065661320537,
+          49.3887026320391
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 24848,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/03/03-austrian_renewable_energy.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "type": "Collection",
+  "id": "gtif_at_ew_snow_basin_data_indicator",
+  "stac_version": "1.1.0",
+  "description": "## Hydropower Snow Potential Energy\n\nThis dataset provides daily time-series estimates of the electrical energy stored within the Alpine snowpack across three hydroelectric reservoir catchment areas in Tyrol. By translating snowpack water volume into potential energy, this layer serves as an indicator for forecasting potential renewable energy production from spring snowmelt.\nThis service covers Achensee, Längentalspeicher (Kühtai), and Gepatschspeicher (Kaunertal) reservoir catchments over the 2022–2023 winter season. The underlying snow data is sourced from Waterjade's Level-2 snow products, which are modelled daily at 500m resolution. Daily mean Snow Water Equivalent (SWE, in mm) is extracted across catchment geometries via the Copernicus Data Space Ecosystem (CDSE) Sentinel Hub API, converted to total water-equivalent volume (m³), and multiplied by energy conversion coefficients (energy per m³) to calculate total stored potential energy over time.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./SWE-L2-DEMO/collection.json",
+      "type": "application/json",
+      "title": "GTIF demo - Snow Water Equivalent",
+      "endpointtype": "Sentinel Hub WMS",
+      "shortdescription": "Amount of water if the snowpack were melted.",
+      "id": "SWE-L2-DEMO",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SWE_GTIF_DEMO.png"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "child",
+      "href": "./gtif_at_ew_snow_basin_data/collection.json",
+      "type": "application/json",
+      "title": "Basin Snow Data",
+      "endpointtype": "VectorTile source",
+      "id": "gtif_at_ew_snow_basin_data",
+      "themes": [
+        "Hydrology"
+      ],
+      "providers": [
+        "Waterjade",
+        "TIWAG",
+        "Sinergise Austria"
+      ],
+      "thumbnail": [
+        "https://picsum.photos/id/29/300/300"
+      ],
+      "tags": [
+        "mobility"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "service",
+      "href": "https://eoapi.workspace.gtif-eox.hub-otc.eox.at/vector/collections/public.snow_basin_data/items?limit=1000&bbox-only=true&filter=id%20%3D%20%27{{feature}}%27",
+      "type": "application/json",
+      "id": "timeseries",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ew/assets/achensee-thumbnail.jpg",
+  "themes": [
+    "Hydrology"
+  ],
+  "collection_group": "Hydrology",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ew/form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ew/chart.json",
+  "title": "Alpine Hydropower Snow Potential Energy",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          46.4,
+          17.1,
+          49.1
+        ],
+        [
+          10.41166,
+          46.716906,
+          11.977302,
+          47.615112
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-10-02T00:00:00Z",
+          "2030-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Waterjade",
+      "url": "https://waterjade.com/"
+    },
+    {
+      "name": "TIWAG",
+      "url": "https://www.tiwag.at/"
+    },
+    {
+      "name": "Sinergise Austria",
+      "url": "https://www.sinergise.com/"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "Hydrology"
+    ],
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SWE_GTIF_DEMO.png",
+      "https://picsum.photos/id/29/300/300"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ew/assets/achensee-thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

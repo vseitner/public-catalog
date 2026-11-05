@@ -1,0 +1,89 @@
+{
+  "type": "Collection",
+  "id": "n_vision_green_roofs",
+  "stac_version": "1.1.0",
+  "description": "N Vision's rooftop charachterization capabilty provides efficient and accurate mapping of [solar panel installations](https://gtif-austria.info/narratives/solar_panel_mapping) and of [green roofs](https://gtif-austria.info/narratives/green-roof-mapping) in areas of interest by analysing satellite or aerial imagery using state-of-the-art computer vision methods.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Rooftop Characterisation"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "eox:colorlegend": {
+    "title": "",
+    "range": [
+      "rgb(84, 173, 49)"
+    ],
+    "domain": [
+      "Green Roofs 2025"
+    ],
+    "scaleType": "categorical"
+  },
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/refs/heads/main/assets/nvisionpublic/nvision-solar-panels-cover.webp",
+  "themes": [
+    "sustainable-cities"
+  ],
+  "tags": [
+    "Green Roofs",
+    "Solar Roofs"
+  ],
+  "collection_group": " ",
+  "endpointtype": "GeoJSON source",
+  "title": "Green Roofs",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          15.69,
+          47.096,
+          15.72,
+          47.113
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "N Vision",
+      "url": "https://www.n-vision.ai/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 14898,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/refs/heads/main/assets/nvisionpublic/nvision-solar-panels-cover.webp",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "type": "Collection",
+  "id": "HS-L2-DEMO",
+  "stac_version": "1.1.0",
+  "description": "## Snow Depth (Snow Height)\n\nSnow Depth (snow height) is the most intuitive snow measurement — how much snow is lying on the ground, given here in centimetres. It shows how the snowpack builds up and thins out through the winter, a familiar reference point for civil protection, the tourism sector, and researchers alike. This layer is a demonstration subset of Waterjade's Level-2 snow products, covering the 2022–2023 winter season over Tyrol, modelled daily at 500 m resolution with the SnowMaps processing chain and the GEOtop physical model. It builds on the snow-modelling work first developed within the Digital Twin of the Alps (DTA).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GTIF demo - Snow Height"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "shortdescription": "Depth of snow on the ground.",
+  "eox:colorlegend": {
+    "title": "Snow Height (cm)",
+    "tickFormat": ".0f",
+    "domain": [
+      "2-5 cm",
+      "6-10 cm",
+      "11-20 cm",
+      "21-40 cm",
+      "41-60 cm",
+      "61-80 cm",
+      "81-100 cm",
+      "101-120 cm",
+      "121-160 cm",
+      "161-200 cm",
+      "201-250 cm",
+      "> 250 cm"
+    ],
+    "range": [
+      "#ffffad",
+      "#ffdd2f",
+      "#99ff81",
+      "#1dd307",
+      "#00ffff",
+      "#0078ff",
+      "#000096",
+      "#7f007f",
+      "#ef0aff",
+      "#ff7300",
+      "#996633",
+      "#ff0000"
+    ],
+    "markType": "rect",
+    "scaleType": "categorical"
+  },
+  "thumbnail": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/HS_GTIF_DEMO.png",
+  "collection_group": "Hydrology",
+  "endpointtype": "Sentinel Hub WMS",
+  "title": "GTIF demo - Snow Height",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          10.41166,
+          46.716906,
+          11.977302,
+          47.615112
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-10-02T00:00:00Z",
+          "2023-09-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Waterjade",
+      "url": "https://waterjade.com/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 23324,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/HS_GTIF_DEMO.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

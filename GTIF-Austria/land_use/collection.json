@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "land_use",
   "stac_version": "1.1.0",
-  "description": "Land Use, Land Use Change and Forestry (LULUCF) status map for the years 2015 - 2023 over Austria, at the Level 3 of the LULUCF Nomenclature.\n\nDerived by means of Artificial Intelligence, deep learning U-Net automated supervised classification algorithm and rule-based post-processing. The scope of the Austrian Space Applications Program (ASAP 18) flagship GHG-KIT project - \"Prototyping an EO-enabled kit supporting greenhouse gas reporting\" is to develop a scientific Proof-of-Concept (PoC) towards the first European Earth Observation (EO)- integrated CO2 and CH4 Monitoring Verification and Reporting (MVR) System using Copernicus satellite data and information products, including two prototypes:\n\n1. The Verification Element based on atmospheric modelling, and\n2. LULUCF Inventory Reporter\n\nDeveloped within FFG project GHG-KIT [contract #FO999893432] https://ghg-kit.at/\n",
+  "description": "Land Use, Land Use Change and Forestry (LULUCF) status map for the years 2015 - 2023 over Austria, at the Level 3 of the LULUCF Nomenclature.\n\nDerived by means of Artificial Intelligence, deep learning U-Net automated supervised classification algorithm and rule-based post-processing. The scope of the Austrian Space Applications Program (ASAP 18) flagship GHG-KIT project - \"Prototyping an EO-enabled kit supporting greenhouse gas reporting\" is to develop a scientific Proof-of-Concept (PoC) towards the first European Earth Observation (EO)- integrated CO2 and CH4 Monitoring Verification and Reporting (MVR) System using Copernicus satellite data and information products, including two prototypes:\n\n1. The Verification Element based on atmospheric modelling, and\n2. LULUCF Inventory Reporter\n\nDeveloped within FFG project GHG-KIT [contract #FO999893432] https://ghg-kit.at/\nThis data was produced within the GHG-KIT project and does not correspond to the officially reported LULUCF figures of Austria.",
   "links": [
     {
       "rel": "root",
@@ -16,7 +16,6 @@
       "type": "application/json",
       "title": "NUTS2 Austria (Gemeinden)",
       "endpointtype": "GeoJSON source",
-      "code": "NUTS2_AT",
       "id": "NUTS2_AT",
       "themes": [
         "TBD"
@@ -27,7 +26,6 @@
       "agency": [
         "None"
       ],
-      "subcode": "NUTS2_AT",
       "satellite": [
         "Combined"
       ]
@@ -38,10 +36,15 @@
       "type": "application/json",
       "title": "LULUCF Time Series",
       "endpointtype": "COG source",
-      "code": "LULUCF",
       "id": "land_use",
       "themes": [
         "TBD"
+      ],
+      "providers": [
+        "GeoVille"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg"
       ],
       "tags": [
         "land use"
@@ -49,7 +52,6 @@
       "agency": [
         "None"
       ],
-      "subcode": "LULUCF",
       "satellite": [
         "Combined"
       ]
@@ -63,19 +65,19 @@
     },
     {
       "rel": "xyz",
-      "href": "//s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2022_3857/default/g/{z}/{y}/{x}.jpeg",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
       "type": "image/jpeg",
-      "title": "EOxCloudless 2022",
+      "title": "EOxCloudless 2025",
       "roles": [
         "baselayer",
         "visible"
       ],
-      "id": "cloudless-2022",
-      "attribution": "{ EOxCloudless 2022: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2022) }"
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
     },
     {
       "rel": "xyz",
-      "href": "//s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
       "type": "image/jpeg",
       "title": "Terrain light",
       "roles": [
@@ -87,7 +89,7 @@
     },
     {
       "rel": "xyz",
-      "href": "//s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
       "type": "image/jpeg",
       "title": "OSM Background",
       "roles": [
@@ -99,7 +101,7 @@
     },
     {
       "rel": "xyz",
-      "href": "//s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
       "type": "image/png",
       "title": "Overlay labels",
       "roles": [
@@ -116,30 +118,17 @@
       "title": "GTIF Austria"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg",
   "themes": [
-    "Land"
+    "Carbon Accounting"
   ],
-  "subcode": "LULUCF_indicator",
-  "collection_group": "Capabilities",
+  "collection_group": "Carbon Accounting",
   "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/forms/LULUCF_form.json",
   "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/charts/LULUCF_vega_chart.json",
   "title": "Land Use, Land Use Change and Forestry (LULUCF)",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          9.5,
-          44.5,
-          18.0,
-          49.9
-        ],
-        [
-          9.5,
-          44.5,
-          18.0,
-          49.9
-        ],
         [
           9.5,
           44.5,
@@ -158,11 +147,13 @@
     }
   },
   "license": "other",
+  "providers": [
+    {
+      "name": "GeoVille",
+      "url": "https://www.geoville.com/"
+    }
+  ],
   "summaries": {
-    "subcode": [
-      "NUTS2_AT",
-      "LULUCF"
-    ],
     "themes": [
       "TBD"
     ],
@@ -170,12 +161,12 @@
       "Combined"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg"
+      "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg"
     ]
   },
   "assets": {
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main//assets/LULUCF_preview.jpg",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/LULUCF_preview.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

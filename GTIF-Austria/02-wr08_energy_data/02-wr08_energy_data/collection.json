@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "02-wr08_energy_data",
+  "stac_version": "1.1.0",
+  "description": "Renewable energy production is naturally inconsistent; for instance, a dry year can significantly reduce hydropower output. Because of these fluctuations, installed capacity serves as a more stable metric for evaluating the renewable energy infrastructure across different regions.\n\n**The Leaderboard (2024)**\n\nThe distribution of installed capacity varies significantly across the federal states:\n\nLower Austria (Niederösterreich): Remains the undisputed leader in total capacity.\n\nUpper Austria (Oberösterreich): Claimed the second-place spot in 2024, overtaking Tyrol.\n\nTyrol (Tirol): Now holds the third position.\n\n**The \"Size\" Factor**\n\nThere is a clear correlation between a state's physical size and its capacity. Smaller states like Vienna, Burgenland, and Salzburg record the lowest shares. This isn't necessarily a lack of effort—smaller land areas simply offer less space for large-scale renewable installations compared to their sprawling neighbors.\n\nThis information has been published initially on https://www.energie.gv.at\nRenewable energy output in the federal states in MW in 2024, source: EAG Monitoring Report 2025 by E-Control via energie.gv.at, accessed on: February 26, 2026, 10:27 a.m.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Installed Renewable Energy Capacity by Federal State"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/02/02-austrian_renewable_energy.png",
+  "collection_group": "Energy Dashboard",
+  "endpointtype": "GeoJSON source",
+  "title": "Installed Renewable Energy Capacity by Federal State",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.578556248103666,
+          46.11052454356342,
+          17.379707726320735,
+          49.46206668427328
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 25346,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/02/02-austrian_renewable_energy.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "type": "Collection",
+  "id": "gtif_at_ew_snow_basin_data",
+  "stac_version": "1.1.0",
+  "description": "Snow Basin Data for the Austrian Alps",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Alpine Hydropower Snow Potential Energy"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://picsum.photos/id/29/300/300",
+  "themes": [
+    "Hydrology"
+  ],
+  "tags": [
+    "mobility"
+  ],
+  "collection_group": "Hydrology",
+  "endpointtype": "VectorTile source",
+  "title": "Basin Snow Data",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.5,
+          46.4,
+          17.1,
+          49.1
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2030-01-01T00:00:00Z",
+          "2030-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Waterjade",
+      "url": "https://waterjade.com/"
+    },
+    {
+      "name": "TIWAG",
+      "url": "https://www.tiwag.at/"
+    },
+    {
+      "name": "Sinergise Austria",
+      "url": "https://www.sinergise.com/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 13916,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://picsum.photos/id/29/300/300",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

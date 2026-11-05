@@ -1,0 +1,141 @@
+{
+  "type": "Collection",
+  "id": "n_vision_indicator",
+  "stac_version": "1.1.0",
+  "description": "N Vision's rooftop charachterization capabilty provides efficient and accurate mapping of [solar panel installations](https://gtif-austria.info/narratives/solar_panel_mapping) and of [green roofs](https://gtif-austria.info/narratives/green-roof-mapping) in areas of interest by analysing satellite or aerial imagery using state-of-the-art computer vision methods.N Vision’s solar mapping service utilizes remote sensing and computer vision to automate the detection of solar infrastructure from high-resolution orthorectified imagery. By applying advanced deep learning architectures to satellite and aerial datasets, the system identifies solar modules with a statistical performance target of 95% or higher in both precision and recall. In case of remaining failures, human validation is performed to ensure high-quality data across the region of interest.\n\nFrom an operational perspective, this geospatial solution offers an increase in temporal resolution, allowing for the monitoring of solar deployment trends through comparative analysis of imagery captured at different intervals. The resulting datasets are exported in standardized Geographic Information System (GIS) formats, such as GeoPackage or GeoJSON, or accessed via an API for seamless integration into energy modeling workflows. While the analysis is constrained by the visibility of the 'nadir' or top-down view—meaning occluded or vertical facade-mounted panels are excluded—the approach provides a scalable, cost-efficient alternative to traditional ground-based surveys.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./n_vision_green_roofs/collection.json",
+      "type": "application/json",
+      "title": "Green Roofs",
+      "endpointtype": "GeoJSON source",
+      "id": "n_vision_green_roofs",
+      "themes": [
+        "sustainable-cities"
+      ],
+      "providers": [
+        "N Vision"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/refs/heads/main/assets/nvisionpublic/nvision-solar-panels-cover.webp"
+      ],
+      "tags": [
+        "Green Roofs",
+        "Solar Roofs"
+      ],
+      "collection_group": " "
+    },
+    {
+      "rel": "child",
+      "href": "./n_vision_solar_panels/collection.json",
+      "type": "application/json",
+      "title": "Solar Panels",
+      "endpointtype": "GeoJSON source",
+      "id": "n_vision_solar_panels",
+      "themes": [
+        "sustainable-cities"
+      ],
+      "providers": [
+        "N Vision"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/refs/heads/main/assets/nvisionpublic/nvision-solar-panels-cover.webp"
+      ],
+      "tags": [
+        "Green Roofs",
+        "Solar Roofs"
+      ],
+      "collection_group": " "
+    },
+    {
+      "rel": "xyz",
+      "href": "https://www.n-vision.ai/tiles/v1/gleisdorf_uce41_20221003_solar_panels/ortho/{z}/{x}/{y}.png",
+      "type": "image/png",
+      "title": "Solar panels",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "n_vision"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/refs/heads/main/assets/nvisionpublic/nvision-solar-panels-cover.webp",
+  "themes": [
+    "Sustainable Cities"
+  ],
+  "tags": [
+    "Green Roofs",
+    "Solar Roofs"
+  ],
+  "collection_group": "Sustainable Cities",
+  "title": "Rooftop Characterisation",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          15.69,
+          47.096,
+          15.72,
+          47.113
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "N Vision",
+      "url": "https://www.n-vision.ai/"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "sustainable-cities"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/refs/heads/main/assets/nvisionpublic/nvision-solar-panels-cover.webp"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/refs/heads/main/assets/nvisionpublic/nvision-solar-panels-cover.webp",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

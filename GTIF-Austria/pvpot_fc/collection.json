@@ -1,0 +1,198 @@
+{
+  "type": "Collection",
+  "id": "pvpot_fc",
+  "stac_version": "1.1.0",
+  "description": "The data layer *Theoretical Solar Potential* shows the results of the nowcasting for 2 hours on 23th october 2025 from 09:00 to 11:00 (Run 1) and from 10:00 to 12:00 (Run 2). The time resolution is 15min.\nThe data layer *Global Solar Radiation* shows the results for the radation in W/m². It is defined as the sum of direct and diffuse solar radation. \n\nThe calculation of the theoretical solar potential (PVpot) is based on the method of [Jerez et al (2015)](https://www.nature.com/articles/ncomms10014). The meteorological input is given by First, the global solar radiation is calculated with GeoSphere Austria's solar radiation model *STRAHLGRID* ([Seitner et al (2024)](https://doi.org/10.5194/ems2024-366)). The data of global radiation is provided in 15min temporal and 1000m spatial resolution. In combination with temperature and wind data from GeoSphere Austria's *INCA* model ([Haiden et al (2011)](https://doi.org/10.1175/2010WAF2222451.1)) the theoretical solar potential is calculated. The calculation of the theoretical solar potential (PVpot) is based on the method of [Jerez et al (2015)](https://www.nature.com/articles/ncomms10014).\n\nl ranges from 0 to 1. If the value of PVpot is equal to 1, the nominal PV production value specified by the system is achieved. If the cell temperature of the PV system is higher (lower) than 25°C and/or the global radiation is less (greater) than 1000 W/m², then the PV output is lower (greater) than the nominal power of the module. These threshold values can be adjusted to customer requirements.\n\nContact:[solar@geosphere.at](mailto:solar@geosphere.at)",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./Solar-Potential-Nowcasting/collection.json",
+      "type": "application/json",
+      "title": "Theoretical Solar Potential (Run 1)",
+      "endpointtype": "COG source",
+      "id": "Solar-Potential-Nowcasting",
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/solar-potential-1749907032353.webp"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Solar-Potential-Nowcasting-2/collection.json",
+      "type": "application/json",
+      "title": "Theoretical Solar Potential (Run 2)",
+      "endpointtype": "COG source",
+      "id": "Solar-Potential-Nowcasting-2",
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/solar-potential-1749907032353.webp"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Solar-Potential-Nowcasting-Glo-Run1/collection.json",
+      "type": "application/json",
+      "title": "Global Solar Radiation (Run 1)",
+      "endpointtype": "COG source",
+      "id": "Solar-Potential-Nowcasting-Glo-Run1",
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/solar-potential-1749907032353.webp"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Solar-Potential-Nowcasting-Glo-Run2/collection.json",
+      "type": "application/json",
+      "title": "Global Solar Radiation (Run 2)",
+      "endpointtype": "COG source",
+      "id": "Solar-Potential-Nowcasting-Glo-Run2",
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/solar-potential-1749907032353.webp"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://statistics.gtif.eox.at/geoparquet-stats/?geoparquet_url=https://gtif-austria.github.io/public-catalog/GTIF-Austria/pvpot_fc/Solar-Potential-Nowcasting/items.parquet&bbox={{bbox.0}}&bbox={{bbox.1}}&bbox={{bbox.2}}&bbox={{bbox.3}}#.json",
+      "type": "application/json",
+      "id": "nc1",
+      "method": "GET"
+    },
+    {
+      "rel": "service",
+      "href": "https://statistics.gtif.eox.at/geoparquet-stats/?geoparquet_url=https://gtif-austria.github.io/public-catalog/GTIF-Austria/pvpot_fc/Solar-Potential-Nowcasting-2/items.parquet&bbox={{bbox.0}}&bbox={{bbox.1}}&bbox={{bbox.2}}&bbox={{bbox.3}}#.json",
+      "type": "application/json",
+      "id": "nc2",
+      "method": "GET"
+    },
+    {
+      "rel": "service",
+      "href": "https://statistics.gtif.eox.at/geoparquet-stats/?geoparquet_url=https://gtif-austria.github.io/public-catalog/GTIF-Austria/pvpot_fc/Solar-Potential-Nowcasting-Glo-Run1/items.parquet&bbox={{bbox.0}}&bbox={{bbox.1}}&bbox={{bbox.2}}&bbox={{bbox.3}}#.json",
+      "type": "application/json",
+      "id": "glo1",
+      "method": "GET"
+    },
+    {
+      "rel": "service",
+      "href": "https://statistics.gtif.eox.at/geoparquet-stats/?geoparquet_url=https://gtif-austria.github.io/public-catalog/GTIF-Austria/pvpot_fc/Solar-Potential-Nowcasting-Glo-Run2/items.parquet&bbox={{bbox.0}}&bbox={{bbox.1}}&bbox={{bbox.2}}&bbox={{bbox.3}}#.json",
+      "type": "application/json",
+      "id": "glo2",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/solar-potential-1749907032353.webp",
+  "collection_group": "Energy Transition",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/process/form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/process/vega.json",
+  "title": "Nowcasting of theoretical PV potential",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          8.662064185510863,
+          45.73145475761923,
+          18.761401868813746,
+          50.07148553381576
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-10-23T09:00:00Z",
+          "2025-10-23T12:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoSphere",
+      "url": "https://www.geosphere.at/en"
+    }
+  ],
+  "summaries": {
+    "thumbnail": [
+      "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/solar-potential-1749907032353.webp"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/solar-potential-1749907032353.webp",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

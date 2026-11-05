@@ -1,0 +1,114 @@
+{
+  "type": "Collection",
+  "id": "heatrisk_watermark",
+  "stac_version": "1.1.0",
+  "description": "waatermark\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Hitzeriskobewertung nach IPCC"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "shortdescription": "Hitzerisikobewertung nach Risikokonzept des IPCC für das Beispiel Wien. Die Klimagefahr wird abgebildet durch eine Kombination von Klimadaten und Stadtklimaanalysen und mit Expostionsdaten der Bevölkerung nach Altersgruppen zu hochaufgelösten Hitzeexpostionskarten verschnitten. Die Risikobewertung wird durch Vulnerabilität in Form einen Overlaylayers besonders vulnerabler Einrichtungen und relevanter Infrastruktur vervollständigt.",
+  "eodash:narratives": {
+    "heat_risk_maps": {
+      "href": "https://gtif-austria.info/narratives/heat_risk_maps",
+      "type": "text/markdown",
+      "title": "Hitzerisikokarten Narrativ",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/main/heat_risk_maps.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/heatrisk/Mockup_heatrisk.png",
+  "themes": [
+    "Sustainable Cities"
+  ],
+  "collection_group": "Sustainable Cities",
+  "endpointtype": "COG source",
+  "title": "Höhere Auflösung verfügbar - Wassermarke",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          16.297565911091805,
+          48.130752747801665,
+          16.43430742496407,
+          48.21959610427235
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2020-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "AIT Center for Energy",
+      "url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-energy"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 14266,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "heat_risk_maps": {
+      "href": "https://gtif-austria.info/narratives/heat_risk_maps",
+      "type": "text/markdown",
+      "title": "Hitzerisikokarten Narrativ",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/main/heat_risk_maps.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/heatrisk/Mockup_heatrisk.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

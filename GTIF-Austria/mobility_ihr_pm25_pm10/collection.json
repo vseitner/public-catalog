@@ -1,0 +1,151 @@
+{
+  "type": "Collection",
+  "id": "mobility_ihr_pm25_pm10",
+  "stac_version": "1.1.0",
+  "description": "## Purpose and Context\nThis layer explores the relationship between mobility patterns, particulate matter concentrations, and population health risk at the level of Local Administrative Units (LAU).\nBy combining HFLB-based mobility indicators with modeled air quality data and a composite health risk index, the layer supports an exploratory assessment of potential associations between traffic-related mobility, particulate pollution, and short-term health impacts.\n\n## Data Basis\nThe analysis integrates three groups of indicators:\n1) Mobility Indicators (HFLB-based)\n- Speed\n- Motorized Share\n- Motorized Count\n- Trajectories (max)\n- Trajectories (scaled)\n\n2) Particulate Matter Concentrations \nDaily mass concentrations of PM2.5 and PM10 obtained from the Copernicus Atmosphere Monitoring Service (CAMS) European air quality forecasts dataset.\n\n3) Aggregate Health Risk Index (HRI)\nA composite indicator representing the short-term health risk from simultaneous exposure to multiple air pollutants (PM10, PM2.5, NO2, SO2, and O3).\nThe index is calculated by additively summing pollutant concentrations weighted by health outcome-specific relative risk factors for all-cause mortality, as provided by the World Health Organization (WHO).\n\n## Spatial Aggregation\nAll indicators are aggregated to the Local Administrative Unit (LAU) level.\nThis aggregation enables linkage between mobility, air quality, and population exposure, supports region-based comparison and interpretation, and reduces local-scale variability in modeled air quality data.\n\n## Visualization and Interaction\nThe map displays PM2.5, PM10 concentrations, the Aggregate Health Risk Index (HRI), and selected mobility indicators at LAU level.\n\nWhen selecting a LAU, scatter plots are generated showing the correlation between mobility indicators and air quality metrics. This allows users to compare the relative influence of different mobility metrics, explore spatial variability across administrative units, and to identify patterns, outliers, and non-linear relationships.\n\n## Interpretation and Limitations\nThe displayed relationships reflect statistical associations rather than direct causal effects.\nParticulate matter concentrations and health risk indicators are influenced by multiple factors, including meteorological conditions, regional background pollution, long-range transport of pollutants, and non-traffic-related emission sources.\n\nThe Aggregate Health Risk Index represents a modeled, population-level risk indicator and should not be interpreted as an observed health outcome.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./mobility_ihr_pm25_pm10/collection.json",
+      "type": "application/json",
+      "title": "Mobility Impact on PM2.5 and PM10 Concentrations",
+      "endpointtype": "tipg",
+      "id": "mobility_ihr_pm25_pm10",
+      "themes": [
+        "mobility-transition"
+      ],
+      "providers": [
+        "AIT Center for Transport Technologies"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_Image_pm2-5-10.jpg"
+      ],
+      "tags": [
+        "mobility"
+      ],
+      "collection_group": "Mobility Transition"
+    },
+    {
+      "rel": "service",
+      "href": "https://eoapi.workspace.gtif-eox.hub-otc.eox.at/vector/collections/public.timeseries_by_id/items?target_id={{feature.values_.id }}&f=json&limit=10000&geom-column=#.json",
+      "type": "text/csv",
+      "id": "timeseries",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_Image_pm2-5-10.jpg",
+  "themes": [
+    "mobility-transition"
+  ],
+  "tags": [
+    "mobility"
+  ],
+  "collection_group": "Mobility Transition",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/test/form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/test/chart.json",
+  "title": "Mobility Impact on PM2.5 and PM10 Concentrations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          15.0,
+          47.69,
+          17.7,
+          48.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-07-01T00:00:00Z",
+          "2022-12-18T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "AIT Center for Transport Technologies",
+      "url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-transport-technologies"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "mobility-transition"
+    ],
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_Image_pm2-5-10.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_Image_pm2-5-10.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

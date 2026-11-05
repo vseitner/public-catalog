@@ -1,0 +1,71 @@
+{
+  "type": "Collection",
+  "id": "WR02-PVpot",
+  "stac_version": "1.1.0",
+  "description": "The data layer *Solar Potential* shows the average available theoretical solar potential as mean from 2007 to 2023 on a seasonal basis. This is the data basis for selecting suitable locations for PV systems.\n\nTime step 0001 refers to DJF, 0002 to MAM, 0003 to JJA and 0004 to SON.\n\nThe calculation of the theoretical solar potential (PVpot) is based on the method of [Jerez et al (2025)](https://www.nature.com/articles/ncomms10014). The data is calculated by GeoSphere Austria's radiation model *STRAHLGRID*.\n\nThe theoretical solar potential ranges from 0 to 1. If the value of PVpot is equal to 1, the nominal PV production value specified by the system is achieved. If the cell temperature of the PV system is higher (lower) than 25°C and/or the global radiation is less (greater) than 1000 W/m², then the PV output is lower (greater) than the nominal power of the module. These threshold values can be adjusted to customer requirements.\n\nContact: solar@geosphere.at",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Solar Energy Potential"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/Enefit-Greeni-Purtse-hybriidpark-Ida-Virumaal-1749907570161.webp",
+  "endpointtype": "COG source",
+  "title": "Solar Potential",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.144373204774606,
+          45.32263166908202,
+          18.06091477860709,
+          50.13400803885565
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "0001-01-01T00:00:00Z",
+          "0004-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoSphere",
+      "url": "https://www.geosphere.at/en"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 21424,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/evapotranspiration-monitoring-2/assets/triebnigg/Enefit-Greeni-Purtse-hybriidpark-Ida-Virumaal-1749907570161.webp",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

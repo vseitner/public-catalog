@@ -1,0 +1,127 @@
+{
+  "type": "Collection",
+  "id": "10-wr08-wind_production",
+  "stac_version": "1.1.0",
+  "description": "This description for a data publication analyzes the relationship between regional electricity consumption and wind power generation, highlighting the varying levels of energy self-sufficiency across Austria.\n**Wind Energy and Regional Energy Autonomy**\nWhen comparing electricity consumption directly to wind power generation, a striking hierarchy of regional self-sufficiency emerges, mirroring the disparities observed in the photovoltaic sector. This metric reveals which provinces are successfully decoupling their energy needs from external sources and which remain heavily reliant on imports.\n**The Net Exporters and Regional Leaders**\nBurgenland stands as a unique outlier and the undisputed national leader in energy autonomy. The state currently produces approximately 187% of its total electricity demand through wind power alone. This surplus allows Burgenland to function as a vital net exporter of renewable energy, supporting the wider national grid.\nLower Austria secures the second position in the national ranking. The province currently covers 44.5% of its total internal electricity consumption through wind generation, marking it as a critical pillar of regional energy security and a successful model for large-scale integration.\nThis information has been published initially on https://www.energie.gv.at\nComparison of electricity generation from wind power and electricity consumption in the federal states in 2024, source: Energy balance 2024 from Statistics Austria via energie.gv.at, accessed on: February 26, 2026, 10:38 a.m.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./10-wr08-wind_production/collection.json",
+      "type": "application/json",
+      "title": "Wind Energy Production vs. Consumption",
+      "endpointtype": "GeoJSON source",
+      "id": "10-wr08-wind_production",
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/10/10-austrian_renewable_energy.png"
+      ],
+      "collection_group": "Energy Dashboard"
+    },
+    {
+      "rel": "service",
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/10/features/{{feature}}.json",
+      "type": "application/json",
+      "id": "10-wr08-energy_production_statistics",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/10/10-austrian_renewable_energy.png",
+  "collection_group": "Energy Dashboard",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/10/10-wr08-form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/10/10-wr08-vega_chart.json",
+  "title": "Wind Energy Production vs. Consumption",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.561311497636542,
+          46.309689940845686,
+          17.188098254092136,
+          49.16426472440946
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/10/10-austrian_renewable_energy.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-08-BMK-Energy-Dashboard-Integration/10/10-austrian_renewable_energy.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

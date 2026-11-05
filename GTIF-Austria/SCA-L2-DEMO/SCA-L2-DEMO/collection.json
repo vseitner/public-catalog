@@ -1,0 +1,89 @@
+{
+  "type": "Collection",
+  "id": "SCA-L2-DEMO",
+  "stac_version": "1.1.0",
+  "description": "## Snow Covered Area\n\nSnow Covered Area (SCA) maps delineate the extent of the snowpack, identifying which areas of the terrain are covered by snow and which are snow-free. Each pixel is classified as 0 (snow free) or 1 (snow covered). This binary mask is obtained by thresholding Earth Observation-derived snow maps from the Copernicus Land Monitoring Service (CLMS). The SCA is further used as an assimilation dataset for a correction loop in the GEOtop physical model to adjust the snow line, and thus the minimum snow cover elevation. This layer is a demonstration subset of Waterjade's snow products over Tyrol. It builds on the snow-modelling work first developed within the Digital Twin of the Alps (DTA).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GTIF demo - Snow Covered Area"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "shortdescription": "Binary snow cover classification.",
+  "eox:colorlegend": {
+    "title": "Snow Covered Area (0: no snow, 1: snow, 255: no valid classification)",
+    "tickFormat": ".1f",
+    "domain": [
+      0,
+      1,
+      255
+    ],
+    "range": [
+      "#ffffff80",
+      "#13316c",
+      "#00000080"
+    ],
+    "markType": "rect",
+    "scaleType": "categorical"
+  },
+  "thumbnail": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SCA_GTIF_DEMO.png",
+  "collection_group": "Hydrology",
+  "endpointtype": "Sentinel Hub WMS",
+  "title": "GTIF demo - Snow Covered Area",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          10.41166,
+          46.716906,
+          11.977302,
+          47.615112
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-10-07T00:00:00Z",
+          "2026-07-14T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Waterjade",
+      "url": "https://waterjade.com/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 23102,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SCA_GTIF_DEMO.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

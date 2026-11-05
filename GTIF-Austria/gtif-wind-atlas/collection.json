@@ -1,0 +1,136 @@
+{
+  "type": "Collection",
+  "id": "gtif-wind-atlas",
+  "stac_version": "1.1.0",
+  "description": "This page shows the distribution of the mean wind speed in Austria.\n\nThe wind data presented on this page is the result of numerical modelling and only an approximation to the real-world wind conditions. The accuracy of the result very much depends on the local terrain complexity and the coverage of in-situ data. In addition, local wind systems, e.g. katabatic winds, are not covered by the numerical simulation. The data should thus be interpreted as a first indication only. In particular in complex terrain or at alpine sites, an on-site wind measurement with adequate measurement height and duration is required to assess the wind energy potential. No liability is assumed for the accuracy of the data\n\nIn the creation of the wind data, coarse‑resolution (3 km) wind fields from a COSMO-CLM meteorological model have been transferred in a first step to a high‑resolution target grid (100m) using statistical downscaling based on Generalized Additive Models (GAMs). The GAM acts as a transfer function, that relates large‑scale wind patterns to fine‑scale terrain characteristics, allowing non‑linear terrain effects to be represented more realistically than with purely linear interpolation approaches.\n\nResidual differences between the downscaled wind field and station observations (including meteorological measurements (GeoSphere, DWD), energy production data (E-Control), avalanche warning stations (LWD) and AuWiPot 2013 data) are subsequently corrected using geostatistical modelling via kriging with consideration of measurement quality. This approach prevents uncertain station values from dominating local corrections while still exploiting spatially coherent information from the observation network.\n\nIn a final step, remaining small‑scale and non‑stationary errors are addressed through a non‑linear, machine‑learning‑based local correction using Bayesian Additive Regression Trees (BART). This step is applied as a subsequent fine‑scale adjustment on top of the already downscaled and geostatistical corrected wind field and therefore represents comparatively small but systematic local corrections. The model is trained on residual information from the preceding steps in combination with terrain‑related covariates (including elevation, relative height, slope, curvature (based on 10m DEM data), topographic openness and CORINE land cover data) as well as the spatial coordinates of the measurement stations.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./gtif-wind-atlas/collection.json",
+      "type": "application/json",
+      "title": "Wind Atlas",
+      "endpointtype": "COG source",
+      "id": "gtif-wind-atlas",
+      "providers": [
+        "Energiewerkstatt"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind%20Atlas/Thumbnail/Thumbnail%20Wind%20Atlas.png"
+      ],
+      "collection_group": "Energy Transition"
+    },
+    {
+      "rel": "service",
+      "href": "https://statistics.gtif.eox.at/geoparquet-stats/?geoparquet_url=https://gtif-austria.github.io/public-catalog/GTIF-Austria/gtif-wind-atlas/gtif-wind-atlas/items.parquet&bbox={{bbox.0}}&bbox={{bbox.1}}&bbox={{bbox.2}}&bbox={{bbox.3}}#.json",
+      "type": "application/json",
+      "id": "cogstats",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind%20Atlas/Thumbnail/Thumbnail%20Wind%20Atlas.png",
+  "collection_group": "Energy Transition",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind%20Atlas/process/wind_atlas_form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind%20Atlas/process/wind_atlas_vega.json",
+  "title": "Wind Atlas",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.329330840752046,
+          46.18972579652253,
+          17.27805928781191,
+          49.2375054222361
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Energiewerkstatt",
+      "url": "https://energiewerkstatt.org/?lang=en"
+    }
+  ],
+  "summaries": {
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind%20Atlas/Thumbnail/Thumbnail%20Wind%20Atlas.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind%20Atlas/Thumbnail/Thumbnail%20Wind%20Atlas.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

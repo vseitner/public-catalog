@@ -1,0 +1,130 @@
+{
+  "type": "Collection",
+  "id": "wr03_wind_nowcasting",
+  "stac_version": "1.1.0",
+  "description": "The data layers *Wind Speed* and *Wind power* show the results of the nowcasting for 3 hours on 16th June 2025 from 09:00 to 12:00 UTC. The time resolution is 15min.\n\nThe data layer shows wind speed at hub height (100m above ground) in m/s. Wind speeds are extrapolated from 10m using terrain-aware logarithmic and power law methods.\n \nThe wind speed nowcasting is based on GeoSphere Austria's *INCA+* high-resolution analysis and nowcasting system. The data is provided in 15min temporal and 1000m spatial resolution. \n\nIn combination with turbine-specific power curves from *windpowerlib*, the theoretical power output for various turbine types (Enercon E-101, Vestas V90) is calculated.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./wr03_wind_nowcasting_collection/collection.json",
+      "type": "application/json",
+      "title": "Windspeed Nowcasting at hub heights",
+      "endpointtype": "COG source",
+      "id": "wr03_wind_nowcasting_collection"
+    },
+    {
+      "rel": "child",
+      "href": "./wr03_wind_power_enercon/collection.json",
+      "type": "application/json",
+      "title": "Wind Power Output - Enercon E-101 (3.0 MW)",
+      "endpointtype": "COG source",
+      "id": "wr03_wind_power_enercon"
+    },
+    {
+      "rel": "child",
+      "href": "./wr03_wind_power_vestas/collection.json",
+      "type": "application/json",
+      "title": "Wind Power Output - Vestas V90 (2.0 MW)",
+      "endpointtype": "COG source",
+      "id": "wr03_wind_power_vestas"
+    },
+    {
+      "rel": "service",
+      "href": "https://statistics.gtif.eox.at/geoparquet-stats/?geoparquet_url=https://gtif-austria.github.io/public-catalog/GTIF-Austria/wr03_wind_nowcasting/wr03_wind_nowcasting_collection/items.parquet&bbox={{bbox.0}}&bbox={{bbox.1}}&bbox={{bbox.2}}&bbox={{bbox.3}}#.json",
+      "type": "application/json",
+      "id": "cogstats",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "collection_group": "Energy Transition",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-02-Site-Identification-Capabilities-REDIII/process/form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/process/vegawind.json",
+  "title": "Wind Speed and Power Nowcasting",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -85.0,
+          180.0,
+          85.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-06-16T09:00:00Z",
+          "2025-06-16T12:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoSphere",
+      "url": "https://www.geosphere.at/en"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "type": "Collection",
+  "id": "tourism_uc2_indicator",
+  "stac_version": "1.1.0",
+  "description": "### GTIF AT EA – Austrian Climate Change Explorer for Tourism\n\n\n\n*Climate threats*\n\n\n\nVisualization of flood, snow decline, avalanche, heat episode, and hot day (>30°C) risks aggregated at the level of Austrian tourism destinations.\n\n\n\nBy selecting one or more tourism destinations on the map, the distribution of risk levels within each destination can be explored and compared.\n\n\n\nRead narrative (general) and (use case 2) for a more detailed description.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc2_snow_anomaly/collection.json",
+      "type": "application/json",
+      "title": "Climate Hazards",
+      "endpointtype": "COG source",
+      "id": "tourism_uc2_snow_anomaly",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "GeoVille"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc2_flood/collection.json",
+      "type": "application/json",
+      "title": "Flood Hazard Zones",
+      "endpointtype": "COG source",
+      "id": "tourism_uc2_flood",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "HORA – Natural Hazard Overview & Risk Assessment Austria"
+      ],
+      "roles": [
+        "disable"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc2_avalanche/collection.json",
+      "type": "application/json",
+      "title": "Avalanche Hazard Zones",
+      "endpointtype": "COG source",
+      "id": "tourism_uc2_avalanche",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "HORA – Natural Hazard Overview & Risk Assessment Austria"
+      ],
+      "roles": [
+        "disable"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc2_heat_episodes/collection.json",
+      "type": "application/json",
+      "title": "Heat Episodes",
+      "endpointtype": "COG source",
+      "id": "tourism_uc2_heat_episodes",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "HORA – Natural Hazard Overview & Risk Assessment Austria"
+      ],
+      "roles": [
+        "disable"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc2_hot_days_30/collection.json",
+      "type": "application/json",
+      "title": "Hot Days Above 30 °C",
+      "endpointtype": "COG source",
+      "id": "tourism_uc2_hot_days_30",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "HORA – Natural Hazard Overview & Risk Assessment Austria"
+      ],
+      "roles": [
+        "disable"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc2_hot_days_35/collection.json",
+      "type": "application/json",
+      "title": "Hot Days Above 35 °C",
+      "endpointtype": "COG source",
+      "id": "tourism_uc2_hot_days_35",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "HORA – Natural Hazard Overview & Risk Assessment Austria"
+      ],
+      "roles": [
+        "disable"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "child",
+      "href": "./tourism_uc2_tropical_nights/collection.json",
+      "type": "application/json",
+      "title": "Tropical Nights",
+      "endpointtype": "COG source",
+      "id": "tourism_uc2_tropical_nights",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "HORA – Natural Hazard Overview & Risk Assessment Austria"
+      ],
+      "roles": [
+        "disable"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
+      "rel": "service",
+      "href": "https://eoapi.workspace.gtif-eox.hub-otc.eox.at/vector/collections/public.snow_anomaly_geoville/items?limit=1&bbox-only=true&filter=S_INTERSECTS(geometry,%20POINT({{point.0}}%20{{point.1}}))",
+      "type": "application/json",
+      "id": "snow_variation",
+      "method": "GET"
+    },
+    {
+      "rel": "service",
+      "href": "https://cors.eox.at/get?url=https%3A%2F%2Fhora.gv.at%2Fservices%2Fdata%2F85f342bb-c9e0-05c2-9d52-d30039f4a925%2F%3Fepsg%3D4326%26x%3D{{point.0}}%26y%3D{{point.1}}",
+      "type": "application/json",
+      "id": "hora",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "style",
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ea/uc2/tourism_regions_overlay_style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "tourism_regions"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://picsum.photos/seed/picsum/536/354",
+  "themes": [
+    "Climate Change & Tourism"
+  ],
+  "collection_group": "Climate Change & Tourism",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ea/uc2/snow_depth_anomaly_jsonform.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ea/uc2/snow_depth_anomaly_vega.json",
+  "eodash:merge_assets": false,
+  "title": "Snow Depth Anomaly",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.40356439416315,
+          46.345563479243154,
+          17.21172084373003,
+          49.03321991805956
+        ],
+        [
+          9.530749,
+          46.372299,
+          17.160742,
+          49.020608
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoVille",
+      "url": "https://www.geoville.com/"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "Climate Change & Tourism"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://picsum.photos/seed/picsum/536/354",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "tourism_regions": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ea/uc2/tourismregions_FINAL.geojson",
+      "type": "application/geo+json",
+      "title": "Tourism Regions",
+      "proj:epsg": 4326,
+      "roles": [
+        "overlay",
+        "visible"
+      ]
+    }
+  }
+}

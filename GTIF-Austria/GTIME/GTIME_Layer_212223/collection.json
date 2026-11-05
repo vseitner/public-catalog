@@ -1,0 +1,79 @@
+{
+  "type": "Collection",
+  "id": "GTIME_Layer_212223",
+  "stac_version": "1.1.0",
+  "description": "The RGB colour model is used to visualize vegetation status and changes across three user-defined time periods (in this case: T1: 2021, T2: 2022, and T3: 2023). This vegetation change model is based on a semantic Earth Observation (EO) data cube, utilizing all available Sentinel-2 observations within each time frame. It calculates the percentage of vegetation presence among valid (cloud- and snow-free) observations. As a result, the model not only depicts changes over time but also reflects variations in vegetation intensity and transitions between vegetation and non-vegetation. Vegetation percentages are represented as integer values within the respective colour channels.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Multitemporal Vegetation Change Dynamics"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/thumbnail_gtime_layer.png",
+  "collection_group": "EO Adaptation Services",
+  "endpointtype": "COG source",
+  "title": "Multitemporal Vegetation Change Dynamics 2021 – 2022 – 2023",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.0,
+          44.5,
+          18.0,
+          49.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Univ. of Salzburg, Department of Geoinformatics – Z_GIS & Spatial Services",
+      "url": "https://www.plus.ac.at/geoinformatik/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 19085,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "legend": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/Cube_2021_2022_2023_sm.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/assets/thumbnail_gtime_layer.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

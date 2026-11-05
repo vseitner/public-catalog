@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "heating_degree_days",
+  "stac_version": "1.1.0",
+  "description": "By integrating precise satellite-based data, air temperature is calculated on a 100-meter grid to simulate and forecast its spatial and hourly variations. The model integrates multiple high-resolution datasets to enhance forecast accuracy:\n* Satellite-based land cover data (e.g., Sentinel-2) to map surface properties and urban structures.\n* Building density and surface material analysis to account for urban heat storage and emission.\n* Vegetation and green space influence to assess cooling effects from parks and tree canopies.\n* Anthropogenic heat emissions from industry and residential heating/cooling.\n\n**Technical features**\n* Spatial gridding:\t100m\n* Temporal gridding:\t1 hour\n* Forecast range:\t+30 hours\n* Forecast time:\t00 UTC",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Temperature Forecast, Cooling/Heating Degree Days for Cities in Austria"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "tags": [
+    "city_temperature"
+  ],
+  "endpointtype": "COG source",
+  "title": "Heating Degree Days",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          16.04,
+          47.94,
+          16.7,
+          48.48
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-06-24T07:00:00Z",
+          "2019-07-02T07:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoSphere",
+      "url": "https://www.geosphere.at/en"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/heating_degree_days_timeseries.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 16519,
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

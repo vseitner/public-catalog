@@ -1,0 +1,152 @@
+{
+  "type": "Collection",
+  "id": "SNWMLT-L2-DEMO",
+  "stac_version": "1.1.0",
+  "description": "## Snow Melt\n\nSnow Melt shows how much water the snowpack is releasing, given here in millimetres per day. Meltwater makes its way into the ground, streams and rivers, making snowmelt a key driver of spring runoff and flooding — valuable for flood forecasting, reservoir operation and early-warning systems. This layer is a demonstration subset of Waterjade's Level-2 snow products, covering the 2022–2023 winter season over Tyrol, modelled daily at 500 m resolution with the SnowMaps processing chain and the GEOtop physical model. It builds on the snow-modelling work first developed within the Digital Twin of the Alps (DTA).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./SNWMLT-L2-DEMO/collection.json",
+      "type": "application/json",
+      "title": "GTIF demo - Snow Melt",
+      "endpointtype": "Sentinel Hub WMS",
+      "shortdescription": "Daily snowmelt water runoff.",
+      "id": "SNWMLT-L2-DEMO",
+      "providers": [
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT_GTIF_DEMO.png"
+      ],
+      "collection_group": "Hydrology"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "shortdescription": "Daily snowmelt water runoff.",
+  "eox:colorlegend": {
+    "title": "Snow Melt (mm/day)",
+    "tickFormat": ".0f",
+    "domain": [
+      0,
+      25
+    ],
+    "range": [
+      "#ffffff",
+      "#f7fbff",
+      "#c9dbf0",
+      "#a3cae2",
+      "#75afd8",
+      "#5d9dce",
+      "#5093c8",
+      "#3371b8",
+      "#2962b3",
+      "#1e529f",
+      "#163982"
+    ],
+    "markType": "rect",
+    "scaleType": "continuous"
+  },
+  "thumbnail": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT_GTIF_DEMO.png",
+  "collection_group": "Hydrology",
+  "title": "GTIF demo - Snow Melt",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          10.41166,
+          46.716906,
+          11.977302,
+          47.615112
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-10-02T00:00:00Z",
+          "2023-09-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Waterjade",
+      "url": "https://waterjade.com/"
+    }
+  ],
+  "summaries": {
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT_GTIF_DEMO.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT_GTIF_DEMO.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "type": "Collection",
+  "id": "brownfield_recovery_potential",
+  "stac_version": "1.1.0",
+  "description": "This dataset, officially titled \"Gewerbliche und industrielle Brachflächen – Wahrscheinlichkeitskarte (Version für Österreich 2024),\" represents a nationwide inventory of potential industrial and commercial brownfields across Austria.\nDeveloped by the Environment Agency Austria (Umweltbundesamt) in collaboration with Fraunhofer IIS, it utilizes Artificial Intelligence (AI) and remote sensing data (digital orthophotos) to identify sealed, underutilized surfaces, assigning each plot a probability score (e.g., Brownfield_Total) to prioritize areas for land recycling and reduce soil sealing.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./brownfield_recovery_potential/collection.json",
+      "type": "application/json",
+      "title": "Brownfield Recovery Potential",
+      "endpointtype": "GeoJSON source",
+      "id": "brownfield_recovery_potential",
+      "themes": [
+        "Sustainable Cities"
+      ],
+      "providers": [
+        "Fraunhofer IIS"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/brownfield/assets/triebnigg/brownfieldcover-1749915393864.jpg"
+      ],
+      "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "service",
+      "href": "data:application/json,[{\"total_price\":\"{{feature.values_.total_price}}\",\"total_solar_pot\":{{feature.values_.total_solar_pot}},\"Brownfield_Total\":{{feature.values_.Brownfield_Total}},\"Prediction_Subclass_DOP\":\"{{feature.values_.Prediction_Subclass_DOP}}\",\"build_area\":{{feature.values_.build_area}},\"sealed_area\":{{feature.values_.sealed_area}},\"seal_perc\":{{feature.values_.seal_perc}},\"area\":{{feature.values_.area}},\"solar_pot_djf\":{{feature.values_.solar_pot_djf}},\"solar_pot_jja\":{{feature.values_.solar_pot_jja}},\"solar_pot_mam\":{{feature.values_.solar_pot_mam}},\"solar_pot_son\":{{feature.values_.solar_pot_son}},\"Name\":\"{{feature.values_.Name}}\",\"€/m²\":\"{{feature.values_.€/m²}}\"}]",
+      "type": "application/json",
+      "id": "stats",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://mapsneu.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{z}/{y}/{x}.jpeg",
+      "type": "image/png",
+      "title": "Geoland Basemap Orthofoto",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "bmaporthofoto30cm",
+      "attribution": "{ Datenquelle: <a href=\"https://basemap.at\" target=\"_blank\" property=\"dct:title\">basemap.at</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/brownfield/assets/triebnigg/brownfieldcover-1749915393864.jpg",
+  "themes": [
+    "Sustainable Cities"
+  ],
+  "collection_group": "Sustainable Cities",
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-14-Fallow-Land-Soil-Sealing/form_merged.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-14-Fallow-Land-Soil-Sealing/vega_chart_stats.json",
+  "title": "Brownfield Recovery Potential",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.489274390469427,
+          45.934319198418606,
+          17.366799269340135,
+          49.61178781509044
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Fraunhofer IIS",
+      "url": "https://www.iis.fraunhofer.de/en.html"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "Sustainable Cities"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/brownfield/assets/triebnigg/brownfieldcover-1749915393864.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/triebnigg/public-narratives/triebnigg/brownfield/assets/triebnigg/brownfieldcover-1749915393864.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

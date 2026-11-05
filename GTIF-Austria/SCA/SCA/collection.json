@@ -1,0 +1,90 @@
+{
+  "type": "Collection",
+  "id": "SCA",
+  "stac_version": "1.1.0",
+  "description": "## Snow Covered Area\n\nThis product was developed within the Digital Twin of Alps (DTA), a demonstration platform built by a Sinergise-led consortium and funded by the European Space Agency under Regional Initiative 3 (EXPRO+), ESA Contract No. 4000139281/22/I-DT. Running for two years from September 2022, the DTA combined Earth observation, numerical modelling and artificial intelligence into a single decision-support platform for water and risk management in the Alps, and serves as a stepping stone towards future Digital Twins  focused on mountainous regions. The Snow products available here were produced by Waterjade S.r.l. and serve as a development basis for the newer products available in the GTIF platform. These products are included in the GTIF platform for demonstration purposes.\n\nSnow Covered Area (SCA) maps delineate the extent of the snowpack, identifying which areas of the terrain are covered by snow and which are snow-free. Each pixel is classified from 0 (completely snow-free) to 1 (100% snow covered), producing representation of snow extent across the mountains at a given point in the season. SCA is a fundamental variable: it tracks the advance and retreat of the snow line along the slopes through winter and into the melt season, and provides an accessible entry point for characterising snow conditions, of value to water managers, the tourism sector and the research community alike.\n\nThe SCA maps were produced weekly through the winter season (October to June) at a spatial resolution of 250 metres across the entire Alps (here provided over Austria), with the full record spanning the 2017 to 2022 winters. They were derived from Sentinel-2 optical imagery, which provides a revisit interval of approximately five days over the Alps, using algorithms that combine several spectral indices (notably NDSI, NDVI and NDWI) with terrain information. A dedicated gap-filling procedure compensated for pixels obscured by cloud, dense vegetation or water, yielding a spatially complete map whose snow line is consistent with the underlying topography, including slope aspect and elevation. Beyond its value as a standalone product, SCA performed a central function within the snow service: it was assimilated into the GEOtop physical model to constrain and correct the simulated snowpack, keeping the modelled Snow Depth and Snow Water Equivalent outputs in agreement with satellite observations.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "DTA - Snow Covered Area"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "shortdescription": "Binary mask of snow covered area per pixel.",
+  "eox:colorlegend": {
+    "title": "Snow Covered Area (0: no snow - 1: snow)",
+    "tickFormat": ".1f",
+    "domain": [
+      0,
+      1
+    ],
+    "range": [
+      "#ffffff",
+      "#13316c"
+    ],
+    "markType": "rect",
+    "scaleType": "categorical"
+  },
+  "thumbnail": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SCA.jpg",
+  "agency": [
+    "ESA"
+  ],
+  "collection_group": "Hydrology",
+  "endpointtype": "Sentinel Hub WMS",
+  "title": "DTA - Snow Covered Area",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          8.983152841195214,
+          46.12248935673261,
+          17.067990398270908,
+          48.55685052214071
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-10-04T00:00:00Z",
+          "2022-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Waterjade",
+      "url": "https://waterjade.com/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 17835,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SCA.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "Collection",
+  "id": "mobility_no2",
+  "stac_version": "1.1.0",
+  "description": "## Purpose and Context\nThis layer explores the relationship between daily mobility indicators and atmospheric NO₂ concentrations by jointly analyzing HFLB-based mobility metrics and EO-based air quality data. \nEarth observation satellites, such as the TROPOMI instrument on Copernicus Sentinel-5P, provide spatially continuous measurements of tropospheric nitrogen dioxide (NO₂), a pollutant commonly associated with traffic and industrial activities.\nThe layer is designed as an exploratory analysis tool to support the identification of potential spatial and temporal associations between mobility patterns and air quality indicators, rather than to establish causal relationships.\n\n## Data Basis\nThe analysis integrates two main data sources:\n1) HFLB Mobility Indicators (daily resolution):\n - Speed\n - Motorized Share\n - Motorized Count\n - Trajectories (max)\n - Trajectories (scaled)\n\n2) EO-based NO₂ Concentrations (Sentinel-5P / TROPOMI): Tropospheric NO₂ concentrations derived from satellite observations.\nTo reduce atmospheric and observational disturbances, a quality masking procedure is applied to the NO₂ data. Only pixels with a Quality Assurance value ≥ 75 are considered, excluding measurements affected by clouds, aerosols, or unfavorable viewing conditions.\n\n## Spatial and Temporal Harmonization\nSatellite observations are acquired under varying viewing geometries, resulting in differing pixel footprints. To ensure spatial comparability NO₂ data are regridded onto a fixed, regular grid. An equirectangular grid with a resolution of 0.022° (~3 km) is used. Regridding is performed using a nearest neighbour approach on masked data.\nDue to strong day-to-day variability driven by meteorological conditions, NO₂ concentrations are temporally aggregated using a 14-day averaging window.\nOnly grid cells with at least two valid observations within the averaging period are considered.\nThis temporal aggregation reduces meteorological noise and enhances the visibility of signals related to human activity.\n\nTo enable a consistent spatial comparison between mobility and air quality indicators, mobility indicators are aggregated onto the same regular spatial grid.\n\n## Visualization and Interaction\nThe map visualizes gridded daily mobility indicators and NO₂ concentrations. By selecting an individual grid cell, scatter plots are generated showing the correlation between each mobility indicator and the corresponding NO₂ concentration.\nThis interactive functionality allows users to explore indicator-specific relationships, compare the explanatory behavior of different mobility metrics, and to identify outliers and non-linear patterns.\n\n## Interpretation and Limitations\nObserved correlations should be interpreted with caution. Atmospheric NO₂ concentrations are influenced by multiple factors, including meteorological conditions or background pollution levels. As a result, the displayed relationships represent statistical associations rather than direct emission–immission linkages.\nThe layer is therefore intended for hypothesis generation and comparative exploration, not for quantitative impact assessment.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Daily mobility vs NO2"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_traffic_no2_2.jpg",
+  "themes": [
+    "mobility-transition"
+  ],
+  "tags": [
+    "mobility"
+  ],
+  "collection_group": "Mobility Transition",
+  "endpointtype": "tipg",
+  "title": "Daily mobility vs NO2",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          15.0,
+          47.69,
+          17.7,
+          48.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-07-01T00:00:00Z",
+          "2022-12-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "AIT Center for Transport Technologies",
+      "url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-transport-technologies"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 71242,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-09-Human-Mobility-Data/thumbnails/Gemini_Generated_traffic_no2_2.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
