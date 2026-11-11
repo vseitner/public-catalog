@@ -11,6 +11,14 @@
       "title": "GTIF Austria"
     },
     {
+      "rel": "style",
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ea/uc2/hora_hot_days_30_style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "hora_hot_days_30_1991_2020"
+      ]
+    },
+    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",

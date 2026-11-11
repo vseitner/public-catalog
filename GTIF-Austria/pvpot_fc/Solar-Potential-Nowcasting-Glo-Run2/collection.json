@@ -11,6 +11,14 @@
       "title": "GTIF Austria"
     },
     {
+      "rel": "style",
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-03-Energy-Nowcasting-Solar-Wind/style_wr03_solar_glo.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "run2-glo-1200"
+      ]
+    },
+    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",

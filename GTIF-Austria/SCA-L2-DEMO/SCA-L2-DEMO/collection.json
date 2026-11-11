@@ -11,6 +11,18 @@
       "title": "GTIF Austria"
     },
     {
+      "rel": "wms",
+      "href": "https://sh.dataspace.copernicus.eu/ogc/wms/",
+      "type": "image/png",
+      "title": "GTIF demo - Snow Covered Area",
+      "wms:layers": [
+        "SNOW-COVERED-AREA"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",

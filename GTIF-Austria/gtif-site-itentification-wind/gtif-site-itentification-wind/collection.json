@@ -11,6 +11,26 @@
       "title": "GTIF Austria"
     },
     {
+      "rel": "style",
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-01-Wind Atlas/gtif-wr-02-site-identification-wind-style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "cog01-pwr-density-100m",
+        "cog02-01-elevation",
+        "cog03-02-slope",
+        "cog04-03A-Nature preservation areas V-VI",
+        "cog05-03B-Nature preservation areas I-IV",
+        "cog06-04-Settlements",
+        "cog07-06-Railways",
+        "cog08-07-Roads",
+        "cog09-08-Aviation",
+        "cog10-09-Water-Bodies",
+        "cog11-10-Power-Lines",
+        "cog12-11-Military-Areas",
+        "cog13-00-border_aut"
+      ]
+    },
+    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",

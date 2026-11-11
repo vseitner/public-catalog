@@ -11,6 +11,14 @@
       "title": "GTIF Austria"
     },
     {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/Taenja/public-assets/main/assets/styles/ubicube.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "ubifootprint"
+      ]
+    },
+    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
