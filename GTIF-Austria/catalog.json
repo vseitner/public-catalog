@@ -1199,6 +1199,56 @@
       "collection_group": "Climate Change & Tourism"
     },
     {
+      "rel": "child",
+      "href": "./nature_capital_solution/collection.json",
+      "type": "application/json",
+      "title": "Biodiversity Carbon Farming Index",
+      "id": "nature_capital_solution",
+      "themes": [
+        "Carbon Accounting"
+      ],
+      "providers": [
+        "ECOSYS",
+        "EOX"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Thumbnail/grassland_lt.png"
+      ],
+      "collection_group": "Carbon Accounting"
+    },
+    {
+      "rel": "child",
+      "href": "./heatgrid_lst/collection.json",
+      "type": "application/json",
+      "title": "HEATGRID - Urban Land Surface Temperature Projections",
+      "shortdescription": "The map provides 70 m resolution land surface temperature (LST) projections for Vienna, Graz and Innsbruck from 2000 to 2049 with the ECMWF model IFS-NEMO, based on the SSP3-7.0 scenario (Shared Socioeconomic Pathway, high-emission future with continuous increases in CO₂ emissions and limited global mitigation efforts) and its implication for the climate. Decadal outputs show mean LST during summer hot spells, separately for morning and afternoon. Additional visualization variables simulate four LULUCF land-use transitions to estimate their potential effects on surface temperatures. The results support heat hotspot identification, urban heat mitigation, climate adaptation and spatial planning.",
+      "id": "heatgrid_lst",
+      "themes": [
+        "Climate Change & Tourism"
+      ],
+      "providers": [
+        "GeoVille"
+      ],
+      "cities": [
+        "Graz",
+        "Innsbruck",
+        "Vienna"
+      ],
+      "countries": [
+        "AT"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/gtif-austria/public-narratives/refs/heads/main/assets/gofweiss-source/heatgrid-cover-image.png"
+      ],
+      "tags": [
+        "LST",
+        "Urban Heat",
+        "Climate Projections",
+        "LULUCF"
+      ],
+      "collection_group": "Climate Change & Tourism"
+    },
+    {
       "rel": "self",
       "href": "https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json",
       "type": "application/json"

@@ -44,8 +44,8 @@
     "temporal": {
       "interval": [
         [
-          "2026-11-11T00:00:00Z",
-          "2026-11-12T06:00:00Z"
+          "2026-11-19T00:00:00Z",
+          "2026-11-20T06:00:00Z"
         ]
       ]
     }
@@ -62,7 +62,7 @@
       "href": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_tagesaktuell_oeffentlich-v1-1h-100m/filelisting/stadtwetter.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "GeoParquet Items",
-      "file:size": 15472,
+      "file:size": 15451,
       "roles": [
         "collection-mirror"
       ]

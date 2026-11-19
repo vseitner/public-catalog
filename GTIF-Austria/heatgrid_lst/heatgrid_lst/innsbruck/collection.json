@@ -1,0 +1,148 @@
+{
+  "type": "Collection",
+  "id": "innsbruck",
+  "stac_version": "1.1.0",
+  "description": "The map provides high-resolution (70 m) land surface temperature (LST) projections for Vienna, Graz and Innsbruck from 2000 to 2049 with the ECMWF model IFS-NEMO, based on the SSP3-7.0 scenario (Shared Socioeconomic Pathway, high-emission future with continuous increases in CO₂ emissions and limited global mitigation efforts) and its implication for the climate. Decadal outputs show mean LST during summer hot spells, separately for morning and afternoon. Additional maps simulate four LULUCF land-use transitions to estimate their potential effects on surface temperatures. The results support heat hotspot identification, urban heat mitigation, climate adaptation and spatial planning.\n\n### Displayed variables\nLand Surface Temperature projection under the climate scenario IFS-NEMO, depending on:\n* **Areas of Interest**: Vienna, Graz, Innsbruck\n* **Decade**: 2000-2009, 2010-2019, 2020-2029, 2030-2039, 2040-2049\n* **Daytime**: coldest hour of the morning during hot spells, hottest hour of the afternoon during hot spells\n* **Land Use Change**:\n  * unvegetated settlement (511) -> settlement with trees (521)\n  * unvegetated settlement (511) -> settlement with grassland (522)\n  * deciduous forest (120) -> unvegetated settlement (511)\n  * grassland (311) -> unvegetated settlement (511)\n\n### Resolution\n70 m, coldest hot-spell morning hour and hottest hot-spell afternoon hour from 2000 to 2049 aggregated by decade.\n\n### Note\nOnly the outputs with the climate scenario IFS-NEMO are displayed. Results for ICON model available under request.\n\n### Purpose\n* **Target groups**: Municipalities and regional authorities, urban planners and landscape architects, real estate developers, healthcare and education facilities, and infrastructure operators.\n* **Potential use**: Identifying urban heat hotspots, assessing the thermal effects of land-use changes, supporting greening and de-sealing measures, informing climate-resilient spatial planning, and exploring future urban heat patterns under climate scenarios.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/heatgrid_lst_style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "lst_stack"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/gtif-at-ea-heatgrid/heatgrid_stats.csv",
+      "type": "text/csv",
+      "id": "heatgrid_stats",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "HEATGRID - Urban Land Surface Temperature Projections"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "endpointtype": "COG source",
+  "proj:epsg": 3857,
+  "eodash:jsonform": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/forms/heatgrid_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/charts/heatgrid_vega.json",
+  "shortdescription": "The map provides 70 m resolution land surface temperature (LST) projections for Vienna, Graz and Innsbruck from 2000 to 2049 with the ECMWF model IFS-NEMO, based on the SSP3-7.0 scenario (Shared Socioeconomic Pathway, high-emission future with continuous increases in CO₂ emissions and limited global mitigation efforts) and its implication for the climate. Decadal outputs show mean LST during summer hot spells, separately for morning and afternoon. Additional visualization variables simulate four LULUCF land-use transitions to estimate their potential effects on surface temperatures. The results support heat hotspot identification, urban heat mitigation, climate adaptation and spatial planning.",
+  "thumbnail": "https://raw.githubusercontent.com/gtif-austria/public-narratives/refs/heads/main/assets/gofweiss-source/heatgrid-cover-image.png",
+  "themes": [
+    "Climate Change & Tourism"
+  ],
+  "tags": [
+    "LST",
+    "Urban Heat",
+    "Climate Projections",
+    "LULUCF"
+  ],
+  "collection_group": "Climate Change & Tourism",
+  "title": "Innsbruck",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          11.31017,
+          47.20055,
+          11.51417,
+          47.33169
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00Z",
+          "2040-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoVille",
+      "url": "https://www.geoville.com/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 15403,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/gtif-austria/public-narratives/refs/heads/main/assets/gofweiss-source/heatgrid-cover-image.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

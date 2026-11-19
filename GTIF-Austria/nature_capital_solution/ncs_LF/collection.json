@@ -1,0 +1,120 @@
+{
+  "type": "Collection",
+  "id": "ncs_LF",
+  "stac_version": "1.1.0",
+  "description": "**Biodiversity & Carbon Farming Index (BCFI)**\n\nThis collection provides a harmonized geospatial data framework designed for dMRV in regenerative agriculture, nature finance, and ecosystem service accounting. Developed in the context of the [ECOSYS Natural Capital Solutions platform](https://ncs.eox.at/), the collection integrates parcel-level ecological valuation metrics, standardized Land Use, Land-Use Change, and Forestry (LULUCF) classifications, and high-resolution agro-ecological landscape elements.\n\n# Core Layers in Collection\n## Biodiversity & Carbon Farming Index (BCFI): \nA multi-criteria assessment score demonstrating the value-creation potential of the land regarding biodiversity, climate mitigation, and regenerative agriculture.\nImpacts scaled in BCFI are shared among four benefit categories : biodiversity, climate, soil and water. The BCFI index translates them into a relative score for each parcel. Each category is scored using objectively measurable indicators (from EO, in-field data and management records), then weighted to reflect its positive contribution by impact category to ecosystem performance and resilience.\n\n## Harmonized LULUCF Stack: \nA multi-band composite raster classifying land cover into standardized agricultural, forestry, grassland, and wetland classes, stacked into a prioritized categorical classification.\n\n## Landscape Features (LF): \nHigh-resolution delineation of non-productive landscape structures (hedgerows, tree rows, isolated woody features, buffer strips, and stone/grassy boundaries) built by combining GSA declarations and Copernicus Small Woody Features (SWF) detections for eco-scheme compliance and biodiversity corridors.\n\n# Data Sources \nECOSYS NCS - BCFI analytics layer combines EO datasets, GSA declaration, soil estimation (Bodenkarte) to accurately verify and score parcel-level performance.\n\n- GSA (INVEKOS - AMA): Field parcel identification data and farmer declarations identifying crop types, declared boundaries, agroforestry, and ecological focus areas.\n\n- LMS & Waldkarte: Land Monitoring System base layers and Austrian forest inventory maps distinguishing artificial surfaces, water bodies, and forest canopy composition.\n\n- MAES Habitat Map: National ecosystem assessments identifying Natura 2000 habitats, bogs, and high-nature-value natural grasslands.\n\n- Copernicus HRL SWF: High-resolution Earth Observation layer detecting linear and patchy woody structures (hedgerows, bushy strips, and isolated trees) across agricultural landscapes.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Biodiversity Carbon Farming Index"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:narratives": {
+    "natural_capital_solution": {
+      "href": "https://gtif-austria.info/narratives/natural_capital_solution",
+      "type": "text/markdown",
+      "title": "Natural Capital Solution",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/main/natural_capital_solution.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Thumbnail/grassland_lt.png",
+  "themes": [
+    "Carbon Accounting"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "collection_group": "Carbon Accounting",
+  "endpointtype": "VectorTile source",
+  "title": "Landscape Features",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          15.5,
+          48.1,
+          15.9,
+          48.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ECOSYS",
+      "url": "https://ncs.eox.at/"
+    },
+    {
+      "name": "EOX",
+      "url": "https://eox.at/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "file:size": 13992,
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "natural_capital_solution": {
+      "href": "https://gtif-austria.info/narratives/natural_capital_solution",
+      "type": "text/markdown",
+      "title": "Natural Capital Solution",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/GTIF-Austria/public-narratives/main/natural_capital_solution.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Thumbnail/grassland_lt.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

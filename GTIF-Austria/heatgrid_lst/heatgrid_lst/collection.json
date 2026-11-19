@@ -1,0 +1,133 @@
+{
+  "type": "Collection",
+  "id": "heatgrid_lst",
+  "stac_version": "1.1.0",
+  "description": "The map provides high-resolution (70 m) land surface temperature (LST) projections for Vienna, Graz and Innsbruck from 2000 to 2049 with the ECMWF model IFS-NEMO, based on the SSP3-7.0 scenario (Shared Socioeconomic Pathway, high-emission future with continuous increases in CO₂ emissions and limited global mitigation efforts) and its implication for the climate. Decadal outputs show mean LST during summer hot spells, separately for morning and afternoon. Additional maps simulate four LULUCF land-use transitions to estimate their potential effects on surface temperatures. The results support heat hotspot identification, urban heat mitigation, climate adaptation and spatial planning.\n\n### Displayed variables\nLand Surface Temperature projection under the climate scenario IFS-NEMO, depending on:\n* **Areas of Interest**: Vienna, Graz, Innsbruck\n* **Decade**: 2000-2009, 2010-2019, 2020-2029, 2030-2039, 2040-2049\n* **Daytime**: coldest hour of the morning during hot spells, hottest hour of the afternoon during hot spells\n* **Land Use Change**:\n  * unvegetated settlement (511) -> settlement with trees (521)\n  * unvegetated settlement (511) -> settlement with grassland (522)\n  * deciduous forest (120) -> unvegetated settlement (511)\n  * grassland (311) -> unvegetated settlement (511)\n\n### Resolution\n70 m, coldest hot-spell morning hour and hottest hot-spell afternoon hour from 2000 to 2049 aggregated by decade.\n\n### Note\nOnly the outputs with the climate scenario IFS-NEMO are displayed. Results for ICON model available under request.\n\n### Purpose\n* **Target groups**: Municipalities and regional authorities, urban planners and landscape architects, real estate developers, healthcare and education facilities, and infrastructure operators.\n* **Potential use**: Identifying urban heat hotspots, assessing the thermal effects of land-use changes, supporting greening and de-sealing measures, informing climate-resilient spatial planning, and exploring future urban heat patterns under climate scenarios.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./vienna/collection.json",
+      "type": "application/json",
+      "title": "Vienna",
+      "id": "vienna",
+      "latlng": "48.22813,16.3443",
+      "name": "Vienna",
+      "city": "Vienna",
+      "country": "AT"
+    },
+    {
+      "rel": "child",
+      "href": "./graz/collection.json",
+      "type": "application/json",
+      "title": "Graz",
+      "id": "graz",
+      "latlng": "46.99931,15.45964",
+      "name": "Graz",
+      "city": "Graz",
+      "country": "AT"
+    },
+    {
+      "rel": "child",
+      "href": "./innsbruck/collection.json",
+      "type": "application/json",
+      "title": "Innsbruck",
+      "id": "innsbruck",
+      "latlng": "47.26617,11.41204",
+      "name": "Innsbruck",
+      "city": "Innsbruck",
+      "country": "AT"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "HEATGRID - Urban Land Surface Temperature Projections"
+    }
+  ],
+  "shortdescription": "The map provides 70 m resolution land surface temperature (LST) projections for Vienna, Graz and Innsbruck from 2000 to 2049 with the ECMWF model IFS-NEMO, based on the SSP3-7.0 scenario (Shared Socioeconomic Pathway, high-emission future with continuous increases in CO₂ emissions and limited global mitigation efforts) and its implication for the climate. Decadal outputs show mean LST during summer hot spells, separately for morning and afternoon. Additional visualization variables simulate four LULUCF land-use transitions to estimate their potential effects on surface temperatures. The results support heat hotspot identification, urban heat mitigation, climate adaptation and spatial planning.",
+  "thumbnail": "https://raw.githubusercontent.com/gtif-austria/public-narratives/refs/heads/main/assets/gofweiss-source/heatgrid-cover-image.png",
+  "themes": [
+    "Climate Change & Tourism"
+  ],
+  "locations": true,
+  "tags": [
+    "LST",
+    "Urban Heat",
+    "Climate Projections",
+    "LULUCF"
+  ],
+  "collection_group": "Climate Change & Tourism",
+  "proj:epsg": 3857,
+  "endpointtype": "COG source",
+  "title": "HEATGRID - Urban Land Surface Temperature Projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          11.31017,
+          46.86559,
+          16.48089,
+          48.33919
+        ],
+        [
+          16.20831,
+          48.11691,
+          16.48089,
+          48.33919
+        ],
+        [
+          15.32762,
+          46.86559,
+          15.59232,
+          47.13287
+        ],
+        [
+          11.31017,
+          47.20055,
+          11.51417,
+          47.33169
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00Z",
+          "2040-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GeoVille",
+      "url": "https://www.geoville.com/"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Vienna",
+      "Graz",
+      "Innsbruck"
+    ],
+    "countries": [
+      "AT"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/gtif-austria/public-narratives/refs/heads/main/assets/gofweiss-source/heatgrid-cover-image.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

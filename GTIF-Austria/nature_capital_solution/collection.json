@@ -1,0 +1,216 @@
+{
+  "type": "Collection",
+  "id": "nature_capital_solution",
+  "stac_version": "1.1.0",
+  "description": "**Biodiversity & Carbon Farming Index (BCFI)**\n\nThis collection provides a harmonized geospatial data framework designed for dMRV in regenerative agriculture, nature finance, and ecosystem service accounting. Developed in the context of the [ECOSYS Natural Capital Solutions platform](https://ncs.eox.at/), the collection integrates parcel-level ecological valuation metrics, standardized Land Use, Land-Use Change, and Forestry (LULUCF) classifications, and high-resolution agro-ecological landscape elements.\n\n# Core Layers in Collection\n## Biodiversity & Carbon Farming Index (BCFI): \nA multi-criteria assessment score demonstrating the value-creation potential of the land regarding biodiversity, climate mitigation, and regenerative agriculture.\nImpacts scaled in BCFI are shared among four benefit categories : biodiversity, climate, soil and water. The BCFI index translates them into a relative score for each parcel. Each category is scored using objectively measurable indicators (from EO, in-field data and management records), then weighted to reflect its positive contribution by impact category to ecosystem performance and resilience.\n\n## Harmonized LULUCF Stack: \nA multi-band composite raster classifying land cover into standardized agricultural, forestry, grassland, and wetland classes, stacked into a prioritized categorical classification.\n\n## Landscape Features (LF): \nHigh-resolution delineation of non-productive landscape structures (hedgerows, tree rows, isolated woody features, buffer strips, and stone/grassy boundaries) built by combining GSA declarations and Copernicus Small Woody Features (SWF) detections for eco-scheme compliance and biodiversity corridors.\n\n# Data Sources \nECOSYS NCS - BCFI analytics layer combines EO datasets, GSA declaration, soil estimation (Bodenkarte) to accurately verify and score parcel-level performance.\n\n- GSA (INVEKOS - AMA): Field parcel identification data and farmer declarations identifying crop types, declared boundaries, agroforestry, and ecological focus areas.\n\n- LMS & Waldkarte: Land Monitoring System base layers and Austrian forest inventory maps distinguishing artificial surfaces, water bodies, and forest canopy composition.\n\n- MAES Habitat Map: National ecosystem assessments identifying Natura 2000 habitats, bogs, and high-nature-value natural grasslands.\n\n- Copernicus HRL SWF: High-resolution Earth Observation layer detecting linear and patchy woody structures (hedgerows, bushy strips, and isolated trees) across agricultural landscapes.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "child",
+      "href": "./ncs_nutat1/collection.json",
+      "type": "application/json",
+      "title": "NUT AT1",
+      "endpointtype": "FlatGeobuf source",
+      "id": "ncs_nutat1",
+      "themes": [
+        "Carbon Accounting"
+      ],
+      "providers": [
+        "ECOSYS",
+        "EOX"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Thumbnail/grassland_lt.png"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Carbon Accounting"
+    },
+    {
+      "rel": "child",
+      "href": "./ncs_LULUCFgsa/collection.json",
+      "type": "application/json",
+      "title": "Land Cover Land Use with GSA parcels",
+      "endpointtype": "COG source",
+      "id": "ncs_LULUCFgsa",
+      "themes": [
+        "Carbon Accounting"
+      ],
+      "providers": [
+        "ECOSYS",
+        "EOX"
+      ],
+      "roles": [
+        "disable"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Thumbnail/grassland_lt.png"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Carbon Accounting"
+    },
+    {
+      "rel": "child",
+      "href": "./ncs_LF/collection.json",
+      "type": "application/json",
+      "title": "Landscape Features",
+      "endpointtype": "VectorTile source",
+      "id": "ncs_LF",
+      "themes": [
+        "Carbon Accounting"
+      ],
+      "providers": [
+        "ECOSYS",
+        "EOX"
+      ],
+      "roles": [
+        "disable"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Thumbnail/grassland_lt.png"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Carbon Accounting"
+    },
+    {
+      "rel": "child",
+      "href": "./ncs_BCFI_AL/collection.json",
+      "type": "application/json",
+      "title": "Biodiversity & Carbon Farming Index (BCFI)",
+      "endpointtype": "VectorTile source",
+      "id": "ncs_BCFI_AL",
+      "themes": [
+        "Carbon Accounting"
+      ],
+      "providers": [
+        "ECOSYS",
+        "EOX"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Thumbnail/grassland_lt.png"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Carbon Accounting"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"//eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Thumbnail/grassland_lt.png",
+  "themes": [
+    "Carbon Accounting"
+  ],
+  "collection_group": "Carbon Accounting",
+  "title": "Biodiversity Carbon Farming Index",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          15.5,
+          48.1,
+          15.9,
+          48.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ECOSYS",
+      "url": "https://ncs.eox.at/"
+    },
+    {
+      "name": "EOX",
+      "url": "https://eox.at/"
+    }
+  ],
+  "summaries": {
+    "themes": [
+      "Carbon Accounting"
+    ],
+    "thumbnail": [
+      "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Thumbnail/grassland_lt.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Thumbnail/grassland_lt.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

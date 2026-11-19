@@ -33,7 +33,7 @@
     },
     {
       "rel": "service",
-      "href": "https://eoapi.workspace.gtif-eox.hub-otc.eox.at/vector/collections/public.timeseries_asfinag_by_id/items?target_id={{feature.values_.unique_id }}&f=json&limit=10000&geom-column=#.json",
+      "href": "https://eoapi.workspace.gtif-eox.hub-otc.eox.at/vector/collections/public.timeseries_asfinag_by_id/items?target_id={{feature}}&f=json&limit=10000&geom-column=#.json",
       "type": "text/csv",
       "id": "timeseries",
       "method": "GET"
